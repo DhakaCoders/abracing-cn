@@ -67,3 +67,72 @@
 	border-top-left-radius: 0;
 	border-top-right-radius: 0;
 }
+
+
+
+
+/*extra*/
+
+.ab-wpa-sec{
+	padding: 200px 0 215px;
+	background-color: #fafafa;
+}
+
+.ab-wpa-sec-inr{
+	display: flex;
+	flex-wrap: wrap;
+}
+.ab-wpa-des{
+	width: 50%;
+	padding-right: 20px;
+}
+.ab-wpa-img{
+	width: 50%;
+}
+
+
+
+.ab-wpa-des-title{
+	padding-bottom: 40px;
+	margin-bottom: 35px;
+	text-transform: uppercase;
+	color: #333434;
+	position: relative;
+}
+.ab-wpa-des-title:after{
+	content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: url(../images/sec-entry-hdr-btm-img.png);
+    background-repeat: no-repeat!important;
+    height: 13px;
+    width: 83px;
+}
+
+
+.ab-wpa-des blockquote{
+	padding-left: 25px;
+	position: relative;
+}
+.ab-wpa-des blockquote:after{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 8px;
+	width: 3px;
+	height: 100%;
+	background: #009fe1;
+}
+
+.ab-blockquote-title{
+	margin-bottom: 25px;
+}
+.ab-wpa-des blockquote p{
+	margin-bottom: 20px;
+}
+.ab-wpa-des blockquote p:last-child{
+	margin-bottom: 0;
+}
+
+
