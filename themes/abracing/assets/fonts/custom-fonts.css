@@ -1,11 +1,14 @@
 
 @font-face {
-    font-family: 'LatoRegular';
-    src: url('LatoRegular/LatoRegular.eot');
-    src: url('LatoRegular/LatoRegular.eot') format('embedded-opentype'),
-         url('LatoRegular/LatoRegular.woff2') format('woff2'),
-         url('LatoRegular/LatoRegular.woff') format('woff'),
-         url('LatoRegular/LatoRegular.ttf') format('truetype'),
-         url('LatoRegular/LatoRegular.svg#LatoRegular') format('svg');
+    font-family: 'LuckiestGuy-Regular';
+    src: url('LuckiestGuy-Regular/LuckiestGuy-Regular.eot');
+    src: url('LuckiestGuy-Regular/LuckiestGuy-Regular.eot?#iefix') format('embedded-opentype'),
+        url('LuckiestGuy-Regular/LuckiestGuy-Regular.woff2') format('woff2'),
+        url('LuckiestGuy-Regular/LuckiestGuy-Regular.woff') format('woff'),
+        url('LuckiestGuy-Regular/LuckiestGuy-Regular.ttf') format('truetype'),
+        url('LuckiestGuy-Regular/LuckiestGuy-Regular.svg#LuckiestGuy-Regular') format('svg');
     font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
+

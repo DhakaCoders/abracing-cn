@@ -50,7 +50,7 @@
 /*sec-entry-hdr-start*/
 
 .sec-entry-hdr{
-	padding-top: 80px;
+	padding-top: 40px;
 	padding-bottom: 50px;
 }
 .sec-entry-hdr .sec-entry-hdr-title{
@@ -79,12 +79,11 @@
 	padding: 14px 30px;
 	border-top-left-radius: 30px;
 	border-bottom-right-radius:30px;
-	font-family: 'Luckiest Guy';
+	font-family: 'LuckiestGuy-Regular';
 	font-size: 18px;
 	background-color: #ff1000;
 	color: #fff;
 	text-transform: uppercase;
-	font-weight: 400;
 	text-align: center;
 	border: 1px solid #ff1000;
 }
