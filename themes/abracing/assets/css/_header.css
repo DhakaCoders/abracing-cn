@@ -165,6 +165,31 @@ nav.main-nav > ul > li{
 	padding: 0 19px;
 	position: relative;
 }
+nav.main-nav > ul > li.menu-item-has-children a{
+	padding-right: 20px;
+}
+nav.main-nav > ul > li.menu-item-has-children > a:before {
+    content: "\f107";
+    position: absolute;
+    right: 0;
+    color: #fff;
+    font-size: 20px;
+    top: 0;
+    font-family: 'Font Awesome\ 5 Free';
+    font-style: normal;
+    font-weight: 600;
+    text-decoration: inherit;
+    transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+nav.main-nav > ul > li.menu-item-has-children:hover > a:before {
+    transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+}
+
 nav.main-nav > ul > li > a{
 	padding-bottom: 18px;
 }
@@ -196,9 +221,8 @@ nav.main-nav > ul > li.menu-item-has-children > a:hover:after{
 nav.main-nav > ul > li > a:hover:after{
 	width: 62px;
 }
-nav.main-nav > ul > li.menu-item-has-children:hover a,
-nav.main-nav > ul > li.current-menu-item a,
-nav.main-nav > ul > li > a:hover{
+
+nav.main-nav > ul > li.current-menu-item a{
 	color: #009fe1;
 }
 
@@ -318,3 +342,7 @@ body.allWork .hamburger-icon span:nth-child(3) {
 	-webkit-transform: rotate(-45deg);
 	-o-transform: rotate(-45deg);
 }
+
+
+
+/*responsive*/
