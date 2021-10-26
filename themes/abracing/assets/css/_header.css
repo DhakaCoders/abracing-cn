@@ -339,12 +339,12 @@ body.allWork {
 }
 body.allWork .hamburger-icon span:nth-child(1) {
     top: 13px;
-    width: 16px;
     left: 8px;
     transform: rotate(45deg);
 	-ms-transform: rotate(45deg);
 	-webkit-transform: rotate(45deg);
 	-o-transform: rotate(45deg);
+	background: #000;
 }
 body.allWork .hamburger-icon span:nth-child(2) {
     content: none;
@@ -353,11 +353,59 @@ body.allWork .hamburger-icon span:nth-child(2) {
 body.allWork .hamburger-icon span:nth-child(3) {
     top: 13px;
     left: 8px;
-    width: 16px;
     transform: rotate(-45deg);
 	-ms-transform: rotate(-45deg);
 	-webkit-transform: rotate(-45deg);
 	-o-transform: rotate(-45deg);
+	background: #000;
+}
+
+.allWork .bdoverlay {
+    z-index: 9999;
+    opacity: 1;
+}
+.bdoverlay {
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    -ms-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    z-index: -1;
+}
+
+.allWork .xs-mobile-menu {
+    right: 0;
+    opacity: 1;
+    z-index: 99999;
+    width: 100%;
+}
+.xs-mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    bottom: 0;
+    background: #fff;
+    width: 0;
+    z-index: 99999;
+    opacity: 0;
+    -ms-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    padding-top: 79px;
+    height: 100%;
+    max-width: 375px;
+    width: 100%;
+    padding-bottom: 118px;
+    border-left: 2px solid #F8800B;
+}
+.logo-close-btn-cntlr{
+	display: flex;
+	align-items: center;
 }
 
 
