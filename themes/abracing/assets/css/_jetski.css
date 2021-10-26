@@ -16,11 +16,15 @@
 }
 .race-booking-grds-cntlr ul li.race-booking-grd-item-col-2{
 	width: 36%;
-	margin-top: -18px;
 }
 .race-booking-grds-cntlr ul li.race-booking-grd-item-col .race-booking-grd-item-desc{
 	color: #fff;
-	padding-bottom: 25px;
+	display: flex;
+    align-items: center;
+    min-height: 270px;
+}
+.race-booking-grds-cntlr ul li.race-booking-grd-item-col .race-booking-grd-item-desc p:last-child{
+	margin-bottom: 0;
 }
 .race-booking-grds-cntlr ul li.race-booking-grd-item-col-2 .race-booking-grd-item-desc{
 	padding-bottom: 130px;
@@ -33,37 +37,34 @@
 	width: 100%;
 	bottom: -18px;
 }
-.race-booking-grd-item-btn a{
+.race-booking-grd-item-btn .ab-btn{
 	color: #f3fe26;
-	display: inline-block;
-	vertical-align: baseline;
 	padding: 9px 33px 9px 28px;
-	background: #ff1000;
 	font-size: 20px;
-	border-top-left-radius: 20px;
-	border-bottom-right-radius: 20px;
-	font-family: 'Luckiest GuY';
 	
 }
 .race-booking-grds-cntlr ul li.race-booking-grd-item-col .race-booking-grd-item-desc p{
 	font-size: 14px;
 	font-weight: 900;
 }
-.race-booking-grds-cntlr ul li.race-booking-grd-item-col-1 .race-booking-grd-item-heading,
+/*.race-booking-grds-cntlr ul li.race-booking-grd-item-col-1 .race-booking-grd-item-heading,
 .race-booking-grds-cntlr ul li.race-booking-grd-item-col-2 .race-booking-grd-item-heading{
 	padding-bottom: 70px;
-}
-.race-booking-grds-cntlr ul li.race-booking-grd-item-col-1 .race-booking-grd-item-desc{
+}*/
+/*.race-booking-grds-cntlr ul li.race-booking-grd-item-col-1 .race-booking-grd-item-desc{
 	padding-bottom: 165px;
-}
+}*/
 .race-booking-grd-item-title{
 	margin-bottom: 25px;
 	color: #fff;
 	font-size: 48px;
 }
+.race-booking-grd-item{
+
+}
 .race-booking-grd-item-cntlr{
 	background: #009fe1;
-	padding: 0 42px;
+	padding: 30px 62px 38px 62px;
 	box-shadow: -3px 1px 16px -2px rgba(0,0,0,0.75);
 	-webkit-box-shadow: -3px 1px 16px -2px rgba(0,0,0,0.75);
 	-moz-box-shadow: -3px 1px 16px -2px rgba(0,0,0,0.75);
@@ -80,10 +81,10 @@
 	box-shadow: none;
 }
 .race-booking-grd-item-heading{
-	padding-top: 40px;
+/*	padding-top: 40px;*/
 }
 .race-booking-grd-item-heading span{
-	padding-bottom: 30px;
+	padding-bottom: 10px;
 	display: inline-block;
 	vertical-align: baseline;
 	color: #fff;
