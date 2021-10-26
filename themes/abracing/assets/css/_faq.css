@@ -16,6 +16,7 @@
 	font-size: 18px;
 	margin-bottom: 0;
 	border-radius: 8px;
+	cursor: pointer;
 	position: relative;
 }
 .ab-faq-accordion-title:after{
@@ -30,7 +31,13 @@
     -ms-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     right: 22px;
-    font-size: 30px;
+    font-size: 25px;
+    -webkit-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.ab-faq-accordion-title.active:after{
+	content: '\f077';
 }
 
 .ab-faq-accordion-des{

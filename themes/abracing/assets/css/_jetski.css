@@ -51,7 +51,7 @@
 	font-size: 48px;
 }
 .race-booking-grd-item-col-2 .race-booking-grd-item-cntlr{
-	padding: 44px 43px 75px;
+	padding: 44px 43px 55px;
 }
 .race-booking-grd-item-col-2 .race-booking-grd-item-desc{
 	padding-bottom: 35px;
@@ -78,4 +78,7 @@
 	vertical-align: baseline;
 	color: #fff;
 	font-size: 15px;
+}
+.race-booking-grds-cntlr ul li.race-booking-grd-item-col-2 .race-booking-grd-item-heading span{
+	padding-bottom: 22px;
 }

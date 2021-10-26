@@ -5,8 +5,8 @@ h1,h2,h3,h4,h5,h6{
 	line-height: 1;	
 	margin-top: 0;
 	margin-bottom: 20px;
-	font-family: 'LuckiestGuy-Regular';
-	/*font-weight: 400;*/
+	font-family: 'Luckiest Guy', cursive;
+	font-weight: 400;
 }
 h1,.fl-h1{
 	font-size: 61px;
