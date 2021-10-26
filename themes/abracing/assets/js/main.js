@@ -247,6 +247,20 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 /*start of Kashob*/
 
+if( $('.contact-form-wrp').length ){
+  $('.contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container button').on('click', function(){
+    $('.wpforms-field input[required],.wpforms-field select[required]').parents('.wpforms-field').addClass('wpforms-has-error');
+    $('.wpforms-field input[required],.wpforms-field select[required]').addClass('wpforms-error');
+  });
+}
+
+
+if( $('.wpforms-error').length ){
+  $('.wpforms-error').on('click', function(){
+    $(this).parents('.wpforms-field').removeClass('wpforms-has-error');
+  });
+}
+
 
 /*start of Jahir*/
 
@@ -255,6 +269,17 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 
 /*start of Shariful*/
+
+/*var windowWidth_1920 = $('.page-body-cntlr').width();*/
+var containerWidth = $('.container').width();
+var offSet = (windowWidth_1920 - containerWidth);
+var rgtOffSet = (offSet / 2);
+var rgtOffSetWidth = (rgtOffSet + 2);
+
+
+$('.ftr-top-border').css({
+  'width': rgtOffSetWidth
+});
 
 
 
