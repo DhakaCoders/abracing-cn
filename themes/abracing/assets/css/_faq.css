@@ -76,6 +76,15 @@
 .ab-wpa-sec{
 	padding: 200px 0 215px;
 	background-color: #fafafa;
+	position: relative;
+}
+
+.ab-wpa-rgt-bg{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 50%;
 }
 
 .ab-wpa-sec-inr{
@@ -133,6 +142,44 @@
 }
 .ab-wpa-des blockquote p:last-child{
 	margin-bottom: 0;
+}
+
+
+
+.ab-wave-trills-sec{
+	padding: 110px 0 180px;
+	position: relative;
+}
+
+.ab-wave-trills-overlay{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-repeat: repeat;
+}
+
+.ab-wave-trills-btm-skew{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 75px;
+	background-repeat: repeat-x;
+}
+
+.ab-wave-trills-title{
+	color: #fff;
+	margin-bottom: 28px;
+	text-shadow: 1px 2px 2px rgba(0,0,0,0.31);
+}
+
+.ab-wave-trills-subtitle{
+	color: #fff;
+	margin-bottom: 40px;
+	font-size: 47px;
+	text-shadow: 1px 2px 2px rgba(0,0,0,0.31);
 }
 
 
