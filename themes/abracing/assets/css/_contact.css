@@ -289,6 +289,23 @@ textarea {
     margin-bottom: 62px;
     text-align: center;
 }
+.follow-us-socials ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.follow-us-socials ul li{
+    padding: 0 22px;
+}
+.follow-us-socials ul li a i,
+.follow-us-socials ul li a{
+    display: inline-block;
+}
+.follow-us-socials ul li a:hover i img{
+    transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+}
 
 
 /*responsive-start*/
