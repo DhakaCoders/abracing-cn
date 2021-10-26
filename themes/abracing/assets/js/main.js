@@ -299,6 +299,17 @@ $(window).resize(function(){
 
 /*start of Shariful*/
 
+/*var windowWidth_1920 = $('.page-body-cntlr').width();*/
+var containerWidth = $('.container').width();
+var offSet = (windowWidth_1920 - containerWidth);
+var rgtOffSet = (offSet / 2);
+var rgtOffSetWidth = (rgtOffSet + 2);
+
+
+$('.ftr-top-border').css({
+  'width': rgtOffSetWidth
+});
+
 
 
 
