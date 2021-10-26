@@ -59,3 +59,61 @@
 	background-repeat: repeat-x;
 	height: 75px;
 }
+.vision-mission-con-cntlr {
+    display: flex;
+    flex-wrap: wrap;
+}
+.vision-con-cntlr, .mission-con-cntlr {
+    width: 50%;
+}
+.vision-con-inner {
+    padding-left: 15px;
+    padding-right: 60px;
+}
+.mission-con-inner{
+	padding-right: 15px;
+    padding-left: 60px;
+}
+.mission-des-cntlr, .vision-des-cntlr {
+    text-align: center;
+    max-width: 420px;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 55px;
+}
+.vision-mission-sec{
+	padding-top: 90px;
+}
+.mission-des-cntlr .sec-entry-hdr, .vision-des-cntlr .sec-entry-hdr{
+	padding-bottom: 30px;
+}
+.mission-img-cntlr img{
+	height: 100%;
+}
+.vision-img-cntlr,
+.mission-img-cntlr{
+	position: relative;
+}
+.vision-mission-top-sketch{
+	position: absolute;
+	top: -1px;
+	right: 0;
+	left: 0;
+	background-repeat: repeat-x;
+	height: 75px;
+}
+.vision-mission-btm-sketch{
+	position: absolute;
+	bottom: -1px;
+	right: 0;
+	left: 0;
+	background-repeat: repeat-x;
+	height: 75px;
+}
+.has-inline-bg img{
+	display: none;
+}
+.has-inline-bg .mis-vis-img {
+    height: 427px;
+    display: block;
+}
