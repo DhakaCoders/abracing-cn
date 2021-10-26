@@ -1,0 +1,98 @@
+.hm-banner{
+	position: relative;
+}
+.header-topbar-cntlr{
+	background: #fff;
+	position: relative;
+}
+.hm-banner-bg-black{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+	background: #000;
+}
+.has-video .hm-video-cntlr {
+    display: block;
+}
+
+.hm-video-cntlr {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+    display: none;
+}
+#bnr-vdo {
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    z-index: 3;
+}
+.has-video .hm-banner-bg {
+    display: none;
+}
+.hm-banner-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    transition: all 1s;
+    -ms-transition: all 1s;
+    -webkit-transition: all 1s;
+    background-attachment: fixed;
+}
+.hm-bnr-down-scroll{
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	z-index: 10;
+}
+.bnr-btm-sketch{
+	height: 75px;
+	background-size: cover!important;
+	background-repeat: repeat!important;
+	background-position: center center!important;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 9;
+	cursor: pointer;
+}
+
+
+.hm-banner-cntlr{
+	height: 880px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	padding: 100px 0 170px;
+	position: relative;
+	z-index: 8;
+}
+.fl-h1.hm-bnr-title{
+	font-family: 'Luckiest Guy', cursive;
+	font-weight: 400;
+	margin-bottom: 0;
+	line-height: 1.1;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
