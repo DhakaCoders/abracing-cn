@@ -266,10 +266,10 @@ var windowWidth_1920 = $(window).width();
 var containerWidth = $('.container').width();
 var containerOffset = (windowWidth_1920 - containerWidth);
 var containerOffsetRgt = containerOffset / 2;
-var content = $('.hm-contact-rgt-con').width();
+var content = $('.our-location-rgt-con').width();
 var imgWidth = (containerOffsetRgt + content);
 
-$('.hm-contact-map-cntlr').css("width", imgWidth);
+$('.our-location-map-cntlr').css("width", imgWidth);
 
 
 $(window).resize(function(){
@@ -277,17 +277,17 @@ $(window).resize(function(){
   var containerWidth = $('.container').width();
   var containerOffset = (windowWidth_1920 - containerWidth);
   var containerOffsetRgt = containerOffset / 2;
-  var content = $('.hm-contact-rgt-con').width();
+  var content = $('.our-location-rgt-con').width();
   var imgWidth = (containerOffsetRgt + content);
-  $('.hm-contact-map-cntlr').css("width", imgWidth);
+  $('.our-location-map-cntlr').css("width", imgWidth);
 });
 
-var contactEntryHeader = $('.hm-contact-sec-title-cntlr').height();
-$('.hm-contact-map-cntlr').css('top', contactEntryHeader);
+var contactEntryHeader = $('.our-location-sec-title-cntlr').height();
+$('.our-location-map-cntlr').css('top', contactEntryHeader);
 
 $(window).resize(function(){
-  var contactEntryHeader = $('.hm-contact-sec-title-cntlr').height();
-  $('.hm-contact-map-cntlr').css('top', contactEntryHeader);
+  var contactEntryHeader = $('.our-location-sec-title-cntlr').height();
+  $('.our-location-map-cntlr').css('top', contactEntryHeader);
 });
 
 
@@ -308,6 +308,31 @@ var rgtOffSetWidth = (rgtOffSet + 2);
 
 $('.ftr-top-border').css({
   'width': rgtOffSetWidth
+});
+
+
+$(window).resize(function(){
+  var windowWidth_1920 = $('.page-body-cntlr').width();
+  var containerWidth = $('.container').width();
+  var offSet = (windowWidth_1920 - containerWidth);
+  var rgtOffSet = (offSet / 2);
+  var rgtOffSetWidth = (rgtOffSet + 2);
+
+
+  $('.ftr-top-border').css({
+    'width': rgtOffSetWidth
+  });
+});
+
+
+$('.ab-faq-accordion-title').on('click', function(){
+  $(this).toggleClass('active');
+  $(this).parents('.ab-faq-accordion-item').siblings().find('.ab-faq-accordion-title').removeClass('active'); 
+  $(this).parents('.ab-faq-accordion-item').find('.ab-faq-accordion-des').slideToggle(300);
+  $(this).parents('.ab-faq-accordion-item').siblings().find('.ab-faq-accordion-des').slideUp(300);
+  $('.ab-faq-accordion-item').removeClass('active');
+  $(this).parents('.ab-faq-accordion-item').addClass('active');
+  $(this).parent().parent().siblings().find('.ab-faq-accordion-item').removeClass('active');
 });
 
 

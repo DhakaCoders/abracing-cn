@@ -92,3 +92,51 @@
 .ab-btn-ywl{
 	
 }
+
+
+/*page banner*/
+.page-banner{
+	position: relative;
+}
+.bnr-btm-sketch{
+
+}
+.pg-banner-bg-black{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+	background: #000;
+}
+.pg-banner-bg{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 3;
+	transition: all 1s;
+	-ms-transition: all 1s;
+	-webkit-transition: all 1s;
+	background-attachment: fixed;
+}
+.pg-banner-cntlr{
+	height: 600px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	padding: 100px 0 170px;
+	position: relative;
+	z-index: 8;
+}
+.fl-h1.pg-bnr-title{
+	font-family: 'Luckiest Guy', cursive;
+    font-weight: 400;
+    margin-bottom: 0;
+    line-height: 1.1;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
