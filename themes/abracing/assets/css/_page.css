@@ -57,6 +57,7 @@
 	text-align: center;
 	padding-bottom: 35px;
 	position: relative;
+	text-transform: uppercase;
 }
 .sec-entry-hdr .sec-entry-hdr-title:after{
 	content: '';
