@@ -2,6 +2,14 @@
 	background-color: #020202;
 	padding-top: 110px;
 	padding-bottom: 195px;
+	position: relative;
+}
+.ftr-top-angle{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 75px;
 }
 
 .ftr-top{
