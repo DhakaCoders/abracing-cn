@@ -1,0 +1,91 @@
+.race-booking-grd-sec .sec-entry-hdr{
+	padding-bottom: 90px;
+}
+.race-booking-grds-cntlr ul{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -20px;
+}
+.race-booking-grds-cntlr ul li.race-booking-grd-item-col{
+	width: 32%;
+	padding: 0 20px;
+	text-align: center;
+}
+.race-booking-grds-cntlr ul li.race-booking-grd-item-col-2{
+	width: 36%;
+}
+.race-booking-grds-cntlr ul li.race-booking-grd-item-col-2{
+	width: 36%;
+	margin-top: -18px;
+}
+.race-booking-grds-cntlr ul li.race-booking-grd-item-col .race-booking-grd-item-desc{
+	color: #fff;
+	padding-bottom: 25px;
+}
+.race-booking-grds-cntlr ul li.race-booking-grd-item-col-2 .race-booking-grd-item-desc{
+	padding-bottom: 130px;
+}
+.race-booking-grd-item-btn{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	max-width: 246px;
+	width: 100%;
+	bottom: -18px;
+}
+.race-booking-grd-item-btn a{
+	color: #f3fe26;
+	display: inline-block;
+	vertical-align: baseline;
+	padding: 9px 33px 9px 28px;
+	background: #ff1000;
+	font-size: 20px;
+	border-top-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	font-family: 'Luckiest GuY';
+	
+}
+.race-booking-grds-cntlr ul li.race-booking-grd-item-col .race-booking-grd-item-desc p{
+	font-size: 14px;
+	font-weight: 900;
+}
+.race-booking-grds-cntlr ul li.race-booking-grd-item-col-1 .race-booking-grd-item-heading,
+.race-booking-grds-cntlr ul li.race-booking-grd-item-col-2 .race-booking-grd-item-heading{
+	padding-bottom: 70px;
+}
+.race-booking-grds-cntlr ul li.race-booking-grd-item-col-1 .race-booking-grd-item-desc{
+	padding-bottom: 165px;
+}
+.race-booking-grd-item-title{
+	margin-bottom: 25px;
+	color: #fff;
+	font-size: 48px;
+}
+.race-booking-grd-item-cntlr{
+	background: #009fe1;
+	padding: 0 42px;
+	box-shadow: -3px 1px 16px -2px rgba(0,0,0,0.75);
+	-webkit-box-shadow: -3px 1px 16px -2px rgba(0,0,0,0.75);
+	-moz-box-shadow: -3px 1px 16px -2px rgba(0,0,0,0.75);
+	position: relative;
+	border: 8px solid #009fe1;
+	border-radius: 20px;
+	transition: .5s;
+
+}
+.race-booking-grd-item{
+}
+.race-booking-grd-item:hover .race-booking-grd-item-cntlr{
+	border: 8px solid #ff1000;
+	box-shadow: none;
+}
+.race-booking-grd-item-heading{
+	padding-top: 40px;
+}
+.race-booking-grd-item-heading span{
+	padding-bottom: 30px;
+	display: inline-block;
+	vertical-align: baseline;
+	color: #fff;
+	font-size: 16px;
+}
