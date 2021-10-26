@@ -15,13 +15,13 @@ h2,.fl-h2{
 	font-size: 50px;
 }
 h3,.fl-h3{
-	font-size: 48px;
-}
-h4,.fl-h4{
 	font-size: 40px;
 }
-h5,.fl-h5{
+h4,.fl-h4{
 	font-size: 30px;
+}
+h5,.fl-h5{
+	font-size: 24px;
 }
 h6,.fl-h6{
 	font-size: 20px;
