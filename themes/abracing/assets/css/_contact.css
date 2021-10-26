@@ -316,6 +316,14 @@ textarea {
 
 
 /*hm-contact-sec*/
+.hm-contact-con-innr{
+    display: flex;
+    flex-wrap: wrap;
+}
+.hm-contact-rgt,
+.hm-contact-lft{
+    width: 50%;
+}
 .hm-contact-info-title{
     line-height: 1.2;
     margin-bottom: 40px;
@@ -340,7 +348,10 @@ textarea {
     margin-bottom: 24px;
 }
 .hm-contact-form-dtails{
-    padding-bottom: 80px;
+    padding-bottom: 71px;
+}
+.hm-contact-info-cntlr{
+    padding-top: 90px;
 }
 /*hm-cnt-map-start*/
 .hm-contact-google-map-wrp{
@@ -366,11 +377,13 @@ textarea {
 
 .hm-contact-sec{
     position: relative;
+    padding-bottom: 50px;
 }
 .hm-contact-map-cntlr{
     position: absolute;
     right: 0;
     top: 0;
+    z-index: 1;
 }
 
 
