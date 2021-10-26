@@ -16,11 +16,9 @@ a, a:hover, a:focus, button:hover, button:focus{
 }
 a{
 	color: #009fe1;
-	text-decoration: underline;
 }
 a:hover{
 	color: #333434;
-	text-decoration: none;
 }
 
 body {
@@ -321,26 +319,5 @@ body.login-register.hide-account-title .select2-container--open .select2-dropdow
 }
 
 
-/*sec-entry-hdr-start*/
-.sec-entry-hdr{
-	padding-bottom: 50px;
-}
-.sec-entry-hdr .sec-entry-hdr-title{
-	text-align: center;
-	padding-bottom: 35px;
-	position: relative;
-}
-.sec-entry-hdr .sec-entry-hdr-title:after{
-	content: '';
-	position: absolute;
-	bottom: 0;
-	background: url(../images/sec-entry-hdr-btm-img.png);
-	height: 13px;
-	width: 83px;
-	left: 50%;
-	transform: translateX(-50%);
-}
-
-/*sec-entry-hdr-end*/
 
 
