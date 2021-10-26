@@ -311,6 +311,14 @@ textarea {
 }
 
 
+
+/*hm-contact-sec*/
+
+.hm-contact-info-title{
+    line-height: 1.2;
+}
+
+
 /*responsive-start*/
 /*@media (max-width: 1699px){
     .contact-form-sec-wrp {
