@@ -117,3 +117,41 @@
     height: 427px;
     display: block;
 }
+
+.ab-about-grids-cntlr ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+.ab-about-grids-cntlr ul li {
+    width: 33.333%;
+    padding: 0 15px;
+    padding-bottom: 20px;
+}
+.ab-about-grid-item {
+    text-align: center;
+}
+.ab-about-grid-item-img {
+    margin-bottom: 30px;
+}
+.ab-about-grid-item-title{
+	margin-bottom: 18px;
+}
+.ab-about-grid-item-img {
+    margin-bottom: 30px;
+    display: flex;
+    max-height: 96px;
+    justify-content: center;
+    align-items: center;
+}
+.ab-about-grid-item-img i {
+    max-height: 96px;
+    display: inline-block;
+}
+.ab-about-grid-item-img i img {
+    max-height: 96px;
+    width: auto;
+}
+.ab-about-grid-item-desc p{
+	padding: 0 16px;
+}
