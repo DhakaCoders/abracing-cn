@@ -45,6 +45,8 @@ u{
 	text-decoration: underline;
 }
 
+
+
 input[type=text],
 input[type=email],
 input[type=tel],
@@ -318,7 +320,4 @@ body.login-register.hide-account-title .select2-container--open .select2-dropdow
 .hmProdctGrdsSlider.slick-initialized .hmProdctGrdsSlideItme{
 	display: block;
 }
-
-
-
 

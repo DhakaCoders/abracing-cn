@@ -12,7 +12,7 @@
     width: 50%;
     padding: 0 15px;
 }
-.cnt-form-title{
+.cntct-form-title{
     line-height: 1.2;
     margin-bottom: 35px;
 }
@@ -24,10 +24,10 @@
     padding-left: 25px;
     padding-right: 100px;
 }
-.cnt-dtails {
+.cntct-dtails {
     position: relative;
 }
-.cnt-dtails > i {
+.cntct-dtails > i {
     display: inline-block;
     position: absolute;
     left: 0;
@@ -36,20 +36,20 @@
     -ms-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
 }
-.cnt-tel.cnt-dtails {
+.cntct-tel.cntct-dtails {
     margin-bottom: 88px;
 }
-.cnt-mail.cnt-dtails{
+.cntct-mail.cntct-dtails{
     margin-bottom: 66px;
 }
-.cnt-addres.cnt-dtails{
+.cntct-addres.cntct-dtails{
     margin-bottom: 50px;
 }
-.cnt-addres.cnt-dtails i{
+.cntct-addres.cntct-dtails i{
     left: 7px;
     top: 25px;
 }
-.cnt-dtails a{
+.cntct-dtails a{
     display: inline-block;
     position: relative;
     text-decoration: none;
@@ -60,13 +60,13 @@
     line-height: 1.2;
     padding-left: 90px;
 }
-.cnt-dtails a i{
+.cntct-dtails a i{
     position: absolute;
     right: -24px;
     top: -23px;
 }
-.cnt-dtails a:hover{
-    color: #008ed9;
+.cntct-dtails a:hover{
+    color: #ff1000;
 }
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container {
     margin: 0 -10px;
@@ -291,7 +291,7 @@ textarea {
     padding-top: 90px;
     padding-bottom: 60px;
 }
-.follow-us-sec-title.fl-h4 {
+.follow-us-sec-title {
     margin-bottom: 62px;
     text-align: center;
 }
@@ -315,59 +315,61 @@ textarea {
 
 
 
-/*hm-contact-sec*/
-.hm-contact-con-innr{
+/*our-location-sec*/
+.our-location-con-innr{
     display: flex;
     flex-wrap: wrap;
 }
-.hm-contact-rgt,
-.hm-contact-lft{
-    width: 50%;
+.our-location-rgt{
+    width: 48%;
 }
-.hm-contact-info-title{
+.our-location-lft{
+    width: 52%;
+}
+.our-location-info-title{
     line-height: 1.2;
     margin-bottom: 40px;
 }
-.hm-cnt-tel a,
-.hm-cnt-addres a{
+.hm-cntct-tel a,
+.hm-cntct-addres a{
     display: inline-block;
     text-decoration: none;
     color: #333434;
     font-size: 18px;
 }
-.hm-cnt-tel a:hover,
-.hm-cnt-addres a:hover{
+.hm-cntct-tel a:hover,
+.hm-cntct-addres a:hover{
     color: #009fe1;
 }
-.hm-cnt-tel span{
+.hm-cntct-tel span{
     display: inline-block;
     font-size: 18px;
     color: #009fe1;
 }
-.hm-cnt-addres{
+.hm-cntct-addres{
     margin-bottom: 24px;
 }
-.hm-contact-form-dtails{
+.our-location-form-dtails{
     padding-bottom: 71px;
 }
-.hm-contact-info-cntlr{
+.our-location-info-cntlr{
     padding-top: 90px;
 }
 /*hm-cnt-map-start*/
-.hm-contact-google-map-wrp{
+.our-location-google-map-wrp{
     position: relative;
 }
-.hm-contact-google-map iframe{
+.our-location-google-map iframe{
     height: 377px;
     width: 100%;
     vertical-align: bottom;
 }
-.hm-contact-google-parachute{
+.our-location-google-parachute{
     position: absolute;
     left: -55px;
     bottom: 100px;
 }
-.hm-contact-parachute-icon {
+.our-location-parachute-icon {
     position: absolute;
     right: -130px;
     top: -300px;
@@ -375,11 +377,11 @@ textarea {
 
 /*hm-cnt-map-position-start*/
 
-.hm-contact-sec{
+.our-location-sec{
     position: relative;
     padding-bottom: 50px;
 }
-.hm-contact-map-cntlr{
+.our-location-map-cntlr{
     position: absolute;
     right: 0;
     top: 0;

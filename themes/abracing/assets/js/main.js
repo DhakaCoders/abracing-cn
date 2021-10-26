@@ -266,10 +266,10 @@ var windowWidth_1920 = $(window).width();
 var containerWidth = $('.container').width();
 var containerOffset = (windowWidth_1920 - containerWidth);
 var containerOffsetRgt = containerOffset / 2;
-var content = $('.hm-contact-rgt-con').width();
+var content = $('.our-location-rgt-con').width();
 var imgWidth = (containerOffsetRgt + content);
 
-$('.hm-contact-map-cntlr').css("width", imgWidth);
+$('.our-location-map-cntlr').css("width", imgWidth);
 
 
 $(window).resize(function(){
@@ -277,17 +277,17 @@ $(window).resize(function(){
   var containerWidth = $('.container').width();
   var containerOffset = (windowWidth_1920 - containerWidth);
   var containerOffsetRgt = containerOffset / 2;
-  var content = $('.hm-contact-rgt-con').width();
+  var content = $('.our-location-rgt-con').width();
   var imgWidth = (containerOffsetRgt + content);
-  $('.hm-contact-map-cntlr').css("width", imgWidth);
+  $('.our-location-map-cntlr').css("width", imgWidth);
 });
 
-var contactEntryHeader = $('.hm-contact-sec-title-cntlr').height();
-$('.hm-contact-map-cntlr').css('top', contactEntryHeader);
+var contactEntryHeader = $('.our-location-sec-title-cntlr').height();
+$('.our-location-map-cntlr').css('top', contactEntryHeader);
 
 $(window).resize(function(){
-  var contactEntryHeader = $('.hm-contact-sec-title-cntlr').height();
-  $('.hm-contact-map-cntlr').css('top', contactEntryHeader);
+  var contactEntryHeader = $('.our-location-sec-title-cntlr').height();
+  $('.our-location-map-cntlr').css('top', contactEntryHeader);
 });
 
 
