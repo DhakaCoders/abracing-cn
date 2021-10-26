@@ -24,7 +24,7 @@
     padding-right: 100px;
 }
 .cnt-dtails {
-    padding-left: 80px;
+    padding-left: 90px;
     position: relative;
 }
 .cnt-dtails i {
@@ -38,6 +38,27 @@
 }
 .cnt-tel.cnt-dtails {
     margin-bottom: 90px;
+}
+.cnt-mail.cnt-dtails{
+    margin-bottom: 70px;
+}
+.cnt-addres.cnt-dtails{
+    margin-bottom: 50px;
+}
+.cnt-addres.cnt-dtails i{
+    left: 7px;
+}
+.cnt-dtails a{
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 25px;
+    font-weight: 400;
+    color: #333434;
+    line-height: 1.2;
+}
+.cnt-dtails a:hover{
+    color: #008ed9;
 }
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container {
     margin: 0 -10px;
