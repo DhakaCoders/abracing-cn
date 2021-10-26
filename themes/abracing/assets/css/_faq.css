@@ -1,11 +1,21 @@
+.ab-faq-sec{
+	padding-bottom: 500px;
+}
 
+.ab-faq-sec .sec-entry-hdr{
+	padding-bottom: 60px;
+}
 
-
+.ab-faq-sec-inr{
+	max-width: 800px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
 
 .ab-faq-accordion-item{
 	margin-bottom: 20px;
-	/*border: 2px solid #008ed9;
-	border-radius: 8px;*/
+	
 }
 
 .ab-faq-accordion-title{
@@ -18,6 +28,7 @@
 	border-radius: 8px;
 	cursor: pointer;
 	position: relative;
+	font-family: 'LuckiestGuy-Regular';
 }
 .ab-faq-accordion-title:after{
 	content: '\f078';
@@ -41,6 +52,18 @@
 }
 
 .ab-faq-accordion-des{
-	padding: 12px 50px 1px 15px;
+	padding: 12px 65px 1px 15px;
 	display: none;
+}
+
+.ab-faq-accordion-item.active{
+	border: 2px solid #008ed9;
+	border-radius: 8px;
+}
+.ab-faq-accordion-item.active .ab-faq-accordion-title{
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
 }
