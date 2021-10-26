@@ -262,6 +262,35 @@ if( $('.wpforms-error').length ){
 }
 
 
+var windowWidth = $(window).width();
+var containerWidth = $('.container').width();
+var containerOffset = (windowWidth - containerWidth);
+var containerOffsetRgt = containerOffset / 2;
+var content = $('.hm-contact-rgt').width();
+var imgWidth = (containerOffsetRgt + content + 15);
+
+$('.hm-contact-map-cntlr').css("width", imgWidth);
+
+
+$(window).resize(function(){
+  var windowWidth = $(window).width();
+  var containerWidth = $('.container').width();
+  var containerOffset = (windowWidth - containerWidth);
+  var containerOffsetRgt = containerOffset / 2;
+  var content = $('.hm-contact-rgt').width();
+  var imgWidth = (containerOffsetRgt + content + 15);
+  $('.hm-contact-map-cntlr').css("width", imgWidth);
+});
+
+var contactEntryHeader = $('.sec-entry-hdr').height();
+$('.hm-contact-map-cntlr').css('top', contactEntryHeader);
+
+$(window).resize(function(){
+  var contactEntryHeader = $('.sec-entry-hdr').height();
+  $('.hm-contact-map-cntlr').css('top', contactEntryHeader);
+});
+
+
 /*start of Jahir*/
 
 
