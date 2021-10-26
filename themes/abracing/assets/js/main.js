@@ -241,6 +241,26 @@ google.maps.event.addDomListener(window, 'load', initialize);
   }, false);
 })();
 
+
+/*start of Momin*/
+
+
+/*start of Kashob*/
+
+
+/*start of Jahir*/
+
+
+/*start of Noyon*/
+
+
+/*start of Shariful*/
+
+
+
+
+
+
 new WOW().init();
 
 })(jQuery);
