@@ -1,14 +1,38 @@
 .header{
-	background: #ccc;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	
+}
+.header > .container > .row > .col-md-12{
+	position: static;
+}
+.header-topbar-cntlr{
+	position: relative;
+	margin-bottom: 138px;
+	z-index: 11;
+}
+.top-sketch{
+	height: 75px;
+	background-size: cover!important;
+	background-repeat: repeat!important;
+	background-position: center center!important;
+	position: absolute;
+	bottom: -75px;
+	left: 0;
+	right: 0;
+	z-index: 9;
+	cursor: pointer;
 }
 .header-cntlr{
-	position: relative;
+	/*position: relative;*/
 }
 .header-topbar{
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
-	margin-bottom: 138px;
+	
 }
 .hdr-details{
 	display: flex;
@@ -109,10 +133,15 @@
 	-ms-transform: translateX(-50%);
 	-webkit-transform: translateX(-50%);
 	-o-transform: translateX(-50%);
+	z-index: 13;
+}
+.header-inr{
+
 }
 
 .hdr-menu{
-
+	position: relative;
+	z-index: 13;
 }
 
 nav.main-nav ul li a{
@@ -233,4 +262,59 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:after {
 }
 nav.main-nav > ul > li.menu-item-has-children ul.sub-menu > li:hover:after {
     height: 100%;
+}
+
+
+
+
+
+.hamburger-icon {
+    height: 17px;
+    width: 22px;
+    position: relative;
+}
+.hamburger-icon span {
+    position: absolute;
+    content: "";
+    height: 3px;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: #000;
+}
+.hamburger-icon span:nth-child(2) {
+    top: 7px;
+}
+.hamburger-icon span:nth-child(3) {
+    top: 14px;
+}
+
+body.allWork {
+    overflow: hidden!important;
+}
+.allWork .bdoverlay {
+    z-index: 9999;
+    opacity: 1;
+}
+body.allWork .hamburger-icon span:nth-child(1) {
+    top: 13px;
+    width: 16px;
+    left: 8px;
+    transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+}
+body.allWork .hamburger-icon span:nth-child(2) {
+    content: none;
+    display: none;
+}
+body.allWork .hamburger-icon span:nth-child(3) {
+    top: 13px;
+    left: 8px;
+    width: 16px;
+    transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
 }
