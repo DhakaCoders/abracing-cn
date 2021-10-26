@@ -103,3 +103,9 @@
 	-webkit-transition: all .5s;
 	-moz-transition: all .5s;
 }
+.cp-sec-entry-header{
+	padding-bottom: 95px;
+}
+.cp-sec-entry-header .sec-entry-hdr-title{
+	padding-bottom: 12px;
+}
