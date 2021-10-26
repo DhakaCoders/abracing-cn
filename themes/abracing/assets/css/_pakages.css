@@ -4,10 +4,18 @@
 .packages-grids-cntlr{
 
 }
+.packages-grid-item:hover .feat-img{
+	/*transform: scale(1.1);*/
+	/*-webkit-transform: scale(1.1);*/
+	/*-moz-transform: scale(1.1);*/
+	opacity: 1;
+}
 .packages-grids-cntlr ul{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin: 0 -32px;
+	flex-wrap: wrap;
 }
 .packages-grids-cntlr ul li{
 	max-width: 33.3333%;
@@ -17,16 +25,24 @@
 
 .packages-grid-item{
 	position: relative;
-
 }
 .cat-grid-img-cntlr{
 	position: relative;
-	box-shadow: 0px 0px 11px 3px rgba(0,0,0,0.75);
-	-webkit-box-shadow: 0px 0px 11px 3px rgba(0,0,0,0.75);
-	-moz-box-shadow: 0px 0px 11px 3px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 20px 6px rgba(249,249,249,0.65);
+	-webkit-box-shadow: 0px 0px 20px 6px rgba(249,249,249,0.65);
+	-moz-box-shadow: 0px 0px 20px 6px rgba(249,249,249,0.65);
+	border-radius: 12px; 
+	overflow: hidden;
+	margin-bottom: 18px;
+	min-height: 360px;
 }
 .feat-img{
 	height: 360px;
+	border-radius: 12px; 
+	transition: all .5s;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	opacity: .8;
 }
 .cat-abs-tt{
 	position: absolute;
@@ -35,19 +51,52 @@
 	transform: translate(-50%, -50%);
 	-webkit-transform: translate(-50%, -50%);
 	-moz-transform: translate(-50%, -50%);
+	z-index: 10;
 }
-.cat-grid-des{
-
+.cat-abs-tt:hover{
+	color: #ff1000;
+}
+.cat-grid-des {
+    text-align: center;
+    display: flex;
+    margin-bottom: 15px;
+    flex-direction: column;
 }
 .cat-grid-des strong{
-
+	display: inline-block;
+	font-family: 'Luckiest Guy';
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
 }
 .cat-grid-btns{
-
-}
-.cat-grid-btns a{
+	display: flex;
+	justify-content: center;
+	padding: 0 45px 45px 45px;
 
 }
 .ab-btn{
+	display: inline-block;
+	font-family: 'Luckiest Guy';
+	font-size: 18px;
+	text-transform: uppercase;
+	background-color: #ff1000;
+	color: #fff;
+	border-top-left-radius: 30px;
+	border-bottom-right-radius:30px;
+	text-decoration: none;
+	min-width: 130px;
+	border: 1px solid #ff1000;
 
+}
+.cat-grid-btns a:first-child{
+	margin-right: 12px;
+}
+.ab-btn:hover{
+	border: 1px solid #ff1000;
+	color: #ff1000;
+	background-color: #fff;
+	transition: all .5s;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
 }

@@ -69,3 +69,20 @@
 }
 
 /*sec-entry-hdr-end*/
+
+.ab-btn{
+	min-width: 130px;
+	padding: 14px 30px;
+	border-top-left-radius: 30px;
+	border-bottom-right-radius:30px;
+	font-family: 'Luckiest Guy';
+	font-size: 18px;
+	background-color: #ff1000;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 400;
+}
+
+.ab-btn-ywl{
+	
+}
