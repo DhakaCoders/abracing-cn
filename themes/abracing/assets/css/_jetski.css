@@ -4,15 +4,16 @@
 .race-booking-grds-cntlr ul{
 	display: flex;
 	flex-wrap: wrap;
-	margin: 0 -20px;
+	margin: 0 -18px;
 }
 .race-booking-grds-cntlr ul li{
 	width: 32%;
-	padding: 0 20px;
+	padding: 0 18px;
 	text-align: center;
 }
 .race-booking-grds-cntlr ul li.race-booking-grd-item-col-2{
 	width: 36%;
+	margin-top: -45px;
 }
 .race-booking-grd-item-desc{
 	color: #fff;
@@ -46,12 +47,15 @@
 	color: #fff;
 	font-size: 48px;
 }
-.race-booking-grd-item{
-
+.race-booking-grd-item-col-2 .race-booking-grd-item-cntlr{
+	padding: 44px 43px 75px;
+}
+.race-booking-grd-item-col-2 .race-booking-grd-item-desc{
+	padding-bottom: 35px;
 }
 .race-booking-grd-item-cntlr{
 	background: #009fe1;
-	padding: 25px 43px 20px;
+	padding: 28px 43px 20px;
 	box-shadow: -3px 1px 16px -2px rgba(0,0,0,0.75);
 	-webkit-box-shadow: -3px 1px 16px -2px rgba(0,0,0,0.75);
 	-moz-box-shadow: -3px 1px 16px -2px rgba(0,0,0,0.75);
@@ -59,10 +63,8 @@
 	border: 6px solid #009fe1;
 	border-radius: 20px;
 	transition: .5s;
+}
 
-}
-.race-booking-grd-item{
-}
 .race-booking-grd-item:hover .race-booking-grd-item-cntlr{
 	border: 6px solid #ff1000;
 	box-shadow: none;
