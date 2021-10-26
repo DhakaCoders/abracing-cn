@@ -87,6 +87,8 @@
 	text-transform: uppercase;
 	text-align: center;
 	border: 1px solid #ff1000;
+	display: inline-block;
+	vertical-align: baseline;
 }
 
 .ab-btn-ywl{
