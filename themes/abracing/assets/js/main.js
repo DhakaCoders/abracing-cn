@@ -311,6 +311,28 @@ $('.ftr-top-border').css({
 });
 
 
+$(window).resize(function(){
+  var windowWidth_1920 = $('.page-body-cntlr').width();
+  var containerWidth = $('.container').width();
+  var offSet = (windowWidth_1920 - containerWidth);
+  var rgtOffSet = (offSet / 2);
+  var rgtOffSetWidth = (rgtOffSet + 2);
+
+
+  $('.ftr-top-border').css({
+    'width': rgtOffSetWidth
+  });
+});
+
+
+$('.ab-faq-accordion-title').on('click', function(){
+  $(this).toggleClass('active');
+  $(this).parents('.ab-faq-accordion-item').siblings().find('.ab-faq-accordion-title').removeClass('active'); 
+  $(this).parents('.ab-faq-accordion-item').find('.ab-faq-accordion-des').slideToggle(300);
+  $(this).parents('.ab-faq-accordion-item').siblings().find('.ab-faq-accordion-des').slideUp(300);
+});
+
+
 
 
 
