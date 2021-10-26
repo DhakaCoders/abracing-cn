@@ -295,7 +295,11 @@ $(window).resize(function(){
 
 
 /*start of Noyon*/
-
+if( $('.hamburgar-cntlr').length ){
+  $('.hamburgar-cntlr').click(function(){
+    $('body').toggleClass('allWork');
+  });
+}
 
 /*start of Shariful*/
 
