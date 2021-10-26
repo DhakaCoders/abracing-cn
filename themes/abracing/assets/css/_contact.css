@@ -284,6 +284,9 @@ textarea {
 }
 
 
+
+
+
 .contact-follow-us-sec{
     padding-top: 90px;
     padding-bottom: 60px;
@@ -313,10 +316,77 @@ textarea {
 
 
 /*hm-contact-sec*/
-
 .hm-contact-info-title{
     line-height: 1.2;
+    margin-bottom: 40px;
 }
+.hm-cnt-tel a,
+.hm-cnt-addres a{
+    display: inline-block;
+    text-decoration: none;
+    color: #333434;
+    font-size: 18px;
+}
+.hm-cnt-tel a:hover,
+.hm-cnt-addres a:hover{
+    color: #009fe1;
+}
+.hm-cnt-tel span{
+    display: inline-block;
+    font-size: 18px;
+    color: #009fe1;
+}
+.hm-cnt-addres{
+    margin-bottom: 24px;
+}
+.hm-contact-form-dtails{
+    padding-bottom: 80px;
+}
+/*hm-cnt-map-start*/
+.hm-contact-google-map-wrp{
+    position: relative;
+}
+.hm-contact-google-map iframe{
+    height: 377px;
+    width: 100%;
+    vertical-align: bottom;
+}
+.hm-contact-google-parachute{
+    position: absolute;
+    left: -55px;
+    bottom: 100px;
+}
+.hm-contact-parachute-icon {
+    position: absolute;
+    right: -130px;
+    top: -300px;
+}
+
+/*hm-cnt-map-position-start*/
+
+.hm-contact-sec{
+    position: relative;
+}
+.hm-contact-map-cntlr{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*responsive-start*/
