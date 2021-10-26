@@ -28,6 +28,7 @@
 	border-radius: 8px;
 	cursor: pointer;
 	position: relative;
+	font-family: 'LuckiestGuy-Regular';
 }
 .ab-faq-accordion-title:after{
 	content: '\f078';
