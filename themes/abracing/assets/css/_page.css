@@ -211,6 +211,7 @@ ol li:before{
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 1px;
+    text-shadow: 1px 1px 10px rgb(0 0 0 / 64%);
 }
 
 
