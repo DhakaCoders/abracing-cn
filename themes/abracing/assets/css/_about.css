@@ -378,6 +378,9 @@
 	    padding-right: 0;
 	    text-align: center;
 	}
+	.vision-mission-con-cntlr{
+		margin: 0 -20px;
+	}
 	.vision-con-cntlr, .mission-con-cntlr {
 	    width: 100%;
 	}
