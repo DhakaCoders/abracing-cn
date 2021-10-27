@@ -355,6 +355,9 @@ textarea {
 .our-location-info-cntlr{
     padding-top: 90px;
 }
+.our-location-sec-title-cntlr .sec-entry-hdr{
+    padding-bottom: 50px;
+}
 /*hm-cnt-map-start*/
 .our-location-google-map-wrp{
     position: relative;
@@ -379,7 +382,7 @@ textarea {
 
 .our-location-sec{
     position: relative;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
 }
 .our-location-map-cntlr{
     position: absolute;
@@ -405,10 +408,10 @@ textarea {
 
 
 /*responsive-start*/
-/*@media (max-width: 1699px){
+@media (max-width: 1699px){
     .contact-form-sec-wrp {
         padding-top: 65px;
-        padding-bottom: 75px;
+        padding-bottom: 60px;
     }   
     .contact-sec-entry-hdr-title{
         margin-bottom: 80px;
@@ -417,7 +420,7 @@ textarea {
         height: 700px;
     }
 }
-@media (max-width: 1599px){  
+/*@media (max-width: 1599px){  
     .contact-sec-entry-hdr-title{
         margin-bottom: 70px;
     }
