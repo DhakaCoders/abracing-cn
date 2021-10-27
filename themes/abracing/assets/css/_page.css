@@ -251,7 +251,10 @@ ol li:before{
 	.ab-btn {
 	    font-size: 13.5px;
 	    min-width: 100px;
+	    border-top-left-radius: 22px;
+	    border-bottom-right-radius: 22px;
 	}
+
 
 }
 @media(max-width: 767px){

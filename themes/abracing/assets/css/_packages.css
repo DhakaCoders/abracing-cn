@@ -80,7 +80,7 @@
 	z-index: 12;
 }
 .hm-pkg-grids-cntlr ul li{
-	padding: 0 32px 160px 32px;
+	padding-bottom: 160px;
 }
 .pkggi-btns a:first-child{
 	margin-right: 12px;
@@ -218,7 +218,7 @@
 }
 @media(max-width: 991px){
 	.pkggi-btns a:first-child {
-	    margin-right: 6px;
+	    margin-right: 4px;
 	}
 	.pkg-grids-cntlr ul li {
 	    padding: 0 15px 130px 15px;
@@ -235,6 +235,9 @@
 	.cpkg-sec-entry-hdr {
 	    padding-bottom: 75px;
 	}
+	.pkggimg-cntlr{
+		margin-bottom: 10px;
+	}
 
 
 
@@ -248,7 +251,7 @@
 	    margin: 0 -10px;
 	}
 	.pkggimg-cntlr{
-		margin-bottom: 12px;
+		margin-bottom: 10px;
 	}
 
 
@@ -265,9 +268,6 @@
 	.pkg-grids-cntlr ul li {
 	    padding: 0 15px 115px 15px;
 	}
-	.pkggimg-cntlr{
-		margin-bottom: 10px;
-	}
 	.pkggi-des{
 		margin-bottom: 10px;
 	}
@@ -282,6 +282,9 @@
 
 }
 @media(max-width: 479px){
+	.pkggi-hdng {
+	    font-size: 26px!important;
+	}
 
 }
 @media(max-width: 359px){
