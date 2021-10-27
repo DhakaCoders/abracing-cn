@@ -11,7 +11,7 @@
 .pkg-grids-cntlr ul li{
 	max-width: 33.3333%;
 	width: 100%;
-	padding: 0 22px 230px 22px;
+	padding: 0 22px 150px 22px;
 }
 .pkgg-item{
 	position: relative;
@@ -105,10 +105,6 @@
 .cp-sec-entry-header{
 	padding-bottom: 130px;
 }
-.cp-sec-entry-header .sec-entry-hdr-title{
-	padding-bottom: 12px;
-}
-
 
 
 
