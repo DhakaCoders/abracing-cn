@@ -156,17 +156,18 @@
     justify-content: center;
     align-items: center;
     color: #fff;
-    background: #13a89e;
+    background: #ff1000;
     padding: 2px;
     text-decoration: none;
 }
 .fl-pagi-cntlr ul li a:hover,
 .fl-pagi-cntlr ul li span:hover{
-    color: #303037;
-    background: #fff;
+    color: #ffffff;
+    background: #333434;
 }
 .page-numbers.current{
-    background: #e2e2e2;
+    background: #333434;
+    color: #fff;
 }
 .fl-pagi-cntlr .prev, .fl-pagi-cntlr .next{
     position: relative;
