@@ -248,6 +248,8 @@ ol li:before{
 @media(max-width: 1199px){
 	.ab-btn{
 		font-size: 16px;
+		padding: 6px 15px;
+		min-width: 120px;
 	}
 }
 @media(max-width: 991px){
