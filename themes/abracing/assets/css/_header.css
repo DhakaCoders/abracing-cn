@@ -199,6 +199,7 @@ nav.main-nav > ul > li.menu-item-has-children > a:before {
     transition: all 0.5s;
     -ms-transition: all 0.5s;
     -webkit-transition: all 0.5s;
+    line-height: 1;
 }
 nav.main-nav > ul > li.menu-item-has-children:hover > a:before {
     transform: rotate(-180deg);
