@@ -32,7 +32,7 @@
 }
 .feat-img{
 	height: 360px;
-	border-radius: 12px; 
+	border-radius: 30px; 
 	transition: all .5s;
 	-webkit-transition: all .5s;
 	-moz-transition: all .5s;
@@ -74,7 +74,16 @@
 .pkggi-btns{
 	display: flex;
 	justify-content: center;
+	position: absolute;
+    left: 0;
+    right: 0;
 }
+.pkgg-item .pkggi-btns-rgt{
+	right: 0;
+	position: absolute;
+	bottom: 11px;
+}
+
 .pkggi-btns a:first-child{
 	margin-right: 12px;
 }
