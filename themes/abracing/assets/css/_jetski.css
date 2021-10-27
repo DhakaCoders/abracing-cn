@@ -199,7 +199,10 @@
 	.race-booking-grd-sec{
 		padding-bottom: 80px;
 	}
-
+	.race-booking-grd-item-desc,
+	.race-booking-grd-item-col-2 .race-booking-grd-item-desc{
+		min-height: 235px;
+	}
 	.race-booking-grd-item,
 	.race-booking-grds-cntlr ul li.race-booking-grd-item-col-2{
 		max-width: 480px;
@@ -273,7 +276,9 @@
 }
 
 @media(max-width: 575px){
-
+	.race-booking-grd-item-cntlr{
+		padding: 15px 50px 30px;
+	}
 }
 
 /*start responsive*/
