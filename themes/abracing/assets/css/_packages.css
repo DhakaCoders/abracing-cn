@@ -81,7 +81,6 @@
 	bottom: 11px;
 	z-index: 12;
 }
-
 .hm-pkggi-btns-rgt .ab-btn:hover{
 	border: 1px solid #ff1000;
 	color: #ff1000;
@@ -90,14 +89,12 @@
 	-webkit-transition: all .5s;
 	-moz-transition: all .5s;
 }
-
 .hm-pkg-grids-cntlr ul li{
 	padding: 0 32px 160px 32px;
 }
 .pkggi-btns a:first-child{
 	margin-right: 12px;
 }
-
 .pkggi-btns .ab-btn:hover{
 	border: 1px solid #ff1000;
 	color: #ff1000;
