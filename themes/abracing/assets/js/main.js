@@ -311,7 +311,7 @@ if( $('.pdt-single-page-sm-gllary-slider').length ){
       autoplaySpeed: 4000,
       speed: 700,
       slidesToShow: 4,
-      slidesToScroll: 1,
+      slidesToScroll: 0,
       rows: 2,
       asNavFor: '.pdtSinglePageGllarySlider',
       focusOnSelect: true
