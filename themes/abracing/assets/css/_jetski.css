@@ -54,7 +54,6 @@
 .race-booking-grd-item-cntlr .race-booking-grd-item-title{
 	margin-bottom: 25px;
 	color: #fff;
-	font-size: 48px;
 }
 .race-booking-grd-item-col-2 .race-booking-grd-item-desc{
 	padding-bottom: 35px;
@@ -98,6 +97,7 @@
 	top: 0;
 	left: 0;
 	right: 0;
+	margin-top: -1px;
 }
 .features-sec-btm-img{
 	position: absolute;
@@ -106,6 +106,7 @@
 	bottom: 0;
 	left: 0;
 	right: 0;
+	margin-bottom: -1px;
 }
 .features-sec-cntlr{
 	display: flex;
@@ -121,7 +122,7 @@
 .features-sec-col-2{
 	padding-left: 10px;
 }
-.features-grd-title{
+.features-sec-col .features-grd-title{
 	font-size: 30px;
 	color: #fff;
 	margin-bottom: 25px;
@@ -147,6 +148,50 @@
 
 /*start responsive*/
 
+@media(max-width: 1199px){
+
+	header{
+		display: none;
+	}
+
+
+	.race-booking-grd-sec .sec-entry-hdr{
+		padding-bottom: 100px;
+	}
+	.race-booking-grd-sec{
+		padding-bottom: 120px;
+	}
+	.race-booking-grds-cntlr ul{
+		margin: 0 -14px;
+	}
+	.race-booking-grds-cntlr ul li{
+		padding: 0 14px;
+	}
+	.race-booking-grds-cntlr ul li.race-booking-grd-item-col-2{
+		margin-top: -40px;
+	}
+	.race-booking-grd-item-cntlr{
+		padding: 15px 23px 30px;
+	}
+	.race-booking-grds-cntlr ul li.race-booking-grd-item-col-2 .race-booking-grd-item-cntlr{
+		padding: 20px 38px 30px;
+	}
+	.race-booking-grd-item-desc{
+		min-height: 280px;
+	}
+	.race-booking-grd-item-heading span{
+		font-size: 14px;
+	}
+	.race-booking-grd-item-cntlr .race-booking-grd-item-title{
+		margin-bottom: 20px;
+	}
+	.features-sec-col .features-grd-title{
+		font-size: 26px;
+	}
+	.conditions-sec{
+		padding-top: 55px;
+	}
+}
 
 
 /*start responsive*/
