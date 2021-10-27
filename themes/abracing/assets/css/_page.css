@@ -202,6 +202,9 @@ ol li:before{
 	-ms-transition: all 1s;
 	-webkit-transition: all 1s;
 	background-attachment: fixed;
+	background-position: center top!important;
+	background-repeat: no-repeat!important;
+	background-size: cover!important;
 }
 .pg-banner-cntlr{
 	height: 600px;

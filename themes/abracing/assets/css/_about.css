@@ -6,6 +6,7 @@
 	line-height: 1.3;
 }
 .about-intro-sec{
+	padding-top: 30px;
 	padding-bottom: 75px;
 }
 .about-our-story-sec{
@@ -167,12 +168,49 @@
 	color: #009fe1;
 }
 
-@media (max-width: 1699px){
 
+@media (max-width: 1699px){
+	.about-intro-sec{
+		padding-top: 20px;
+		padding-bottom: 60px;
+	}
+	.our-story-sec-title{
+		margin-bottom: 40px;
+	}
+	.our-story-rgt-img-cntlr{
+		padding-left: 45px;
+		padding-right: 35px;
+	}
+	.vision-mission-sec{
+		padding-top: 70px;
+	}
+	.mission-des-cntlr .sec-entry-hdr, .vision-des-cntlr .sec-entry-hdr{
+		padding-bottom: 25px;
+	}
+	.mission-des-cntlr, .vision-des-cntlr{
+		padding-bottom: 45px;
+	}
+	.ab-about-grid-sec{
+		padding-top: 130px;
+		padding-bottom: 90px;
+	}
+	.about-intro-sec-con-cntlr p{
+		margin-bottom: 22px;
+	}
 }
 
 @media (max-width: 1199px){
-	
+	.about-intro-sec{
+		padding-top: 10px;
+		padding-bottom: 50px;
+	}
+	.about-intro-sec-con-cntlr p{
+		margin-bottom: 20px;
+	}
+	.our-story-sec-title-cntlr {
+	    padding-top: 50px;
+	    padding-right: 20px;
+	}
 }
 @media (max-width: 991px){
 	
