@@ -345,7 +345,6 @@ textarea {
 }
 .hm-cntct-tel span{
     display: inline-block;
-    font-size: 18px;
     color: #009fe1;
 }
 .hm-cntct-addres{
@@ -568,6 +567,21 @@ textarea {
         width: initial!important;
         top: initial!important;
     }
+    .our-location-info-cntlr {
+        max-width: 400px;
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 0;
+    }
+    .our-location-info-title{
+        text-align: center;
+    }
+    .our-location-sec-title-cntlr .sec-entry-hdr{
+        padding-bottom: 18px;
+    }
+    .our-location-sec{
+        padding-bottom: 40px;
+    }
 
 }
 @media (max-width: 575px){
@@ -601,6 +615,9 @@ textarea {
     .contact-google-map iframe{
         height: 400px;
     }
+    .our-location-form-dtails{
+        padding-bottom: 50px;
+    }
 
 }
 @media (max-width: 479px){
@@ -622,6 +639,17 @@ textarea {
 @media (max-width: 359px){
     .contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container button{
         width: 100%;
+    }
+    .hm-cntct-addres a br{
+        display: none;
+    }
+    .our-location-info-title{
+        margin-bottom: 30px;
+    }
+    .hm-cntct-tel a,
+    .hm-cntct-addres a,
+    .hm-cntct-tel span{
+        font-size: 15px;
     }
 }
 
