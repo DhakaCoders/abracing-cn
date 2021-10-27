@@ -419,6 +419,7 @@ div.wpforms-container-full .wpforms-form select.wpforms-field-medium{
     margin-bottom: 20px;
     position: relative;
 } 
+.pdt-single-page-review-form .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.wpforms-field-description,
 .pdt-single-page-review-form .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.wpforms-field-textarea textarea, 
 .pdt-single-page-review-form .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.wpforms-field-textarea{
     width: 100%;
@@ -506,4 +507,74 @@ div.wpforms-container-full .wpforms-form select.wpforms-field-medium{
     color: #D9534F;
     margin-bottom: 0;
     text-transform: inherit;
+}
+.wpforms-field-checkbox ul,
+.wpforms-field-description ul{
+    padding-top: 20px;
+}
+.wpforms-field-checkbox ul li label,
+.wpforms-field-description ul li label{
+    cursor: pointer;
+}
+.wpforms-field-description ul li,
+.wpforms-field-checkbox ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    padding:0px 15px 15px 30px!important;
+ 
+}
+.wpforms-field-description ul li input[type="checkbox"],
+.wpforms-field-checkbox ul li input[type="checkbox"]{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    left: 0;
+    right: 0;
+    top: 2px;
+    bottom: 0;
+    height: 18px!important;
+    width: 18px!important;
+    z-index: 1;
+    margin: 0!important;
+    border: 1px solid #E2F1E7!important;
+}
+.wpforms-field-description ul li:before,
+.wpforms-field-checkbox ul li:before{
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background: transparent;
+    border: 1px solid #C9E4CF;
+    border-radius: 2px;
+    margin-top: 0;
+}
+.wpforms-field-description ul li:after,
+.wpforms-field-checkbox ul li:after {
+    left: 7px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid #239C4B;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+.wpforms-field-description ul li:after,
+.wpforms-field-checkbox ul li:after {
+    content: "";
+    position: absolute;
+    display: ;
+}
+.wpforms-field-description ul li:after,
+.wpforms-field-checkbox ul li.wpforms-selected:after {
+    display: block;
+}
+.wpforms-field-description input:checked ~ .checkmark:after{
+  display: block;
+}
+.wpforms-field-description input:checked ~ .checkmark{
+  background: transparent;
 }
