@@ -148,7 +148,7 @@ ol li:before{
 /*start responsive*/
 @media(max-width: 1199px){
 	.sec-entry-hdr .sec-entry-hdr-title{
-		padding-bottom: 22px;
+		padding-bottom: 25px;
 	}
 	.sec-entry-hdr{
 		padding-bottom: 22px;
@@ -213,7 +213,6 @@ ol li:before{
 	transition: all 1s;
 	-ms-transition: all 1s;
 	-webkit-transition: all 1s;
-	background-attachment: fixed;
 	background-position: center top 20px!important;
 	background-repeat: no-repeat!important;
 	background-size: cover!important;
