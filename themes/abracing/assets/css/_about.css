@@ -159,3 +159,10 @@
 	padding-top: 150px;
 	padding-bottom: 115px;
 }
+.ab-about-grid-item-title a{
+	color: #333434;
+	text-decoration: none;
+}
+.ab-about-grid-item-title a:hover{
+	color: #009fe1;
+}

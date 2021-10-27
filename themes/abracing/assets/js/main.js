@@ -300,6 +300,14 @@ if( $('.hamburgar-cntlr').length ){
     $('body').toggleClass('allWork');
   });
 }
+if (windowWidth > 767) {
+  if( $('.hm-banner-cntlr').length ){
+    var windowHeight = $(window).height();
+    if (windowHeight < 735) {
+      $('.hm-banner-cntlr').css('height', windowHeight);
+    }
+  }
+}
 
 /*start of Shariful*/
 

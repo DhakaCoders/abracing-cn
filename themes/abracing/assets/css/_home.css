@@ -70,7 +70,7 @@
 	background-repeat: repeat!important;
 	background-position: center center!important;
 	position: absolute;
-	bottom: 0;
+	bottom: -1px;
 	left: 0;
 	right: 0;
 	z-index: 9;
@@ -83,7 +83,7 @@
 	display: flex;
 	align-items: flex-end;
 	justify-content: center;
-	padding: 100px 0 170px;
+	padding: 100px 0 130px;
 	position: relative;
 	z-index: 8;
 }
@@ -96,4 +96,31 @@
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	text-shadow: 1px 1px 10px rgb(0 0 0 / 64%);
+}
+
+
+
+
+/*responsive*/
+@media(max-width: 767px){
+	.hm-banner-cntlr{
+		height: 550px;
+	}
+	.hm-bnr-down-scroll-icon{
+
+	}
+	.hm-bnr-down-scroll-icon img{
+		display: inline-block;
+		max-width: 33px;
+		height: auto;
+	}
+}
+@media(max-width: 575px){
+	.fl-h1.hm-bnr-title br{
+		display: none!important;
+		text-align: center;
+	}
+	.hm-bnr-desc{
+		text-align: center;
+	}
 }
