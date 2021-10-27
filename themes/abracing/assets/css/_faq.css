@@ -91,14 +91,16 @@
 .ab-wpa-des{
 	width: 50%;
 	padding-right: 20px;
+	order: 1;
 }
 .ab-wpa-img{
 	width: 50%;
+	order: 2;
 }
 
 
 
-.ab-wpa-des-title{
+/*.ab-wpa-des-title{
 	padding-bottom: 40px;
 	margin-bottom: 35px;
 	text-transform: uppercase;
@@ -114,7 +116,7 @@
     background-repeat: no-repeat!important;
     height: 13px;
     width: 83px;
-}
+}*/
 
 
 .ab-wpa-des blockquote{
