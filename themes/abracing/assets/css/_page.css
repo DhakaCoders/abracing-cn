@@ -199,7 +199,7 @@ ol li:before{
 	display: flex;
 	align-items: flex-end;
 	justify-content: center;
-	padding: 100px 0 170px;
+	padding: 100px 0 130px;
 	position: relative;
 	z-index: 8;
 }
@@ -211,4 +211,20 @@ ol li:before{
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 1px;
+}
+
+
+
+
+/*responsive*/
+@media(max-width: 991px){
+	.pg-banner-cntlr{
+		height: 500px;
+		padding-bottom: 100px;
+	}
+}
+@media(max-width: 767px){
+	.pg-banner-cntlr{
+		height: 450px;
+	}
 }

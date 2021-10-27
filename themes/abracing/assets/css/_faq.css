@@ -99,24 +99,10 @@
 }
 
 
-
-/*.ab-wpa-des-title{
-	padding-bottom: 40px;
-	margin-bottom: 35px;
-	text-transform: uppercase;
-	color: #333434;
-	position: relative;
+.ab-wpa-sec .sec-entry-hdr {
+    padding-top: 0;
+    padding-bottom: 20px;
 }
-.ab-wpa-des-title:after{
-	content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background: url(../images/sec-entry-hdr-btm-img.png);
-    background-repeat: no-repeat!important;
-    height: 13px;
-    width: 83px;
-}*/
 
 
 .ab-wpa-des blockquote{
@@ -138,6 +124,7 @@
 }
 .ab-wpa-des blockquote p{
 	margin-bottom: 20px;
+	text-align: justify;
 }
 .ab-wpa-des blockquote p:last-child{
 	margin-bottom: 0;
