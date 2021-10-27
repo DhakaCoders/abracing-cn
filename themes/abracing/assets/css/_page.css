@@ -46,6 +46,7 @@
 	text-decoration: underline;
 }
 
+
 ul{
 	margin: 0;
 	padding: 0;
@@ -99,11 +100,12 @@ ol li:before{
 	font-family: 'Museo-Sans-500';
 }
 
+
 /*sec-entry-hdr-start*/
 
 .sec-entry-hdr{
 	padding-top: 40px;
-	padding-bottom: 25px;
+	padding-bottom: 30px;
 }
 .sec-entry-hdr .sec-entry-hdr-title{
 	text-align: center;
@@ -139,8 +141,6 @@ ol li:before{
 	text-transform: uppercase;
 	text-align: center;
 	border: 1px solid #ff1000;
-	display: inline-block;
-	vertical-align: baseline;
 }
 
 .ab-btn-ywl{
@@ -193,5 +193,4 @@ ol li:before{
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 1px;
-    text-shadow: 1px 1px 10px rgb(0 0 0 / 64%);
 }
