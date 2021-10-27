@@ -146,9 +146,7 @@
 
 
 /*start responsive*/
-
 @media(max-width: 1199px){
-
 
 	.race-booking-grd-sec .sec-entry-hdr{
 		padding-bottom: 100px;
@@ -241,8 +239,6 @@
 	.race-booking-grd-item-btn .ab-btn{
 		font-size: 17px;
 	}
-
-
 }
 
 @media(max-width: 767px){
@@ -271,7 +267,6 @@
 	.features-sec-col-2{
 		padding: 0;
 	}
-
 	.features-sec-col .features-grd-title{
 		font-size: 22px;
 	}
@@ -285,7 +280,6 @@
 }
 
 @media(max-width: 575px){
-	
 	.race-booking-grd-item-col .race-booking-grd-item-desc{
 		min-height: 211px;
 	}
@@ -296,7 +290,6 @@
 	.race-booking-grds-cntlr ul li.race-booking-grd-item-col-2 .race-booking-grd-item-cntlr{
 		padding: 15px 20px 30px;
 	}
-	
 }
 @media(max-width: 359px){
 	.race-booking-grd-item-col .race-booking-grd-item-desc{
@@ -304,4 +297,4 @@
 	}
 }
 
-/*start responsive*/
+/*end responsive*/
