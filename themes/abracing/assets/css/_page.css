@@ -59,7 +59,7 @@ ul li{
 	position: relative;
 	line-height: 1.5;
 	color: #333434;
-
+	font-size: 16px;
 }
 ul li:before{
 	content: '';
@@ -90,6 +90,7 @@ ol li{
 	padding: 0 0 10px 27px;
 	line-height: 1.5;
 	position: relative;
+	font-size: 16px;
 }
 ol li:before{
 	content: counter(my-awesome-counter) ".";
@@ -189,6 +190,7 @@ ol li:before{
 /*page banner*/
 .page-banner{
 	position: relative;
+	overflow: hidden;
 }
 .bnr-btm-sketch{
 
@@ -212,9 +214,10 @@ ol li:before{
 	transition: all 1s;
 	-ms-transition: all 1s;
 	-webkit-transition: all 1s;
-	background-position: center top 20px!important;
+	background-position: center top;
 	background-repeat: no-repeat!important;
 	background-size: cover!important;
+	background-attachment: fixed;
 }
 .pg-banner-cntlr{
 	height: 600px;
@@ -246,7 +249,9 @@ ol li:before{
 /*responsive*/
 @media(max-width: 1199px){
 	.ab-btn{
-		font-size: 15px;
+		font-size: 16px;
+		padding: 6px 15px;
+		min-width: 120px;
 	}
 }
 @media(max-width: 991px){
