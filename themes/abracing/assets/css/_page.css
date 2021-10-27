@@ -131,7 +131,7 @@ ol li:before{
 
 .ab-btn{
 	min-width: 130px;
-	padding: 14px 30px;
+	padding: 9px 20px;
 	border-top-left-radius: 30px;
 	border-bottom-right-radius:30px;
 	font-family: 'LuckiestGuy-Regular';
@@ -141,6 +141,7 @@ ol li:before{
 	text-transform: uppercase;
 	text-align: center;
 	border: 1px solid #ff1000;
+	display: inline-block;
 }
 
 .ab-btn-ywl{
