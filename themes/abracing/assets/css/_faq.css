@@ -215,19 +215,6 @@
 	.ab-wave-trills-subtitle {
 	    font-size: 35px;
 	}
-
-}
-
-@media(max-width: 767px){
-	.ab-faq-sec {
-	    padding-bottom: 300px;
-	}
-	.ab-faq-accordion-title {
-	    font-size: 16px;
-	}
-	.ab-faq-accordion-title:after {
-	    font-size: 21px;
-	}
 	.ab-wpa-sec-inr{
 		display: block;
 	}
@@ -244,6 +231,19 @@
 		width: 100%;
 		margin-left: auto;
 		margin-right: auto;
+	}
+
+}
+
+@media(max-width: 767px){
+	.ab-faq-sec {
+	    padding-bottom: 300px;
+	}
+	.ab-faq-accordion-title {
+	    font-size: 16px;
+	}
+	.ab-faq-accordion-title:after {
+	    font-size: 21px;
 	}
 	.ab-blockquote-title {
 	    margin-bottom: 18px;

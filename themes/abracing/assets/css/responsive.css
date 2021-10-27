@@ -1,18 +1,4 @@
 
-@media (max-width: 1699px){
-
-}
-@media (max-width: 1499px) {
-
-}
-
-@media(max-width: 1399px){
-	
-}
-
-@media(max-width: 1299px){
-
-}
 
 @media(max-width: 1199px){
 	.hide-lg{
@@ -107,7 +93,7 @@
 		font-size: 18px;
 	}
 	body{
-		font-size: 17px;
+		font-size: 16px;
 	}
 }
 
@@ -118,14 +104,5 @@
 	.show-xs{
 		display: block!important;
 	}
-
-}
-
-@media(max-width: 479px){
-
-
-}
-
-@media(max-width: 359px){
 
 }
