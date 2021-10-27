@@ -189,6 +189,7 @@ ol li:before{
 /*page banner*/
 .page-banner{
 	position: relative;
+	overflow: hidden;
 }
 .bnr-btm-sketch{
 
@@ -247,7 +248,7 @@ ol li:before{
 /*responsive*/
 @media(max-width: 1199px){
 	.ab-btn{
-		font-size: 15px;
+		font-size: 16px;
 	}
 }
 @media(max-width: 991px){
