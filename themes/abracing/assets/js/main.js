@@ -334,12 +334,6 @@ $('.ab-faq-accordion-title').on('click', function(){
   $(this).parents('.ab-faq-accordion-item').siblings().find('.ab-faq-accordion-title').removeClass('active'); 
   $(this).parents('.ab-faq-accordion-item').find('.ab-faq-accordion-des').slideToggle(300);
   $(this).parents('.ab-faq-accordion-item').siblings().find('.ab-faq-accordion-des').slideUp(300);
-
-  $('.ab-faq-accordion-item').removeClass('active');
-  $(this).parent().parent('.ab-faq-accordion-item').addClass('active');
-  $(this).parent().parent().siblings().find('.ab-faq-accordion-item').removeClass('active');
-  
-  
 });
 
 

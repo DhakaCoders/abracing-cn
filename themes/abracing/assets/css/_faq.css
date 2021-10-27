@@ -22,10 +22,8 @@
 	background: #009fe1;
 	color: #fff;
 	padding: 15px 50px 15px 15px;
-	border: 2px solid #008ed9;
 	font-size: 18px;
 	margin-bottom: 0;
-	border-radius: 8px;
 	cursor: pointer;
 	position: relative;
 	font-family: 'LuckiestGuy-Regular';
@@ -50,23 +48,22 @@
 .ab-faq-accordion-title.active:after{
 	content: '\f077';
 }
+.ab-faq-accordion-title.active{
+	border-bottom: 2px solid #008ed9;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
 
 .ab-faq-accordion-des{
 	padding: 12px 65px 1px 15px;
 	display: none;
 }
 
-.ab-faq-accordion-item.active{
+.ab-faq-accordion-item{
 	border: 2px solid #008ed9;
 	border-radius: 8px;
 }
-.ab-faq-accordion-item.active .ab-faq-accordion-title{
-	border-top: none;
-	border-left: none;
-	border-right: none;
-	border-top-left-radius: 0;
-	border-top-right-radius: 0;
-}
+
 
 
 
@@ -94,14 +91,29 @@
 .ab-wpa-des{
 	width: 50%;
 	padding-right: 20px;
+	order: 1;
 }
 .ab-wpa-img{
 	width: 50%;
+	order: 2;
 }
 
 
+.sec-entry-hdr-lft.sec-entry-hdr .sec-entry-hdr-title{
+	text-align: left;
+}
+.sec-entry-hdr-lft.sec-entry-hdr .sec-entry-hdr-title:after{
+	left: 0;
+    transform: none;
+    -ms-transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+}
 
-.ab-wpa-des-title{
+.sec-entry-hdr-title-remove-border.sec-entry-hdr-lft.sec-entry-hdr .sec-entry-hdr-title:after{
+	content: none;
+}
+/*.ab-wpa-des-title{
 	padding-bottom: 40px;
 	margin-bottom: 35px;
 	text-transform: uppercase;
@@ -117,7 +129,7 @@
     background-repeat: no-repeat!important;
     height: 13px;
     width: 83px;
-}
+}*/
 
 
 .ab-wpa-des blockquote{
@@ -216,6 +228,20 @@
 @media(max-width: 575px){
 	.ab-faq-sec {
 	    padding-bottom: 250px;
+	}
+}
+
+@media(max-width: 479px){
+	.ab-faq-accordion-title {
+	    font-size: 14px;
+	    padding: 15px 35px 15px 15px;
+	}
+	.ab-faq-accordion-title:after {
+	    font-size: 18px;
+	    right: 10px;
+	}
+	.ab-faq-sec {
+	    padding-bottom: 200px;
 	}
 }
 
