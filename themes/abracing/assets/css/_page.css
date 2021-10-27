@@ -144,6 +144,11 @@ ol li:before{
 	content: none;
 }
 
+/*start responsive*/
+.sec-entry-hdr{
+	padding-bottom: 22px;
+}
+
 /*sec-entry-hdr-end*/
 
 .ab-btn{
@@ -211,8 +216,13 @@ ol li:before{
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 1px;
+    text-shadow: 1px 1px 10px rgb(0 0 0 / 64%);
 }
 
+/*pagination*/
+.fl-pagi-cntlr ul.page-numbers li{
+	padding: 0;
+}
 
 
 
