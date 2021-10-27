@@ -1,5 +1,5 @@
 .pkgg-item:hover .feat-img{
-	opacity: 1;
+	transform: scale(1.1);
 }
 .pkg-grids-cntlr ul{
 	display: flex;
@@ -21,7 +21,7 @@
 	box-shadow: 0px 0px 20px 6px rgba(249,249,249,0.65);
 	-webkit-box-shadow: 0px 0px 20px 6px rgba(249,249,249,0.65);
 	-moz-box-shadow: 0px 0px 20px 6px rgba(249,249,249,0.65);
-	border-radius: 12px; 
+	border-radius: 30px; 
 	overflow: hidden;
 	margin-bottom: 18px;
 	min-height: 360px;
@@ -36,7 +36,6 @@
 	transition: all .5s;
 	-webkit-transition: all .5s;
 	-moz-transition: all .5s;
-	opacity: .7;
 }
 .pkggi-hdr {
     position: absolute;
