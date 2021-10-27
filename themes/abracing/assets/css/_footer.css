@@ -25,16 +25,16 @@
 }
 
 .ftr-col-01{
-	width: 23.3463%;
+	width: 22%;
 }
 .ftr-col-02{
-	width: 22.5680%;
+	width: 22%;
 }
 .ftr-col-03{
-	width: 24.9027%;
+	width: 36%;
 }
 .ftr-col-04{
-	width: 29.1828%;
+	width: 20%;
 }
 
 .ftr-logo{
@@ -43,6 +43,7 @@
 .ftr-logo a{
 	display: inline-block;
 	vertical-align: baseline;
+	max-width: 160px;
 }
 
 
@@ -126,4 +127,45 @@
 	color: #fff;
 	font-size: 12px;
 	margin-bottom: 0;
+}
+
+
+
+@media(max-width: 1199px){
+	.footer-wrp{
+		padding-bottom: 140px;
+	}
+	.ftr-col-01 {
+	    width: 24%;
+	}
+	.ftr-col-03 {
+	    width: 34%;
+	}
+	.ftr-col-04 .ftr-title, 
+	.ftr-col-04 .ftr-col-menu {
+	    padding-left: 18%;
+	}
+}
+
+@media(max-width: 991px){
+	.ftr-col-01 {
+	    width: 100%;
+	    text-align: center;
+	    margin-bottom: 40px;
+	}
+	.ftr-col-02 {
+	    width: 30%;
+	}
+	.ftr-col-03 {
+	    width: 50%;
+	}
+	.ftr-col-04 {
+	    width: 20%;
+	}
+	.ftr-top-border{
+		display: none;
+	}
+	.footer-wrp {
+	    padding-bottom: 100px;
+	}
 }
