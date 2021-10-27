@@ -265,6 +265,11 @@ ol li:before{
 		height: 10px;
 		width: 63px;
 	}
+	ul li,
+	ol li{
+		font-size: 15px;
+	}
+
 }
 @media(max-width: 575px){
 		.ab-btn {
