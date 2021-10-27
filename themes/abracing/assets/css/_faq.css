@@ -183,3 +183,40 @@
 }
 
 
+@media(max-width: 1199px){
+	.ab-faq-sec {
+	    padding-bottom: 450px;
+	}
+}
+
+@media(max-width: 991px){
+	.ab-faq-sec {
+	    padding-bottom: 400px;
+	}
+	.ab-faq-accordion-title{
+		font-size: 17px;
+	}
+	.ab-faq-accordion-title:after{
+		font-size: 23px;
+	}
+}
+
+@media(max-width: 767px){
+	.ab-faq-sec {
+	    padding-bottom: 300px;
+	}
+	.ab-faq-accordion-title {
+	    font-size: 16px;
+	}
+	.ab-faq-accordion-title:after {
+	    font-size: 21px;
+	}
+}
+
+@media(max-width: 575px){
+	.ab-faq-sec {
+	    padding-bottom: 250px;
+	}
+}
+
+
