@@ -144,6 +144,11 @@ ol li:before{
 	content: none;
 }
 
+/*start responsive*/
+.sec-entry-hdr{
+	padding-bottom: 22px;
+}
+
 /*sec-entry-hdr-end*/
 
 .ab-btn{
