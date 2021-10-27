@@ -24,7 +24,6 @@
 	border-radius: 30px; 
 	overflow: hidden;
 	margin-bottom: 18px;
-	min-height: 360px;
 	position: relative;
 }
 .pkggimg-cntlr h3{
@@ -225,15 +224,51 @@
 	    padding: 0 15px 135px 15px;
 	}
 	.feat-img{
-		height: 320px;
+		height: 290px;
 	}
 
 
 }
 @media(max-width: 767px){
+	.pkg-grids-cntlr ul li {
+	    max-width: 50%;
+	    padding: 0 10px 110px 10px;
+	}
+	.pkg-grids-cntlr ul {
+	    margin: 0 -10px;
+	}
+	.pkggimg-cntlr{
+		margin-bottom: 12px;
+	}
+
 
 }
 @media(max-width: 575px){
+	.pkg-grids-cntlr ul li {
+	    max-width: 100%;
+	}
+	.pkgg-item {
+	    max-width: 450px;
+	    width: 100%;
+	    margin: 0 auto;
+	}
+	.pkg-grids-cntlr ul li {
+	    padding: 0 15px 115px 15px;
+	}
+	.pkggimg-cntlr{
+		margin-bottom: 10px;
+	}
+	.pkggi-des{
+		margin-bottom: 10px;
+	}
+	.cpkg-sec-entry-hdr {
+	    padding-bottom: 65px;
+	}
+	.feat-img {
+	    height: 340px;
+	}
+
+
 
 }
 @media(max-width: 479px){
