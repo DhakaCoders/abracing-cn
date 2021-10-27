@@ -47,6 +47,14 @@
 	padding: 10px 28px;
 	font-size: 19px;
 }
+.race-booking-grd-item-btn .ab-btn:hover{
+	border: 1px solid #ff1000;
+    color: #ff1000;
+    background-color: #fff;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+}
 .race-booking-grd-item-desc p{
 	font-size: 13px;
 	font-weight: 800;
