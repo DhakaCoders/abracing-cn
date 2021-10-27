@@ -221,11 +221,21 @@
 	    margin-right: 6px;
 	}
 	.pkg-grids-cntlr ul li {
-	    padding: 0 15px 135px 15px;
+	    padding: 0 15px 130px 15px;
 	}
 	.feat-img{
 		height: 290px;
 	}
+	.pkggi-des strong {
+	    font-size: 17px;
+	}
+	.pkggi-hdng{
+		font-size: 24px!important;
+	}
+	.cpkg-sec-entry-hdr {
+	    padding-bottom: 75px;
+	}
+
 
 
 }
@@ -275,5 +285,8 @@
 
 }
 @media(max-width: 359px){
+	.feat-img {
+	    height: 290px;
+	}
 
 }
