@@ -260,7 +260,7 @@
 		font-size: 22px;
 	}
 	.features-sec-col ul{
-		padding-left: 18px;
+		padding-left: 15px;
 		padding-bottom: 30px;
 	}
 	.features-sec-col .features-grd-title{
@@ -269,8 +269,7 @@
 }
 
 @media(max-width: 575px){
-/*	.sec-entry-hdr .sec-entry-hdr-title{
-		padding-bottom: 25px;
-	}
-}*/
+
+}
+
 /*start responsive*/
