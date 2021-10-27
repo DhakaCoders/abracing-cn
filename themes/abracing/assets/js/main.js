@@ -79,7 +79,7 @@ $(window).load(function() {
 //banner animation
 $(window).scroll(function() {
   var scroll = $(window).scrollTop();
-  $('.pg-banner-bg').css({
+  $('.pg-banner-bg-2').css({
     '-webkit-transform' : 'scale(' + (1 + scroll/2000) + ')',
     '-moz-transform'    : 'scale(' + (1 + scroll/2000) + ')',
     '-ms-transform'     : 'scale(' + (1 + scroll/2000) + ')',
