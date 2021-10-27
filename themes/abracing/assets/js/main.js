@@ -291,6 +291,34 @@ $(window).resize(function(){
 });
 
 
+if( $('.pdt-single-page-gllary-slider').length ){
+    $('.pdt-single-page-gllary-slider').slick({
+      dots: false,
+      infinite: false,
+      autoplay: true,
+      autoplaySpeed: 4000,
+      speed: 700,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      asNavFor: '.pdt-single-page-sm-gllary-slider'
+    });
+}
+if( $('.pdt-single-page-sm-gllary-slider').length ){
+    $('.pdt-single-page-sm-gllary-slider').slick({
+      dots: false,
+      infinite: false,
+      autoplay: true,
+      autoplaySpeed: 4000,
+      speed: 700,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      asNavFor: '.pdt-single-page-gllary-slider',
+      focusOnSelect: true
+    });
+}
+
+
+
 /*start of Jahir*/
 
 

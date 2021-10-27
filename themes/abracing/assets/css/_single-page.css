@@ -1,0 +1,8 @@
+.pdt-single-page-sm-gllary-slider{
+  display: flex;
+  margin: 0 -10px;
+}
+.pdt-single-page-sm-gllary-item{
+  width: 25%;
+  padding: 0 10px;
+}
