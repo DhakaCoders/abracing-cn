@@ -417,7 +417,10 @@ textarea {
         margin-bottom: 80px;
     }
     .contact-google-map iframe{
-        height: 700px;
+        height: 550px;
+    }
+    .cntct-dtails a{
+        font-size: 24px;
     }
 }
 /*@media (max-width: 1599px){  
