@@ -2,7 +2,7 @@
 	padding-bottom: 150px;
 }
 .race-booking-grd-sec .sec-entry-hdr{
-	padding-bottom: 90px;
+	padding-bottom: 120px;
 }
 .race-booking-grds-cntlr ul{
 	display: flex;
@@ -59,7 +59,7 @@
 }
 .race-booking-grd-item-cntlr{
 	background: #009fe1;
-	padding: 28px 43px 30px;
+	padding: 20px 43px 30px;
 	box-shadow: -3px 1px 16px -2px rgba(0,0,0,0.75);
 	-webkit-box-shadow: -3px 1px 16px -2px rgba(0,0,0,0.75);
 	-moz-box-shadow: -3px 1px 16px -2px rgba(0,0,0,0.75);
@@ -106,10 +106,8 @@
 }
 .features-sec-cntlr{
 	display: flex;
-	max-width: 1100px;
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
+	padding-left: 60px;
+	padding-right: 60px;
 }
 .features-sec-col{
 	width: 50%;
@@ -138,4 +136,8 @@
 .conditions-sec{
 	padding-top: 65px;	
 	padding-bottom: 150px;
+}
+.condition-sec-list{
+	padding-left: 90px;
+	padding-right: 90px;
 }

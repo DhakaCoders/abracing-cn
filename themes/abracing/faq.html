@@ -39,36 +39,48 @@
 <body>
   <div class="page-body-cntlr">
 
-    <header class="header d-none">
+    
+
+    <div class="bdoverlay"></div>
+    <header class="header">
+      <div class="header-topbar-cntlr">
+        <span class="top-sketch" style="background-image: url('assets/images/top-sketch.png');"></span>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="header-topbar">
+                <div class="hdr-details">
+                  <div class="hdr-tel">
+                    <span>Call Today: <a href="tel:+971567372727">+971 56 737 2727</a></span>
+                  </div>
+                  <div class="hdr-open-time">
+                    <span>Open Daily: <span class="open-time-schedule">08:00 TO 19:00</span></span>
+                  </div>
+                </div>
+                <div class="hdr-addr-socials-cntlr">
+                  <div class="hdr-addr">
+                    <a target="_blank" href="#">
+                      <span>Jumeirah Fish Market, Jumeirah 1</span>
+                      <i><img src="assets/images/hdr-addr-icon.png" alt=""></i>
+                    </a>
+                  </div>
+                  <div class="hdr-socials">
+                    <ul class="reset-list">
+                      <li><a target="_blank" href="#"><img src="assets/images/hdr-tiktok-icon.png" alt=""></a></li>
+                      <li><a target="_blank" href="#"><img src="assets/images/hdr-facebook-icon.png" alt=""></a></li>
+                      <li><a target="_blank" href="#"><img src="assets/images/hdr-instragram-icon.png" alt=""></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="container">
           <div class="row">
             <div class="col-md-12">
               <div class="header-cntlr clearfix">
-                <div class="header-topbar">
-                  <div class="hdr-details">
-                    <div class="hdr-tel">
-                      <span>Call Today: <a href="tel:+971567372727">+971 56 737 2727</a></span>
-                    </div>
-                    <div class="hdr-open-time">
-                      <span>Open Daily: 08:00 TO 19:00</span>
-                    </div>
-                  </div>
-                  <div class="hdr-addr-socials-cntlr">
-                    <div class="hdr-addr">
-                      <a href="#">
-                        <span>Jumeirah Fish Market, Jumeirah 1</span>
-                        <i></i>
-                      </a>
-                    </div>
-                    <div class="hdr-socials">
-                      <ul class="reset-list">
-                        <li><a target="_blank" href="#"></a></li>
-                        <li><a target="_blank" href="#"></a></li>
-                        <li><a target="_blank" href="#"></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
                 <div class="header-inr">
                   <div class="hdr-logo">
                     <div class="logo">
@@ -78,14 +90,28 @@
                   <div class="hdr-menu">
                     <nav class="main-nav">
                       <ul class="clearfix reset-list">
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">PACKAGES</a></li>
+                        <li class="current-menu-item"><a href="#">HOME</a></li>
+                        <li class="menu-item-has-children">
+                          <a href="#">PACKAGES</a>
+                          <ul class="sub-menu">
+                            <li><a href="#">submenu 1</a></li>
+                            <li><a href="#">submenu 2</a></li>
+                            <li><a href="#">submenu 3</a></li>
+                          </ul>
+                        </li>
                         <li><a href="#">ACTIVITIES</a></li>
                         <li><a href="#">F.A.Q.</a></li>
                         <li><a href="#">ABOUT US</a></li>
                         <li><a href="#">CONTACT</a></li>
                       </ul>
                     </nav>
+                    <div class="hamburgar-cntlr show-sm">
+                      <div class="hamburger-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -94,16 +120,21 @@
       </div>
     </header>
 
-    <section class="main-content">
+    <section class="page-banner"><!-- has-video -->
+      <div class="bnr-btm-sketch" style="background-image: url('assets/images/bnr-btm-sketch.png');"></div>
+      <div class="pg-banner-bg-black"></div>
+      <div class="pg-banner-bg inline-bg" style="background-image: url('assets/images/faq-page-bg.jpg');">
+      </div>
       <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-
-            </div>
-            <div class="col-md-6">
-
+        <div class="row">
+          <div class="col-md-12">
+            <div class="pg-banner-cntlr">
+              <div class="pg-bnr-desc">
+                <h1 class="fl-h1 pg-bnr-title">faqs</h1>
+              </div>
             </div>
           </div>
+        </div>
       </div>    
     </section>
 
