@@ -214,7 +214,8 @@
 		margin-left: auto;
 		margin-right: auto;
 	}
-	.race-booking-grd-item-cntlr{
+	.race-booking-grd-item-cntlr,
+	.race-booking-grds-cntlr ul li.race-booking-grd-item-col-2 .race-booking-grd-item-cntlr{
 		padding: 15px 95px 30px;
 	}
 	.race-booking-grds-cntlr ul{
