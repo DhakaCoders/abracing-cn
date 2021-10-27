@@ -318,7 +318,14 @@ if( $('.pdt-single-page-sm-gllary-slider').length ){
     });
 }
 
+$('.wpforms-field-select select').select2();
+$('.select-2-cntlr').select2();
 
+if($('.start-flatpickr').length ){
+  $('.start-flatpickr').flatpickr({
+    disableMobile: true,
+  }); 
+}
 
 /*start of Jahir*/
 
