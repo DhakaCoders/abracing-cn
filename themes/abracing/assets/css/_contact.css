@@ -422,6 +422,9 @@ textarea {
     .cntct-dtails a{
         font-size: 24px;
     }
+    .cntct-tel.cntct-dtails {
+        margin-bottom: 82px;
+    }
 }
 /*@media (max-width: 1599px){  
     .contact-sec-entry-hdr-title{
