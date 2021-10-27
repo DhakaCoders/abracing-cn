@@ -165,9 +165,13 @@ ol li:before{
 	border: 1px solid #ff1000;
 	display: inline-block;
 }
-
-.ab-btn-ywl{
-	
+.ab-btn:hover{
+	border: 1px solid #ff1000;
+	color: #ff1000;
+	background-color: #fff;
+	transition: all .5s;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
 }
 
 
@@ -227,6 +231,11 @@ ol li:before{
 
 
 /*responsive*/
+@media(max-width: 1199px){
+	.ab-btn{
+		font-size: 15px;
+	}
+}
 @media(max-width: 991px){
 	.pg-banner-cntlr{
 		height: 500px;
