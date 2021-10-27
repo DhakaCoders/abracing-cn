@@ -1,0 +1,31 @@
+.page-404-sec-wrp {
+    padding-bottom: 85px;
+    padding-top: 50px;
+}
+.page-404-dsc-wrp {
+    max-width: 920px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.page-404-dsc-wrp span {
+    display: block;
+    font-size: 22px;
+    line-height: 1;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+.page-404-dsc-wrp > p:last-of-type {
+    margin-bottom: 60px;
+}
+
+@media(max-width: 1199px){
+	.page-404-dsc-wrp span{
+		font-size: 20px;
+	}
+}
+@media(max-width: 991px){
+	.page-404-sec-wrp{
+		padding-top: 20px;
+	}
+}
