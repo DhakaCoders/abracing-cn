@@ -559,6 +559,15 @@ textarea {
     .contact-follow-us-sec .sec-entry-hdr .sec-entry-hdr-title{
         padding-bottom: 20px;
     }
+    .our-location-lft,
+    .our-location-rgt{
+        width: 100%;
+    }
+    .our-location-map-cntlr{
+        position: static;
+        width: initial!important;
+        top: initial!important;
+    }
 
 }
 @media (max-width: 575px){
