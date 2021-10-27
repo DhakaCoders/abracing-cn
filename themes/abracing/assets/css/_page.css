@@ -123,6 +123,7 @@ ol li:before{
 	height: 13px;
 	width: 83px;
 	left: 50%;
+	background-size: auto 100%;
 	transform: translateX(-50%);
 	-ms-transform: translateX(-50%);
 	-webkit-transform: translateX(-50%);
@@ -145,10 +146,20 @@ ol li:before{
 }
 
 /*start responsive*/
-.sec-entry-hdr{
-	padding-bottom: 22px;
+@media(max-width: 1199px){
+	.sec-entry-hdr .sec-entry-hdr-title{
+		padding-bottom: 22px;
+	}
+	.sec-entry-hdr{
+		padding-bottom: 22px;
+	}
 }
+@media(max-width: 575px){
 
+	.sec-entry-hdr .sec-entry-hdr-title:after{
+		height: 10px;
+	}
+}
 /*sec-entry-hdr-end*/
 
 .ab-btn{
@@ -202,7 +213,7 @@ ol li:before{
 	-ms-transition: all 1s;
 	-webkit-transition: all 1s;
 	background-attachment: fixed;
-	background-position: center top!important;
+	background-position: center top 20px!important;
 	background-repeat: no-repeat!important;
 	background-size: cover!important;
 }
