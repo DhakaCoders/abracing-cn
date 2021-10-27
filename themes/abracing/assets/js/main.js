@@ -262,7 +262,7 @@ if( $('.wpforms-error').length ){
 }
 
 
-var windowWidth_1920 = $(window).width();
+var windowWidth_1920 = $('.page-body-cntlr').width();
 var containerWidth = $('.container').width();
 var containerOffset = (windowWidth_1920 - containerWidth);
 var containerOffsetRgt = containerOffset / 2;
@@ -273,7 +273,7 @@ $('.our-location-map-cntlr').css("width", imgWidth);
 
 
 $(window).resize(function(){
-  var windowWidth_1920 = $(window).width();
+  var windowWidth_1920 = $('.page-body-cntlr').width();
   var containerWidth = $('.container').width();
   var containerOffset = (windowWidth_1920 - containerWidth);
   var containerOffsetRgt = containerOffset / 2;

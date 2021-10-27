@@ -68,6 +68,9 @@
 .cntct-dtails a:hover{
     color: #ff1000;
 }
+.contact-follow-us-sec .sec-entry-hdr {
+    padding-bottom: 15px;
+}
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container {
     margin: 0 -10px;
     display: flex;
@@ -288,7 +291,7 @@ textarea {
 
 
 .contact-follow-us-sec{
-    padding-top: 90px;
+    padding-top: 50px;
     padding-bottom: 60px;
 }
 .follow-us-sec-title {
@@ -424,6 +427,22 @@ textarea {
     }
     .cntct-tel.cntct-dtails {
         margin-bottom: 82px;
+    }
+    .contact-follow-us-sec {
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+    .contact-follow-us-sec .sec-entry-hdr {
+        padding-bottom: 10px;
+    }
+    .our-location-sec-title-cntlr .sec-entry-hdr{
+        padding-bottom: 40px;
+    }
+    .our-location-info-title{
+        margin-bottom: 35px;
+    }
+    .our-location-info-cntlr {
+        padding-top: 80px;
     }
 }
 /*@media (max-width: 1599px){  
