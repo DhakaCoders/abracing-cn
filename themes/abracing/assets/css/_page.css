@@ -159,6 +159,7 @@ ol li:before{
 
 	.sec-entry-hdr .sec-entry-hdr-title:after{
 		height: 10px;
+		width: 63px;
 	}
 }
 /*sec-entry-hdr-end*/
@@ -250,7 +251,7 @@ ol li:before{
 @media(max-width: 1199px){
 	.ab-btn{
 		font-size: 16px;
-		padding: 6px 15px;
+		padding: 7px 15px;
 		min-width: 120px;
 	}
 }
@@ -259,6 +260,12 @@ ol li:before{
 		height: 500px;
 		padding-bottom: 100px;
 	}
+	.ab-btn {
+	    font-size: 15px;
+	    padding: 6px 8px;
+	    min-width: 100px;
+	}
+
 }
 @media(max-width: 767px){
 	.pg-banner-cntlr{
