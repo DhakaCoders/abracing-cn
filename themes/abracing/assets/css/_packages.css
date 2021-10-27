@@ -215,8 +215,11 @@
 	.pkggi-hdr{
 		top: -13px;
 	}
+	.pkg-grids-cntlr ul{
+		margin: 0 -15px;
+	}
 	.pkg-grids-cntlr ul li {
-	    padding: 0 20px 150px 20px;
+	    padding: 0 15px 150px 15px;
 	}
 
 
