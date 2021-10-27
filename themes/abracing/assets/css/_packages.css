@@ -80,7 +80,7 @@
 	z-index: 12;
 }
 .hm-pkg-grids-cntlr ul li{
-	padding: 0 32px 160px 32px;
+	padding-bottom: 160px;
 }
 .pkggi-btns a:first-child{
 	margin-right: 12px;
