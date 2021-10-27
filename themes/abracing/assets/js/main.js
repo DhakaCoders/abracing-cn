@@ -342,6 +342,7 @@ if( $('.wpforms-error').length ){
   });
 }
 
+
 /*start of Jahir*/
 
 
