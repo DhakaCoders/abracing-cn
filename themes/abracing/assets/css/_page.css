@@ -140,7 +140,7 @@ ol li:before{
     -moz-transform: none;
 }
 
-.sec-entry-hdr-title-remove-border.sec-entry-hdr-lft.sec-entry-hdr .sec-entry-hdr-title:after{
+.sec-entry-hdr-title-remove-border.sec-entry-hdr .sec-entry-hdr-title:after{
 	content: none;
 }
 
