@@ -103,9 +103,16 @@
 
 /*responsive*/
 @media(max-width: 1199px){
-	.pkg-grids-cntlr ul li{
-		padding: 
+	.cp-sec-entry-header {
+	    padding-bottom: 85px;
 	}
+	.pkggi-hdr{
+		top: -13px;
+	}
+	.pkg-grids-cntlr ul li {
+	    padding: 0 20px 150px 20px;
+	}
+
 
 }
 @media(max-width: 991px){
