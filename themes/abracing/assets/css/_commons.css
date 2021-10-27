@@ -24,7 +24,7 @@ a:hover{
 body {
     background: #ffffff;
     color: #333434;
-    font-size: 18px;
+    font-size: 17px;
     line-height: 24px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -220,8 +220,7 @@ ul.sub-menu,
 .fl-pagi-cntlr ul,
 .reset-slect ul,
 ul.ab-top-menu,
-.fl-pagination-cntlr ul,
-.attachments-browser ul{
+.fl-pagination-cntlr ul{
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -231,9 +230,7 @@ ul.sub-menu li,
 .fl-pagi-cntlr ul li,
 .reset-slect ul li,
 ul.ab-top-menu li,
-.fl-pagination-cntlr ul li,
-.attachments-browser ul li,
-{
+.fl-pagination-cntlr ul li{
 	padding: 0;
 	margin: 0;
 	list-style: none;
@@ -244,8 +241,7 @@ ul.sub-menu li:before,
 .fl-pagi-cntlr ul li:before,
 .reset-slect ul li:before,
 ul.ab-top-menu li:before,
-.fl-pagination-cntlr ul li:before,
-.attachments-browser ul li:before{
+.fl-pagination-cntlr ul li:before{
 	content: none!important;
 }
 
