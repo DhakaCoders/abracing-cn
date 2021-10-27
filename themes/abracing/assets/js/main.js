@@ -262,7 +262,7 @@ if( $('.wpforms-error').length ){
 }
 
 
-var windowWidth_1920 = $(window).width();
+var windowWidth_1920 = $('.page-body-cntlr').width();
 var containerWidth = $('.container').width();
 var containerOffset = (windowWidth_1920 - containerWidth);
 var containerOffsetRgt = containerOffset / 2;
@@ -273,7 +273,7 @@ $('.our-location-map-cntlr').css("width", imgWidth);
 
 
 $(window).resize(function(){
-  var windowWidth_1920 = $(window).width();
+  var windowWidth_1920 = $('.page-body-cntlr').width();
   var containerWidth = $('.container').width();
   var containerOffset = (windowWidth_1920 - containerWidth);
   var containerOffsetRgt = containerOffset / 2;
@@ -306,6 +306,24 @@ if (windowWidth > 767) {
     if (windowHeight < 735) {
       $('.hm-banner-cntlr').css('height', windowHeight);
     }
+  }
+}
+if( $('.scrollto').length ){
+  $('.scrollto').on('click', function(e){
+    e.preventDefault();
+    var togo = $(this).data('to');
+    goToByScroll(togo, 0);
+  });
+}
+
+function goToByScroll(id, offset){
+  if(id){
+    // Remove "link" from the ID
+    id = id.replace("link", "");
+    // Scroll
+    $('html,body').animate(
+      {scrollTop: $(id).offset().top - offset},
+      500);
   }
 }
 
