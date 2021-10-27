@@ -185,6 +185,9 @@
 	.ab-wave-trills-subtitle{
 		font-size: 40px;
 	}
+	.ab-wpa-rgt-bg{
+		width: 75%;
+	}
 }
 
 @media(max-width: 991px){
@@ -201,7 +204,7 @@
 	    padding: 130px 0 140px;
 	}
 	.ab-wpa-rgt-bg{
-		width: 80%;
+		width: 100%;
 	}
 	.ab-blockquote-title br{
 		display: none;

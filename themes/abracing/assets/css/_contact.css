@@ -100,7 +100,7 @@
     background: #fff;
     border: 2px solid #008ed9;
     box-sizing: border-box;
-    padding: 16px 16px 12px 22px;
+    padding: 16px 16px 13px 22px;
     color: #acacac!important;
     font-size: 12px;
     border-radius: 9px!important;
@@ -338,7 +338,6 @@ textarea {
     display: inline-block;
     text-decoration: none;
     color: #333434;
-    font-size: 18px;
 }
 .hm-cntct-tel a:hover,
 .hm-cntct-addres a:hover{
@@ -430,7 +429,6 @@ textarea {
     }
     .contact-follow-us-sec {
         padding-top: 40px;
-        padding-bottom: 50px;
     }
     .contact-follow-us-sec .sec-entry-hdr {
         padding-bottom: 10px;
@@ -445,81 +443,88 @@ textarea {
         padding-top: 80px;
     }
 }
-/*@media (max-width: 1599px){  
-    .contact-sec-entry-hdr-title{
-        margin-bottom: 70px;
-    }
-    .contact-google-map iframe{
-        height: 650px;
-    }
-}
-@media (max-width: 1499px){   
-    .contact-sec-entry-hdr-title{
-        margin-bottom: 60px;
-    }
-    .contact-google-map iframe{
-        height: 600px;
-    }
-}
-@media (max-width: 1399px){
-    .contact-form-sec-wrp {
-        padding-top: 60px;
-        padding-bottom: 65px;
-    }
-    .contact-sec-entry-hdr-title{
-        margin-bottom: 55px;
-    }
-    .contact-google-map iframe{
-        height: 550px;
-    }
-}
-@media (max-width: 1299px){
-    .contact-sec-entry-hdr-title{
-        margin-bottom: 50px;
-    }
-}
 @media (max-width: 1199px){
     .contact-form-sec-wrp {
         padding-top: 50px;
-        padding-bottom: 60px;
+        padding-bottom: 50px;
     }
-    .cnt-dtails span, .cnt-dtails a{
-        font-size: 15px;
+    .cntct-tel.cntct-dtails {
+        margin-bottom: 70px;
+    }
+    .cntct-mail.cntct-dtails{
+        margin-bottom: 60px;
+    }
+    .contact-follow-us-sec{
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+    .contact-follow-us-sec .sec-entry-hdr {
+        padding-bottom: 0px;
     }
     .contact-google-map iframe{
         height: 500px;
     }
+    .our-location-sec-title-cntlr .sec-entry-hdr{
+        padding-bottom: 30px;
+    }
 }
 @media (max-width: 991px){
-    .contact-form-sec-wrp {
-        padding-top: 40px;
+    .contact-form-info-cntlr {
+        padding-left: 10px;
     }
-    .contact-sec-entry-hdr-title {
-        margin-bottom: 40px;
+    .cntct-dtails a{
+        font-size: 22px;
+        padding-left: 80px;
+    }
+    .cntct-dtails > i > img{
+        max-width: 40px;
+        width: auto;
+    }
+    .cntct-addres.cntct-dtails i{
+        top: 23px;
+    }
+    .cntct-addres.cntct-dtails i img {
+        max-height: 45px;
+    }
+    .cntct-tel.cntct-dtails {
+        margin-bottom: 60px;
+    }
+    .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.wpforms-field-textarea textarea{
+        padding-top: 16px!important;
+        height: 150px!important;
+    }
+    .contact-form-dsc-wrp {
+        padding-left: 15px;
+        padding-right: 30px;
+    }
+    .contact-follow-us-sec{
+        padding-top: 20px;
+        padding-bottom: 45px;
+    }
+    .contact-follow-us-sec .sec-entry-hdr .sec-entry-hdr-title{
+        padding-bottom: 28px;
+    }
+    .follow-us-socials ul li a i img {
+        max-height: 50px;
+        width: auto;
+    }
+    .cntct-form-title{
+        margin-bottom: 30px;
+    }
+    .our-location-info-cntlr {
+        padding-top: 60px;
     }
     .contact-google-map iframe{
-        height: 470px;
+        height: 450px;
+    }
+    .our-location-google-map iframe{
+        height: 340px;
     }
 }
 @media (max-width: 767px){
-    .contect-form-block{
-        margin: 0 -10px;
+    .contact-form-sec-wrp{
+        padding-bottom: 30px;
     }
-    .contact-form-rgt, .contact-form-lft{
-        padding: 0 10px;
-    }
-    .contact-form-lft {
-        width: 48%;
-    }
-    .contact-form-rgt {
-        width: 52%;
-    }
-    .contact-google-map iframe{
-        height: 430px;
-    }
-
-}
-@media (max-width: 575px){
     .contect-form-block{
         margin: 0;
     }
@@ -532,24 +537,91 @@ textarea {
     .contact-form-info-cntlr {
         max-width: 400px;
         margin: 0 auto;
+        padding: 0;
     }
-    .contact-sec-entry-hdr-title {
-        margin-bottom: 30px;
-    }
-    .cnt-dtails{
+    .cntct-mail.cntct-dtails,
+    .cntct-tel.cntct-dtails {
         margin-bottom: 50px;
     }
-    .contact-form-sec-wrp{
-        padding-bottom: 30px;
+    .cntct-form-title{
+        text-align: center;
+    }
+    .cntct-dtails a{
+        font-size: 18px;
+    }
+    .contact-google-map iframe{
+        height: 430px;
+    }
+    .contact-follow-us-sec{
+        padding-top: 10px;
+        padding-bottom: 40px;
+    }
+    .contact-follow-us-sec .sec-entry-hdr .sec-entry-hdr-title{
+        padding-bottom: 20px;
+    }
+    .our-location-lft,
+    .our-location-rgt{
+        width: 100%;
+    }
+    .our-location-map-cntlr{
+        position: static;
+        width: initial!important;
+        top: initial!important;
+    }
+
+}
+@media (max-width: 575px){
+    .cntct-dtails > i > img{
+        max-width: 35px;
+    }
+    .cntct-addres.cntct-dtails i img {
+        max-height: 38px;
+    }
+    .cntct-addres.cntct-dtails i{
+        top: 19px;
+        left: 4px;
+    }
+    .cntct-addres.cntct-dtails,
+    .cntct-mail.cntct-dtails,
+    .cntct-tel.cntct-dtails {
+        margin-bottom: 40px;
+    }
+    .contact-follow-us-sec{
+        padding-top: 0px;
+    }
+    .contact-follow-us-sec .sec-entry-hdr .sec-entry-hdr-title{
+        padding-bottom: 15px;
+    }
+    .follow-us-socials ul li a i img {
+        max-height: 40px;
+    }
+    .follow-us-socials ul li{
+        padding: 0 18px;
     }
     .contact-google-map iframe{
         height: 400px;
     }
 
 }
+@media (max-width: 479px){
+    .contact-form-lft{
+        padding-bottom: 15px;
+    }
+    .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.wpforms-field-textarea textarea, 
+    .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field input{
+        height: 42px;
+        padding: 14px 14px 10px 15px;
+    }
+    .contact-follow-us-sec .sec-entry-hdr .sec-entry-hdr-title{
+        padding-bottom: 10px;
+    }
+    .follow-us-socials ul li{
+        padding: 0 15px;
+    }
+}
 @media (max-width: 359px){
     .contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container button{
         width: 100%;
     }
-}*/
+}
 
