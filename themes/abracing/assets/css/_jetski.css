@@ -40,6 +40,7 @@
 	bottom: -18px;
 	left: 0;
 	right: 0;
+	z-index: 15;
 }
 .race-booking-grd-item-btn .ab-btn{
 	color: #f3fe26;
