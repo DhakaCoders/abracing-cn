@@ -24,7 +24,6 @@
       $logo_tag = '';
     }
     $telephone = get_field('telephone', 'options');
-    $email = get_field('emailaddres', 'options');
     $sinfo = get_field('social_media', 'options');
   ?>   
   <div class="page-body-cntlr">
@@ -52,13 +51,21 @@
                         <i><img src="<?php echo THEME_URI; ?>/assets/images/hdr-addr-icon.png" alt=""></i>
                       </a>
                     </div>
+                    <?php if( $sinfo ): ?>
                     <div class="hdr-socials">
                       <ul class="reset-list">
-                        <li class="tiktok-icon"><a target="_blank" href="#"><img src="<?php echo THEME_URI; ?>/assets/images/hdr-tiktok-icon.png" alt=""></a></li>
+                        <?php 
+                          if( !empty($sinfo['tiktok_url']) ) printf('<li class="tiktok-icon"><a target="_blank" href="%s"><img src="<?php echo THEME_URI; ?>/assets/images/hdr-tiktok-icon.png" alt=""></a></li>', $sinfo['tiktok_url']);
+                           if( !empty($sinfo['facebook_url']) ) printf('<li><a target="_blank" href="%s"><img src="<?php echo THEME_URI; ?>/assets/images/hdr-facebook-icon.png" alt=""></a></li>', $sinfo['facebook_url']);
+                          if( !empty($sinfo['instagram_url']) ) printf('<li><a target="_blank" href="%s"><img src="<?php echo THEME_URI; ?>/assets/images/hdr-instragram-icon.png" alt=""></a></li>', $sinfo['instagram_url']); 
+                        ?>
+
+                       <!--  <li class="tiktok-icon"><a target="_blank" href="#"><img src="<?php echo THEME_URI; ?>/assets/images/hdr-tiktok-icon.png" alt=""></a></li>
                         <li><a target="_blank" href="#"><img src="<?php echo THEME_URI; ?>/assets/images/hdr-facebook-icon.png" alt=""></a></li>
-                        <li><a target="_blank" href="#"><img src="<?php echo THEME_URI; ?>/assets/images/hdr-instragram-icon.png" alt=""></a></li>
+                        <li><a target="_blank" href="#"><img src="<?php echo THEME_URI; ?>/assets/images/hdr-instragram-icon.png" alt=""></a></li> -->
                       </ul>
                     </div>
+                    <?php endif; ?>
                   </div>
                 </div>
               </div>
