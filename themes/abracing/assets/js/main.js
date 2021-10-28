@@ -286,7 +286,23 @@ if( $('.pdtSinglePageSmGllarySlider').length ){
       asNavFor: '.pdtSinglePageGllarySlider',
       draggable: false,
       rows: 2,
-      focusOnSelect: true
+      focusOnSelect: true,
+      responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 5,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
     });
 }
 
