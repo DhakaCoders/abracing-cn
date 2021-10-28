@@ -263,6 +263,7 @@ $(window).resize(function(){
 if( $('.pdtSinglePageGllarySlider').length ){
     $('.pdtSinglePageGllarySlider').slick({
       dots: false,
+      arrows: false,
       infinite: false,
       autoplay: false,
       autoplaySpeed: 4000,
@@ -277,16 +278,18 @@ if( $('.pdtSinglePageGllarySlider').length ){
 if( $('.pdtSinglePageSmGllarySlider').length ){
     $('.pdtSinglePageSmGllarySlider').slick({
       dots: false,
+      arrows: false,
       infinite: false,
       autoplay: false,
       autoplaySpeed: 4000,
       speed: 700,
-      slidesToShow: 4,
+      //slidesToShow: 4,
       slidesToScroll: 1,
       asNavFor: '.pdtSinglePageGllarySlider',
       draggable: false,
-      rows: 2,
+      //rows: 2,
       focusOnSelect: true
+      
     });
 }
 

@@ -37,9 +37,6 @@ if( !function_exists('cbv_theme_setup') ){
             'cbv_main_menu' => __( 'Main Menu', 'abracing' ),
             'cbv_footer_menu1' => __( 'Footer Menu 1', 'abracing' ),
             'cbv_footer_menu2' => __( 'Footer Menu 2', 'abracing' ),
-            'cbv_footer_menu3' => __( 'Footer Menu 3', 'abracing' ),
-            'cbv_footer_menu4' => __( 'Footer Menu 4', 'abracing' ),
-            'cbv_copyright_menu' => __( 'Copyright', 'abracing' ),
         ) );
 
     }
@@ -56,7 +53,7 @@ function cbv_theme_scripts(){
     include_once( THEME_DIR . '/enq-scripts/fonts.php' );
     if( !is_front_page() ) include_once( THEME_DIR . '/enq-scripts/fancybox.php' );
     include_once( THEME_DIR . '/enq-scripts/slick.php' );
-    include_once( THEME_DIR . '/enq-scripts/google.maps.php' );
+    //include_once( THEME_DIR . '/enq-scripts/google.maps.php' );
     include_once( THEME_DIR . '/enq-scripts/matchheight.php' );
     include_once( THEME_DIR . '/enq-scripts/animate.php' );
     include_once( THEME_DIR . '/enq-scripts/select2.php' );
