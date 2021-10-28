@@ -35,28 +35,29 @@
                 <div class="ftr-col ftr-col-02">
                   <h6 class="ftr-title"> Main links</h6>
                   <div class="ftr-col-menu">
-                    <ul class="reset-list">
-                      <li><a href="#">Home</a></li>
-                      <li><a href="#">Packages</a></li>
-                      <li><a href="#">Activities</a></li>
-                      <li><a href="#">Book Now</a></li>
-                      <li><a href="#">F.A.Q.S</a></li>
-                      <li><a href="#">About us</a></li>
-                      <li><a href="#">Contact us</a></li>
-                    </ul>
+                    <?php 
+                      $ftmenuOptions1 = array( 
+                          'theme_location' => 'cbv_footer_menu1', 
+                          'menu_class' => 'reset-list',
+                          'container' => '',
+                          'container_class' => ''
+                        );
+                      wp_nav_menu( $ftmenuOptions1 ); 
+                    ?>
                   </div>
                 </div>
                 <div class="ftr-col ftr-col-03">
                   <h6 class="ftr-title">our services</h6>
                   <div class="ftr-col-menu">
-                    <ul class="reset-list">
-                      <li><a href="#">Fly Board</a></li>
-                      <li><a href="#">Paddle board</a></li>
-                      <li><a href="#">Jet Ski</a></li>
-                      <li><a href="#">Banana Boat</a></li>
-                      <li><a href="#">Crazy Shark</a></li>
-                      <li><a href="#">Yamaha Jet Ski</a></li>
-                    </ul>
+                    <?php 
+                      $ftmenuOptions2 = array( 
+                          'theme_location' => 'cbv_footer_menu2', 
+                          'menu_class' => 'reset-list',
+                          'container' => '',
+                          'container_class' => ''
+                        );
+                      wp_nav_menu( $ftmenuOptions2 ); 
+                    ?>
                   </div>
                 </div>
                 <div class="ftr-col ftr-col-04">
