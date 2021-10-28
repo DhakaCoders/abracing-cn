@@ -611,6 +611,9 @@ div.wpforms-container-full .wpforms-form select.wpforms-field-medium{
     .pdt-single-page-con-rgt-des p strong{
         font-size: 22px;
     }
+    .pdt-single-page-form .wpforms-container .wpforms-form .wpforms-submit-container button{
+        font-size: 16px;
+    }
 }
 @media (max-width: 575px){
     .pdt-single-page-sec{
