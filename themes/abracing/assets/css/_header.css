@@ -83,7 +83,7 @@
 
 }
 .hdr-addr{
-	padding-right: 22px;
+	
 }
 .hdr-addr a{
 	position: relative;
@@ -110,7 +110,7 @@
 	display: inline-block;
 }
 .hdr-socials{
-
+	padding-left: 22px;
 }
 .hdr-socials ul{
 	display: flex;
@@ -473,8 +473,8 @@ body.allWork .hamburger-icon span:nth-child(3) {
 		font-size: 13px;
 		padding-left: 26px;
 	}
-	.hdr-addr{
-		padding-right: 20px;
+	.hdr-socials{
+		padding-left: 20px;
 	}
 	.logo a {
 		max-width: 200px;
@@ -501,6 +501,9 @@ body.allWork .hamburger-icon span:nth-child(3) {
 	.hdr-addr{
 		padding-right: 0;
 		margin-bottom: 10px;
+	}
+	.hdr-socials{
+		padding-left: 0;
 	}
 	.hdr-socials ul{
 		justify-content: flex-end;
