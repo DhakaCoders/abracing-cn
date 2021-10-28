@@ -111,6 +111,7 @@
 }
 .fl-pagi-cntlr ul, .fl-pagi-cntlr ul li{
     display: flex;
+    justify-content: center;
 }
 .fl-pagi-cntlr ul li span{
     font-weight: 500;
