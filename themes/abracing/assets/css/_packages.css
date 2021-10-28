@@ -68,6 +68,7 @@
 	font-size: 20px;
 	font-weight: 400;
 	text-transform: uppercase;
+	line-height: 1.3;
 }
 .pkggi-btns{
 	display: flex;
@@ -216,6 +217,7 @@
 	}
 	.pkggi-des strong{
 		font-size: 18px;
+		line-height: 1.2;
 	}
 }
 @media(max-width: 991px){
@@ -249,12 +251,11 @@
 @media(max-width: 767px){
 	.pkg-grids-cntlr ul li {
 	    max-width: 50%;
-	    padding: 0 10px 110px 10px;
-	}
-	.pkg-grids-cntlr ul {
-	    margin: 0 -10px;
 	}
 	.pkggimg-cntlr{
+		margin-bottom: 10px;
+	}
+	.pkggi-des{
 		margin-bottom: 10px;
 	}
 
@@ -284,6 +285,9 @@
 	}
 	.pkggi-btns a:first-child {
 	    margin-right: 10px;
+	}
+	.hm-pkg-grids-cntlr ul li {
+	    padding: 0 15px 60px 15px;
 	}
 
 

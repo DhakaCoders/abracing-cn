@@ -76,10 +76,11 @@
 	color: #333434;
 }
 .hdr-addr-socials-cntlr{
-	margin-left: auto;
+	
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
+	margin-left: auto;
 
 }
 .hdr-addr{
@@ -110,7 +111,7 @@
 	display: inline-block;
 }
 .hdr-socials{
-	padding-left: 22px;
+	
 }
 .hdr-socials ul{
 	display: flex;
@@ -120,6 +121,9 @@
 }
 .hdr-socials ul li{
 	padding: 0 6px;
+}
+.hdr-socials ul li:first-child{
+	padding-left: 28px;
 }
 .hdr-socials ul li.tiktok-icon a img{
 	max-width: 18px;
@@ -465,6 +469,9 @@ body.allWork .hamburger-icon span:nth-child(3) {
 	.hdr-tel{
 		padding: 0 10px;
 	}
+	.hdr-socials ul li:first-child{
+		padding-left: 25px;
+	}
 	.hdr-open-time span,
 	.hdr-tel span{
 		font-size: 13px;
@@ -473,9 +480,10 @@ body.allWork .hamburger-icon span:nth-child(3) {
 		font-size: 13px;
 		padding-left: 26px;
 	}
-	.hdr-socials{
-		padding-left: 20px;
+	.hdr-addr-socials-cntlr{
+
 	}
+
 	.logo a {
 		max-width: 200px;
 	}
@@ -499,11 +507,14 @@ body.allWork .hamburger-icon span:nth-child(3) {
 		display: block;
 	}
 	.hdr-addr{
-		padding-right: 0;
+		padding: 0;
 		margin-bottom: 10px;
 	}
 	.hdr-socials{
-		padding-left: 0;
+		padding: 0;
+	}
+	.hdr-addr-socials-cntlr{
+		margin: 0;
 	}
 	.hdr-socials ul{
 		justify-content: flex-end;
@@ -547,6 +558,9 @@ body.allWork .hamburger-icon span:nth-child(3) {
 	.hdr-open-time{
 		padding: 0;
 		margin-bottom: 10px;
+	}
+	.hdr-socials ul li:first-child{
+		padding-left: 10px;
 	}
 	.hdr-open-time span,
 	.hdr-tel span{
