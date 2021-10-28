@@ -25,6 +25,9 @@
     }
     $telephone = get_field('telephone', 'options');
     $sinfo = get_field('social_media', 'options');
+    $address = get_field('address', 'options');
+    $gurl = get_field('gurl', 'options');
+    $gmaplink = !empty($gurl)?$gurl: 'javascript:void()';
   ?>   
   <div class="page-body-cntlr">
     <div class="bdoverlay"></div>
@@ -37,21 +40,24 @@
               <div class="header-topbar-wrap hide-sm">
                 <div class="header-topbar">
                   <div class="hdr-details">
+                    <?php if( !empty($telephone) ): ?>
                     <div class="hdr-tel">
-                      <span>Call Today: <a href="tel:+971567372727">+971 56 737 2727</a></span>
+                      <span>Call Today: <a href="<?php echo phone_preg($telephone); ?>"><?php printf('%s', $telephone); ?></a></span>
                     </div>
+                    <?php endif; ?>
                     <div class="hdr-open-time">
                       <span>Open Daily: <span class="open-time-schedule">08:00 TO 19:00</span></span>
                     </div>
                   </div>
                   <div class="hdr-addr-socials-cntlr">
+                    <?php if( !empty($address) ): ?>
                     <div class="hdr-addr">
-                      <a target="_blank" href="#">
-                        <span>Jumeirah Fish Market, Jumeirah 1</span>
+                      <a target="_blank" href="<?php echo $gmaplink; ?>">
+                        <span><?php echo $address; ?></span>
                         <i><img src="<?php echo THEME_URI; ?>/assets/images/hdr-addr-icon.png" alt=""></i>
                       </a>
                     </div>
-                    <?php if( $sinfo ): ?>
+                    <?php endif; if( $sinfo ): ?>
                     <div class="hdr-socials">
                       <ul class="reset-list">
                         <?php 
@@ -59,10 +65,6 @@
                            if( !empty($sinfo['facebook_url']) ) printf('<li><a target="_blank" href="%s"><img src="<?php echo THEME_URI; ?>/assets/images/hdr-facebook-icon.png" alt=""></a></li>', $sinfo['facebook_url']);
                           if( !empty($sinfo['instagram_url']) ) printf('<li><a target="_blank" href="%s"><img src="<?php echo THEME_URI; ?>/assets/images/hdr-instragram-icon.png" alt=""></a></li>', $sinfo['instagram_url']); 
                         ?>
-
-                       <!--  <li class="tiktok-icon"><a target="_blank" href="#"><img src="<?php echo THEME_URI; ?>/assets/images/hdr-tiktok-icon.png" alt=""></a></li>
-                        <li><a target="_blank" href="#"><img src="<?php echo THEME_URI; ?>/assets/images/hdr-facebook-icon.png" alt=""></a></li>
-                        <li><a target="_blank" href="#"><img src="<?php echo THEME_URI; ?>/assets/images/hdr-instragram-icon.png" alt=""></a></li> -->
                       </ul>
                     </div>
                     <?php endif; ?>
@@ -157,9 +159,11 @@
           </div>
           <div class="hdr-socials">
             <ul class="reset-list">
-              <li><a target="_blank" href="#"><img src="<?php echo THEME_URI; ?>/assets/images/hdr-tiktok-icon.png" alt=""></a></li>
-              <li><a target="_blank" href="#"><img src="<?php echo THEME_URI; ?>/assets/images/hdr-facebook-icon.png" alt=""></a></li>
-              <li><a target="_blank" href="#"><img src="<?php echo THEME_URI; ?>/assets/images/hdr-instragram-icon.png" alt=""></a></li>
+              <?php 
+                if( !empty($sinfo['tiktok_url']) ) printf('<li class="tiktok-icon"><a target="_blank" href="%s"><img src="<?php echo THEME_URI; ?>/assets/images/hdr-tiktok-icon.png" alt=""></a></li>', $sinfo['tiktok_url']);
+                 if( !empty($sinfo['facebook_url']) ) printf('<li><a target="_blank" href="%s"><img src="<?php echo THEME_URI; ?>/assets/images/hdr-facebook-icon.png" alt=""></a></li>', $sinfo['facebook_url']);
+                if( !empty($sinfo['instagram_url']) ) printf('<li><a target="_blank" href="%s"><img src="<?php echo THEME_URI; ?>/assets/images/hdr-instragram-icon.png" alt=""></a></li>', $sinfo['instagram_url']); 
+              ?>
             </ul>
           </div>
         </div>
