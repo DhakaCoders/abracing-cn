@@ -578,6 +578,7 @@ div.wpforms-container-full .wpforms-form select.wpforms-field-medium{
     }
     .pdt-single-page-con-rgt-des .sec-entry-hdr-lft.sec-entry-hdr .sec-entry-hdr-title{
         text-align: center;
+        font-size: 30px;
     }
     .pdt-single-page-con-rgt-des .sec-entry-hdr-lft.sec-entry-hdr .sec-entry-hdr-title:after{
         left: 50%;
