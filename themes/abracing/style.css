@@ -14,3 +14,22 @@ Text Domain: abracing
 @import url('assets/css/main.css');
 
 
+.pdtSinglePageSmGllarySlider .slick-track{
+	width: 100%!important;
+	display: flex;
+	flex-wrap: wrap;
+}
+.pdtSinglePageSmGllarySlider .slick-list{
+	overflow: initial;
+}
+.pdtSinglePageSmGllarySlider .slick-track .pdt-single-page-sm-gllary-item{
+	width: 25%!important;
+}
+.pdtSinglePageSmGllarySlider.slick-slider .slick-track,
+.pdtSinglePageSmGllarySlider.slick-slider .slick-list{
+    -webkit-transform: translate3d(0, 0, 0)!important;
+       -moz-transform: translate3d(0, 0, 0)!important;
+        -ms-transform: translate3d(0, 0, 0)!important;
+         -o-transform: translate3d(0, 0, 0)!important;
+            transform: translate3d(0, 0, 0)!important;
+}

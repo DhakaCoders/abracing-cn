@@ -283,12 +283,13 @@ if( $('.pdtSinglePageSmGllarySlider').length ){
       autoplay: false,
       autoplaySpeed: 4000,
       speed: 700,
-      slidesToShow: 4,
+      //slidesToShow: 4,
       slidesToScroll: 1,
       asNavFor: '.pdtSinglePageGllarySlider',
       draggable: false,
-      rows: 2,
+      //rows: 2,
       focusOnSelect: true
+      
     });
 }
 
