@@ -540,6 +540,9 @@ div.wpforms-container-full .wpforms-form select.wpforms-field-medium{
         margin-left: 0;
         margin-right: 0;
     }*/
+    .pdt-single-page-gllary-img-cntlr img {
+        width: 100%;
+    }
 }
 @media (max-width: 575px){
     
