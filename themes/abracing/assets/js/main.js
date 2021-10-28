@@ -161,34 +161,7 @@ if( $('.responsive-slider').length ){
 }
 
 
-var swiper = new Swiper('.catagorySlider', {
-    slidesPerView: 1,
-    loop: true,
-    navigation: {
-      nextEl: '.catagorySlider-arrows .swiper-button-next',
-      prevEl: '.catagorySlider-arrows .swiper-button-prev',
-    },
-    breakpoints: {
-       639: {
-        slidesPerView: 2,
-        spaceBetween: 0,
-      },
-      991: {
-        slidesPerView: 3,
-        spaceBetween: 0,
-      },
-      1199: {
-        loop: false,
-        slidesPerView: 4,
-        spaceBetween: 0,
-      },
-      1920: {
-        loop: false,
-        slidesPerView: 4,
-        spaceBetween: 0,
-      },
-    }
-  });
+
 
 if( $('#mapID').length ){
 var latitude = $('#mapID').data('latitude');
@@ -242,10 +215,6 @@ google.maps.event.addDomListener(window, 'load', initialize);
 })();
 
 
-/*start of Momin*/
-
-
-/*start of Kashob*/
 
 if( $('.contact-form-wrp').length ){
   $('.contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container button').on('click', function(){
@@ -343,10 +312,6 @@ if( $('.wpforms-error').length ){
 }
 
 
-/*start of Jahir*/
-
-
-/*start of Noyon*/
 if( $('.hamburgar-cntlr').length ){
   $('.hamburgar-cntlr').click(function(){
     $('body').toggleClass('allWork');
@@ -379,9 +344,6 @@ function goToByScroll(id, offset){
   }
 }
 
-/*start of Shariful*/
-
-/*var windowWidth_1920 = $('.page-body-cntlr').width();*/
 var containerWidth = $('.container').width();
 var offSet = (windowWidth_1920 - containerWidth);
 var rgtOffSet = (offSet / 2);
