@@ -81,6 +81,8 @@ $mapcode = get_field('gmap_code', $thisID);
   </div>
 </section>
 <?php endif; ?>
+
+<?php if( $sinfo ): ?>
 <section class="contact-follow-us-sec">
   <div class="container">
     <div class="row">
@@ -90,14 +92,31 @@ $mapcode = get_field('gmap_code', $thisID);
         </div>
         <div class="follow-us-socials">
           <ul class="reset-list">
-            <li><a href="#" target="_blank"><i><img src="<?php echo THEME_URI; ?>/assets/images/flw-us-tiktok-icon.png" alt=""></i></a></li>
-            <li><a href="#" target="_blank"><i><img src="<?php echo THEME_URI; ?>/assets/images/flw-us-facebook-icon.png" alt=""></i></a></li>
-            <li><a href="#" target="_blank"><i><img src="<?php echo THEME_URI; ?>/assets/images/flw-us-instragram-icon.png" alt=""></i></a></li>
+          	<?php if( !empty($sinfo['tiktok_url']) ): ?>
+            <li>
+            	<a href="<?php echo $sinfo['tiktok_url']; ?>" target="_blank">
+            		<i><img src="<?php echo THEME_URI; ?>/assets/images/flw-us-tiktok-icon.png" alt=""></i>
+            	</a>
+            </li>
+            <?php endif; if( !empty($sinfo['facebook_url']) ): ?>
+            <li>
+            	<a href="<?php echo $sinfo['facebook_url']; ?>" target="_blank">
+            		<i><img src="<?php echo THEME_URI; ?>/assets/images/flw-us-facebook-icon.png" alt=""></i>
+            	</a>
+            </li>
+            <?php endif; if( !empty($sinfo['instagram_url']) ): ?>
+            <li>
+            	<a href="<?php echo $sinfo['instagram_url']; ?>" target="_blank">
+            		<i><img src="<?php echo THEME_URI; ?>/assets/images/flw-us-instragram-icon.png" alt=""></i>
+            	</a>
+            </li>
+            <?php endif; ?>
           </ul>
         </div>
       </div>
     </div>
   </div>
 </section>
+<?php endif; ?>
 
 <?php get_footer(); ?>
