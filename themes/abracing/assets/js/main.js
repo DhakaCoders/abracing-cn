@@ -270,6 +270,7 @@ if( $('.pdtSinglePageGllarySlider').length ){
       slidesToShow: 1,
       slidesToScroll: 1,
       adaptiveHeight: true,
+      draggable: false,
       asNavFor: '.pdtSinglePageSmGllarySlider'
     });
 }
@@ -282,8 +283,9 @@ if( $('.pdtSinglePageSmGllarySlider').length ){
       speed: 700,
       slidesToShow: 4,
       slidesToScroll: 1,
-      rows: 2,
       asNavFor: '.pdtSinglePageGllarySlider',
+      draggable: false,
+      rows: 2,
       focusOnSelect: true
     });
 }
