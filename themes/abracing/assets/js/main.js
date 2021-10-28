@@ -269,6 +269,7 @@ if( $('.pdtSinglePageGllarySlider').length ){
       speed: 700,
       slidesToShow: 1,
       slidesToScroll: 1,
+      adaptiveHeight: true,
       asNavFor: '.pdt-single-page-sm-gllary-slider'
     });
 }
