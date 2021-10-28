@@ -2,7 +2,7 @@
 /**
 Constants->>
 */
-defined('THEME_NAME') or define('THEME_NAME', 'mbc');
+defined('THEME_NAME') or define('THEME_NAME', 'abracing');
 defined( 'THEME_DIR' ) or define( 'THEME_DIR', get_template_directory() );
 defined( 'THEME_URI' ) or define( 'THEME_URI', get_template_directory_uri() );
 
@@ -15,7 +15,7 @@ if( !function_exists('cbv_theme_setup') ){
     
     function cbv_theme_setup(){
         
-      load_theme_textdomain( 'mbc', get_template_directory() . '/languages' );
+      load_theme_textdomain( 'abracing', get_template_directory() . '/languages' );
         add_theme_support( 'title-tag' );
         add_theme_support('woocommerce');
         add_theme_support('post-thumbnails');
@@ -35,12 +35,12 @@ if( !function_exists('cbv_theme_setup') ){
         ) );
 
         register_nav_menus( array(
-            'cbv_main_menu' => __( 'Main Menu', 'mbc' ),
-            'cbv_footer_menu1' => __( 'Footer Menu 1', 'mbc' ),
-            'cbv_footer_menu2' => __( 'Footer Menu 2', 'mbc' ),
-            'cbv_footer_menu3' => __( 'Footer Menu 3', 'mbc' ),
-            'cbv_footer_menu4' => __( 'Footer Menu 4', 'mbc' ),
-            'cbv_copyright_menu' => __( 'Copyright', 'mbc' ),
+            'cbv_main_menu' => __( 'Main Menu', 'abracing' ),
+            'cbv_footer_menu1' => __( 'Footer Menu 1', 'abracing' ),
+            'cbv_footer_menu2' => __( 'Footer Menu 2', 'abracing' ),
+            'cbv_footer_menu3' => __( 'Footer Menu 3', 'abracing' ),
+            'cbv_footer_menu4' => __( 'Footer Menu 4', 'abracing' ),
+            'cbv_copyright_menu' => __( 'Copyright', 'abracing' ),
         ) );
 
     }
@@ -82,8 +82,8 @@ if( function_exists('acf_add_options_page') ) {
     //parent tab
     //acf_add_options_page( 'Opties' );
     acf_add_options_page(array(
-        'page_title'    => __('Options', 'mbc'),
-        'menu_title'    => __('Options', 'mbc'),
+        'page_title'    => __('Options', 'abracing'),
+        'menu_title'    => __('Options', 'abracing'),
         'menu_slug'     => 'cbv_options',
         'capability'    => 'edit_posts',
         //'redirect'        => false
