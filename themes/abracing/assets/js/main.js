@@ -263,6 +263,7 @@ $(window).resize(function(){
 if( $('.pdtSinglePageGllarySlider').length ){
     $('.pdtSinglePageGllarySlider').slick({
       dots: false,
+      arrows: false,
       infinite: false,
       autoplay: false,
       autoplaySpeed: 4000,
@@ -277,6 +278,7 @@ if( $('.pdtSinglePageGllarySlider').length ){
 if( $('.pdtSinglePageSmGllarySlider').length ){
     $('.pdtSinglePageSmGllarySlider').slick({
       dots: false,
+      arrows: false,
       infinite: false,
       autoplay: false,
       autoplaySpeed: 4000,
