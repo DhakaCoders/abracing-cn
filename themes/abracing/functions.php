@@ -14,8 +14,7 @@ Theme Setup->>
 if( !function_exists('cbv_theme_setup') ){
     
     function cbv_theme_setup(){
-        
-      load_theme_textdomain( 'abracing', get_template_directory() . '/languages' );
+        load_theme_textdomain( 'abracing', get_template_directory() . '/languages' );
         add_theme_support( 'title-tag' );
         add_theme_support('woocommerce');
         add_theme_support('post-thumbnails');
@@ -62,7 +61,7 @@ function cbv_theme_scripts(){
     include_once( THEME_DIR . '/enq-scripts/animate.php' );
     include_once( THEME_DIR . '/enq-scripts/select2.php' );
     include_once( THEME_DIR . '/enq-scripts/flatpickr.php' );
-    include_once( THEME_DIR . '/enq-scripts/waypoints.php' );
+    //include_once( THEME_DIR . '/enq-scripts/waypoints.php' );
     include_once( THEME_DIR . '/enq-scripts/theme.default.php' );
 }
 
@@ -73,7 +72,7 @@ Includes->>
 include_once(THEME_DIR .'/inc/widgets-area.php');
 include_once(THEME_DIR .'/inc/breadcrumbs.php');
 include_once(THEME_DIR .'/inc/cbv-functions.php');
-include_once(THEME_DIR .'/inc/ajax-services-load.php');
+//include_once(THEME_DIR .'/inc/ajax-services-load.php');
 /**
 ACF Option pages->>
 */
