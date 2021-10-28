@@ -456,12 +456,6 @@ body.allWork .hamburger-icon span:nth-child(3) {
 
 
 /*responsive*/
-@media(max-width: 1399px){
-
-}
-@media(max-width: 1299px){
-	
-}
 @media(max-width: 1199px){
 	.hdr-details{
 		margin: 0 -10px;
@@ -621,9 +615,6 @@ body.allWork .hamburger-icon span:nth-child(3) {
 	.hamburgar-cntlr{
 		margin-left: auto;
 	}
-}
-@media(max-width: 639px){
-	
 }
 @media(max-width: 479px){
 	.xs-mobile-menu{
