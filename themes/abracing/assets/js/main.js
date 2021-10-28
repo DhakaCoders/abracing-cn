@@ -215,10 +215,6 @@ google.maps.event.addDomListener(window, 'load', initialize);
 })();
 
 
-/*start of Momin*/
-
-
-/*start of Kashob*/
 
 if( $('.contact-form-wrp').length ){
   $('.contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container button').on('click', function(){
@@ -316,10 +312,6 @@ if( $('.wpforms-error').length ){
 }
 
 
-/*start of Jahir*/
-
-
-/*start of Noyon*/
 if( $('.hamburgar-cntlr').length ){
   $('.hamburgar-cntlr').click(function(){
     $('body').toggleClass('allWork');
@@ -352,9 +344,6 @@ function goToByScroll(id, offset){
   }
 }
 
-/*start of Shariful*/
-
-/*var windowWidth_1920 = $('.page-body-cntlr').width();*/
 var containerWidth = $('.container').width();
 var offSet = (windowWidth_1920 - containerWidth);
 var rgtOffSet = (offSet / 2);
