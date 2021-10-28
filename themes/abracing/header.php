@@ -23,6 +23,7 @@
     }else{
       $logo_tag = '';
     }
+    $time = get_field('time', 'options');
     $telephone = get_field('telephone', 'options');
     $sinfo = get_field('social_media', 'options');
     $address = get_field('address', 'options');
@@ -44,10 +45,11 @@
                     <div class="hdr-tel">
                       <span>Call Today: <a href="<?php echo phone_preg($telephone); ?>"><?php printf('%s', $telephone); ?></a></span>
                     </div>
-                    <?php endif; ?>
+                    <?php endif; if( !empty($time) ): ?>
                     <div class="hdr-open-time">
-                      <span>Open Daily: <span class="open-time-schedule">08:00 TO 19:00</span></span>
+                      <span>Open Daily: <span class="open-time-schedule"><?php echo $time; ?></span></span>
                     </div>
+                    <?php endif; ?>
                   </div>
                   <div class="hdr-addr-socials-cntlr">
                     <?php if( !empty($address) ): ?>
@@ -60,11 +62,25 @@
                     <?php endif; if( $sinfo ): ?>
                     <div class="hdr-socials">
                       <ul class="reset-list">
-                        <?php 
-                          if( !empty($sinfo['tiktok_url']) ) printf('<li class="tiktok-icon"><a target="_blank" href="%s"><img src="<?php echo THEME_URI; ?>/assets/images/hdr-tiktok-icon.png" alt=""></a></li>', $sinfo['tiktok_url']);
-                           if( !empty($sinfo['facebook_url']) ) printf('<li><a target="_blank" href="%s"><img src="<?php echo THEME_URI; ?>/assets/images/hdr-facebook-icon.png" alt=""></a></li>', $sinfo['facebook_url']);
-                          if( !empty($sinfo['instagram_url']) ) printf('<li><a target="_blank" href="%s"><img src="<?php echo THEME_URI; ?>/assets/images/hdr-instragram-icon.png" alt=""></a></li>', $sinfo['instagram_url']); 
-                        ?>
+                        <?php if( !empty($sinfo['tiktok_url']) ): ?>
+                        <li class="tiktok-icon">
+                          <a target="_blank" href="<?php echo $sinfo['tiktok_url']; ?>">
+                            <img src="<?php echo THEME_URI; ?>/assets/images/hdr-tiktok-icon.png">
+                          </a>
+                        </li>
+                        <?php endif; if( !empty($sinfo['facebook_url']) ): ?>
+                        <li>
+                          <a target="_blank" href="<?php echo $sinfo['tiktok_url']; ?>">
+                            <img src="<?php echo THEME_URI; ?>/assets/images/hdr-facebook-icon.png">
+                          </a>
+                        </li>
+                        <?php endif; if( !empty($sinfo['instagram_url']) ): ?>
+                        <li>
+                          <a target="_blank" href="<?php echo $sinfo['instagram_url']; ?>">
+                            <img src="<?php echo THEME_URI; ?>/assets/images/hdr-instragram-icon.png">
+                          </a>
+                        </li>
+                        <?php endif; ?>
                       </ul>
                     </div>
                     <?php endif; ?>
@@ -121,11 +137,13 @@
       <div class="xs-pop-up-menu-inr">
         <div class="xs-pop-up-menu-top">
           <div class="logo-close-btn-cntlr">
+            <?php if( !empty($logo_tag) ): ?>
             <div class="xs-logo">
-              <a href="front-page.html">
-                <img src="<?php echo THEME_URI; ?>/assets/images/logo.png" alt="">
-              </a>
+             <a href="<?php echo esc_url(home_url('/')); ?>">
+                <?php echo $logo_tag; ?>
+               </a>
             </div>
+            <?php endif; ?>
             <div class="hamburgar-cntlr show-sm">
               <div class="hamburger-icon">
                 <span></span>
@@ -151,19 +169,36 @@
           </div>
         </div>
         <div class="xs-pop-menu-btm">
+          <?php if( !empty($time) ): ?>
           <div class="hdr-open-time">
-            <span>Open Daily: <span class="open-time-schedule">08:00 TO 19:00</span></span>
+            <span>Open Daily: <span class="open-time-schedule"><?php echo $time; ?></span></span>
           </div>
+          <?php endif; if( !empty($telephone) ): ?>
           <div class="hdr-tel">
-            <span>Call Today: <a href="tel:+971567372727">+971 56 737 2727</a></span>
+            <span>Call Today: <a href="<?php echo phone_preg($telephone); ?>"><?php printf('%s', $telephone); ?></a></span>
           </div>
+          <?php endif; ?>
           <div class="hdr-socials">
             <ul class="reset-list">
-              <?php 
-                if( !empty($sinfo['tiktok_url']) ) printf('<li class="tiktok-icon"><a target="_blank" href="%s"><img src="<?php echo THEME_URI; ?>/assets/images/hdr-tiktok-icon.png" alt=""></a></li>', $sinfo['tiktok_url']);
-                 if( !empty($sinfo['facebook_url']) ) printf('<li><a target="_blank" href="%s"><img src="<?php echo THEME_URI; ?>/assets/images/hdr-facebook-icon.png" alt=""></a></li>', $sinfo['facebook_url']);
-                if( !empty($sinfo['instagram_url']) ) printf('<li><a target="_blank" href="%s"><img src="<?php echo THEME_URI; ?>/assets/images/hdr-instragram-icon.png" alt=""></a></li>', $sinfo['instagram_url']); 
-              ?>
+              <?php if( !empty($sinfo['tiktok_url']) ): ?>
+              <li>
+                <a target="_blank" href="<?php echo $sinfo['tiktok_url']; ?>">
+                  <img src="<?php echo THEME_URI; ?>/assets/images/hdr-tiktok-icon.png">
+                </a>
+              </li>
+              <?php endif; if( !empty($sinfo['facebook_url']) ): ?>
+              <li>
+                <a target="_blank" href="<?php echo $sinfo['tiktok_url']; ?>">
+                  <img src="<?php echo THEME_URI; ?>/assets/images/hdr-facebook-icon.png">
+                </a>
+              </li>
+              <?php endif; if( !empty($sinfo['instagram_url']) ): ?>
+              <li>
+                <a target="_blank" href="<?php echo $sinfo['instagram_url']; ?>">
+                  <img src="<?php echo THEME_URI; ?>/assets/images/hdr-instragram-icon.png">
+                </a>
+              </li>
+              <?php endif; ?>
             </ul>
           </div>
         </div>
