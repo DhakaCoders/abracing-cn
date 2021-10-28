@@ -535,13 +535,36 @@ div.wpforms-container-full .wpforms-form select.wpforms-field-medium{
     .pdt-single-page-con-rgt {
         padding-left: 0;
     }
-    /*.pdtSinglePageSmGllarySlider.slick-initialized .slick-list .slick-track{
-        width: 100%!important;
-        margin-left: 0;
-        margin-right: 0;
-    }*/
+    .pdt-single-page-con-cntlr{
+        max-width: 500px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .pdt-single-page-sm-gllary-item-img{
+        height: 71px;
+    }
     .pdt-single-page-gllary-img-cntlr img {
         width: 100%;
+    }
+    .pdt-single-page-con-lft{
+        padding-bottom: 30px;
+    }
+    .pdt-single-page-con-rgt-des .sec-entry-hdr-lft.sec-entry-hdr .sec-entry-hdr-title{
+        text-align: center;
+    }
+    .pdt-single-page-con-rgt-des .sec-entry-hdr-lft.sec-entry-hdr .sec-entry-hdr-title:after{
+        left: 50%;
+        transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+    }
+    .pdt-single-page-con-rgt-des p{
+        text-align: center;
+    }
+    .pdt-single-rltd-pdt-grids-cntlr ul li{
+        width: 50%;
+        margin-bottom: 50px;
     }
 }
 @media (max-width: 575px){
