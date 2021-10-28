@@ -15,14 +15,12 @@
     width: 58%;
     padding-left: 40px;
 }
-.pdt-single-page-sm-gllary-slider{
-  display: flex;
+.pdtSinglePageSmGllarySlider{
   margin: 0 -10px;
 }
 .pdt-single-page-sm-gllary-item{
-  width: 25%;
-  padding: 0 10px;
   margin-bottom: 15px;
+  padding: 0 10px;
 }
 .pdt-single-page-gllary-item{
   margin-bottom: 20px;
@@ -385,7 +383,7 @@ div.wpforms-container-full .wpforms-form select.wpforms-field-medium{
     padding-bottom: 80px;
 }
 
-.pdt-single-page-gllary-img-cntlr div{
+.pdt-single-page-sm-gllary-item-img{
     height: 78px;
 }
 
