@@ -103,7 +103,7 @@
     padding: 16px 16px 13px 22px;
     color: #acacac!important;
     font-size: 12px;
-    border-radius: 9px!important;
+    border-radius: 7px!important;
     line-height: 1;
     transition: all 0.5s;
     -ms-transition: all 0.5s;
@@ -130,7 +130,7 @@
     cursor: pointer!important;
     padding: 14px 15px!important;
     text-align: center;
-    border-radius: 9px!important;
+    border-radius: 7px!important;
     font-family: 'Montserrat', sans-serif;
 }
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container button:hover {
