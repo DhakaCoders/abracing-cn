@@ -1,5 +1,5 @@
 <?php
-/*Template Name: FAQ*/
+/*Template Name: Activities Jetski*/
 get_header();
 $thisID = get_the_ID();
 ?>
