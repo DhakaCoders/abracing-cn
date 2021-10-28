@@ -72,14 +72,15 @@ $mapcode = get_field('gmap_code', $thisID);
   </div>
 </section>
 
+<?php if( $mapcode ): ?>
 <section class="contact-google-map-sec-wrp">
   <div class="contact-google-map-wrp">
     <div class="contact-google-map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.7960321817786!2d55.24188235109613!3d25.210100137283245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43f513e396bb%3A0xbc839d24ff3740f8!2sabracing%20watersports!5e0!3m2!1sen!2sbd!4v1635233516740!5m2!1sen!2sbd" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <?php echo $mapcode; ?>
     </div> 
   </div>
 </section>
-
+<?php endif; ?>
 <section class="contact-follow-us-sec">
   <div class="container">
     <div class="row">
