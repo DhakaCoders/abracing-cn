@@ -64,9 +64,9 @@
 }
 .pkggi-des strong{
 	display: inline-block;
-	font-family: 'Luckiest Guy';
+	font-family: 'Luckiest Guy', cursive;
 	font-size: 20px;
-	font-weight: 700;
+	font-weight: 400;
 	text-transform: uppercase;
 }
 .pkggi-btns{
@@ -219,7 +219,7 @@
 }
 @media(max-width: 991px){
 	.pkggi-btns a:first-child {
-	    margin-right: 4px;
+	    margin-right: 8px;
 	}
 	.feat-img{
 		height: 290px;
@@ -238,7 +238,7 @@
 		margin-bottom: 10px;
 	}
 	.pkg-grids-cntlr ul li {
-	    padding: 0 15px 110px 15px;
+	    padding: 0 15px 100px 15px;
 	}
 
 
@@ -262,14 +262,12 @@
 @media(max-width: 575px){
 	.pkg-grids-cntlr ul li {
 	    max-width: 100%;
+	    padding: 0 15px 90px 15px;
 	}
 	.pkgg-item {
 	    max-width: 450px;
 	    width: 100%;
 	    margin: 0 auto;
-	}
-	.pkg-grids-cntlr ul li {
-	    padding: 0 15px 115px 15px;
 	}
 	.pkggi-des{
 		margin-bottom: 10px;
@@ -280,6 +278,13 @@
 	.feat-img {
 	    height: 340px;
 	}
+	.pkg-grids-cntlr ul {
+	    margin: 0 -15px;
+	}
+	.pkggi-btns a:first-child {
+	    margin-right: 10px;
+	}
+
 
 
 
@@ -293,6 +298,12 @@
 @media(max-width: 359px){
 	.feat-img {
 	    height: 290px;
+	}
+	.cpkg-sec-entry-hdr .sec-entry-hdr-title{
+		font-size: 27px;
+	}
+	.pkggi-tt {
+	    font-size: 24px!important;
 	}
 
 }
