@@ -6,28 +6,9 @@
   <meta name="theme-color" content="#009fe1">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-
   <?php $favicon = get_theme_mod('favicon'); if(!empty($favicon)) { ?> 
   <link rel="shortcut icon" href="<?php echo $favicon; ?>" />
   <?php } ?>
-
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome/font-awesome.css">
-  
-  <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
-  <link rel="stylesheet" type="text/css" href="assets/fancybox3/dist/jquery.fancybox.min.css">
-  <link rel="stylesheet" type="text/css" href="assets/slick.slider/slick-theme.css">
-  <link rel="stylesheet" type="text/css" href="assets/slick.slider/slick.css">
-  <link rel="stylesheet" type="text/css" href="assets/select2/select2.min.css">
-  <link rel="stylesheet" type="text/css" href="assets/flatpickr/flatpickr.min.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="assets/fonts/custom-fonts.css">
-
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
-
   <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -42,9 +23,12 @@
     }else{
       $logo_tag = '';
     }
+    $time = get_field('time', 'options');
     $telephone = get_field('telephone', 'options');
-    $email = get_field('emailaddres', 'options');
     $sinfo = get_field('social_media', 'options');
+    $address = get_field('address', 'options');
+    $gurl = get_field('gurl', 'options');
+    $gmaplink = !empty($gurl)?$gurl: 'javascript:void()';
   ?>   
   <div class="page-body-cntlr">
     <div class="bdoverlay"></div>
@@ -57,27 +41,49 @@
               <div class="header-topbar-wrap hide-sm">
                 <div class="header-topbar">
                   <div class="hdr-details">
+                    <?php if( !empty($telephone) ): ?>
                     <div class="hdr-tel">
-                      <span>Call Today: <a href="tel:+971567372727">+971 56 737 2727</a></span>
+                      <span>Call Today: <a href="<?php echo phone_preg($telephone); ?>"><?php printf('%s', $telephone); ?></a></span>
                     </div>
+                    <?php endif; if( !empty($time) ): ?>
                     <div class="hdr-open-time">
-                      <span>Open Daily: <span class="open-time-schedule">08:00 TO 19:00</span></span>
+                      <span>Open Daily: <span class="open-time-schedule"><?php echo $time; ?></span></span>
                     </div>
+                    <?php endif; ?>
                   </div>
                   <div class="hdr-addr-socials-cntlr">
+                    <?php if( !empty($address) ): ?>
                     <div class="hdr-addr">
-                      <a target="_blank" href="#">
-                        <span>Jumeirah Fish Market, Jumeirah 1</span>
+                      <a target="_blank" href="<?php echo $gmaplink; ?>">
+                        <span><?php echo $address; ?></span>
                         <i><img src="<?php echo THEME_URI; ?>/assets/images/hdr-addr-icon.png" alt=""></i>
                       </a>
                     </div>
+                    <?php endif; if( $sinfo ): ?>
                     <div class="hdr-socials">
                       <ul class="reset-list">
-                        <li class="tiktok-icon"><a target="_blank" href="#"><img src="<?php echo THEME_URI; ?>/assets/images/hdr-tiktok-icon.png" alt=""></a></li>
-                        <li><a target="_blank" href="#"><img src="<?php echo THEME_URI; ?>/assets/images/hdr-facebook-icon.png" alt=""></a></li>
-                        <li><a target="_blank" href="#"><img src="<?php echo THEME_URI; ?>/assets/images/hdr-instragram-icon.png" alt=""></a></li>
+                        <?php if( !empty($sinfo['tiktok_url']) ): ?>
+                        <li class="tiktok-icon">
+                          <a target="_blank" href="<?php echo $sinfo['tiktok_url']; ?>">
+                            <img src="<?php echo THEME_URI; ?>/assets/images/hdr-tiktok-icon.png">
+                          </a>
+                        </li>
+                        <?php endif; if( !empty($sinfo['facebook_url']) ): ?>
+                        <li>
+                          <a target="_blank" href="<?php echo $sinfo['tiktok_url']; ?>">
+                            <img src="<?php echo THEME_URI; ?>/assets/images/hdr-facebook-icon.png">
+                          </a>
+                        </li>
+                        <?php endif; if( !empty($sinfo['instagram_url']) ): ?>
+                        <li>
+                          <a target="_blank" href="<?php echo $sinfo['instagram_url']; ?>">
+                            <img src="<?php echo THEME_URI; ?>/assets/images/hdr-instragram-icon.png">
+                          </a>
+                        </li>
+                        <?php endif; ?>
                       </ul>
                     </div>
+                    <?php endif; ?>
                   </div>
                 </div>
               </div>
@@ -101,21 +107,15 @@
                   </div>
                   <div class="hdr-menu">
                     <nav class="main-nav hide-sm">
-                      <ul class="clearfix reset-list">
-                        <li class="current-menu-item"><a href="#">HOME</a></li>
-                        <li class="menu-item-has-children">
-                          <a href="#">PACKAGES</a>
-                          <ul class="sub-menu">
-                            <li><a href="#">submenu 1</a></li>
-                            <li><a href="#">submenu 2</a></li>
-                            <li><a href="#">submenu 3</a></li>
-                          </ul>
-                        </li>
-                        <li><a href="#">ACTIVITIES</a></li>
-                        <li><a href="#">F.A.Q.</a></li>
-                        <li><a href="#">ABOUT US</a></li>
-                        <li><a href="#">CONTACT</a></li>
-                      </ul>
+                      <?php 
+                          $mmenuOptions = array( 
+                              'theme_location' => 'cbv_main_menu', 
+                              'menu_class' => 'clearfix reset-list',
+                              'container' => '',
+                              'container_class' => ''
+                            );
+                          wp_nav_menu( $mmenuOptions ); 
+                      ?>
                     </nav>
                     <div class="hamburgar-cntlr show-sm">
                       <div class="hamburger-icon">
@@ -137,11 +137,13 @@
       <div class="xs-pop-up-menu-inr">
         <div class="xs-pop-up-menu-top">
           <div class="logo-close-btn-cntlr">
+            <?php if( !empty($logo_tag) ): ?>
             <div class="xs-logo">
-              <a href="front-page.html">
-                <img src="<?php echo THEME_URI; ?>/assets/images/logo.png" alt="">
-              </a>
+             <a href="<?php echo esc_url(home_url('/')); ?>">
+                <?php echo $logo_tag; ?>
+               </a>
             </div>
+            <?php endif; ?>
             <div class="hamburgar-cntlr show-sm">
               <div class="hamburger-icon">
                 <span></span>
@@ -154,38 +156,54 @@
         <div class="xs-pop-menu-con">
           <div class="xs-menu">
             <nav class="main-nav">
-              <ul class="clearfix reset-list">
-                <li class="current-menu-item"><a href="#">HOME</a></li>
-                <li class="menu-item-has-children">
-                  <a href="#">PACKAGES</a>
-                  <ul class="sub-menu">
-                    <li><a href="#">submenu 1</a></li>
-                    <li><a href="#">submenu 2</a></li>
-                    <li><a href="#">submenu 3</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">ACTIVITIES</a></li>
-                <li><a href="#">F.A.Q.</a></li>
-                <li><a href="#">ABOUT US</a></li>
-                <li><a href="#">CONTACT</a></li>
-              </ul>
+              <?php 
+                  $mmenuOptions = array( 
+                      'theme_location' => 'cbv_main_menu', 
+                      'menu_class' => 'clearfix reset-list',
+                      'container' => '',
+                      'container_class' => ''
+                    );
+                  wp_nav_menu( $mmenuOptions ); 
+              ?>
             </nav>
           </div>
         </div>
         <div class="xs-pop-menu-btm">
+          <?php if( !empty($time) ): ?>
           <div class="hdr-open-time">
-            <span>Open Daily: <span class="open-time-schedule">08:00 TO 19:00</span></span>
+            <span>Open Daily: <span class="open-time-schedule"><?php echo $time; ?></span></span>
           </div>
+          <?php endif; if( !empty($telephone) ): ?>
           <div class="hdr-tel">
-            <span>Call Today: <a href="tel:+971567372727">+971 56 737 2727</a></span>
+            <span>Call Today: <a href="<?php echo phone_preg($telephone); ?>"><?php printf('%s', $telephone); ?></a></span>
           </div>
+          <?php endif; ?>
+
+          <?php if( $sinfo ): ?>
           <div class="hdr-socials">
             <ul class="reset-list">
-              <li><a target="_blank" href="#"><img src="<?php echo THEME_URI; ?>/assets/images/hdr-tiktok-icon.png" alt=""></a></li>
-              <li><a target="_blank" href="#"><img src="<?php echo THEME_URI; ?>/assets/images/hdr-facebook-icon.png" alt=""></a></li>
-              <li><a target="_blank" href="#"><img src="<?php echo THEME_URI; ?>/assets/images/hdr-instragram-icon.png" alt=""></a></li>
+              <?php if( !empty($sinfo['tiktok_url']) ): ?>
+              <li>
+                <a target="_blank" href="<?php echo $sinfo['tiktok_url']; ?>">
+                  <img src="<?php echo THEME_URI; ?>/assets/images/hdr-tiktok-icon.png">
+                </a>
+              </li>
+              <?php endif; if( !empty($sinfo['facebook_url']) ): ?>
+              <li>
+                <a target="_blank" href="<?php echo $sinfo['tiktok_url']; ?>">
+                  <img src="<?php echo THEME_URI; ?>/assets/images/hdr-facebook-icon.png">
+                </a>
+              </li>
+              <?php endif; if( !empty($sinfo['instagram_url']) ): ?>
+              <li>
+                <a target="_blank" href="<?php echo $sinfo['instagram_url']; ?>">
+                  <img src="<?php echo THEME_URI; ?>/assets/images/hdr-instragram-icon.png">
+                </a>
+              </li>
+              <?php endif; ?>
             </ul>
           </div>
+          <?php endif; ?>
         </div>
       </div>
     </div>
