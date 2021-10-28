@@ -9,8 +9,8 @@
       <div class="hm-banner-bg-black"></div>
       <div class="hm-video-cntlr">
         <video id="bnr-vdo" autoplay muted >
-          <source src="<?php echo THEME_URI; ?>/assets/images/videos/" type="video/mp4">
-          <source src="<?php echo THEME_URI; ?>/assets/images/videos/" type="video/mp4">
+          <source src="<?php echo THEME_URI; ?>/assets/images/videos/placeholder-video.mp4" type="video/mp4">
+          <source src="<?php echo THEME_URI; ?>/assets/images/videos/placeholder-video.mp4" type="video/mp4">
         </video>
       </div>
       <div class="hm-banner-bg inline-bg" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/hm-banner-bg.jpg');">

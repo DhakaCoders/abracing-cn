@@ -60,28 +60,7 @@ $mapcode = get_field('gmap_code', $thisID);
                 </div>
                 <div class="contact-form-wrp clearfix">
                   <div class="wpforms-container">
-                    <div class="wpforms-form needs-validation novalidate">
-                      <div class="wpforms-field-container">
-                        <div class="wpforms-field">
-                          <input type="text" name="name" placeholder="Your name" required="">
-                          <label id="wpforms-222-field_1-error" class="wpforms-error" for="wpforms-222-field_1">Check this field!</label>
-                        </div>
-                        <div class="wpforms-field">
-                          <input type="text" name="text" placeholder="Phone" required="">
-                          <label id="wpforms-222-field_1-error" class="wpforms-error" for="wpforms-222-field_1">Check this field!</label>
-                        </div>
-                        <div class="wpforms-field">
-                          <input type="email" name="text" placeholder="Email" required="">
-                          <label id="wpforms-222-field_1-error" class="wpforms-error" for="wpforms-222-field_1">Check this field!</label>
-                        </div>
-                        <div class="wpforms-field wpforms-field-textarea">
-                          <textarea name="message" placeholder="What you want to book?"></textarea>
-                        </div>
-                      </div>
-                      <div class="wpforms-submit-container">
-                        <button type="submit" name="submit" class="wpforms-submit">Submit</button>
-                      </div>
-                    </div>
+                    <?php if( !empty($shortcode) ) echo do_shortcode($shortcode); ?>
                   </div>
                 </div>
               </div>
