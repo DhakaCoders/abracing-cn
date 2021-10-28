@@ -616,6 +616,9 @@ body.allWork .hamburger-icon span:nth-child(3) {
 	.hamburgar-cntlr{
 		margin-left: auto;
 	}
+	nav.main-nav > ul > li > a:after{
+		content: none;
+	}
 }
 @media(max-width: 479px){
 	.xs-mobile-menu{
