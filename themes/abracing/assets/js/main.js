@@ -98,6 +98,7 @@ $('.fancybox').fancybox({
 }
 
 
+
 /**
 Responsive on 767px
 */
