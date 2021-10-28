@@ -6,12 +6,10 @@
     $logo_tag = '';
   }
   $telephone = get_field('telephone', 'options');
-  $fax = get_field('fax', 'options');
   $email = get_field('emailaddres', 'options');
   $address = get_field('address', 'options');
   $gurl = get_field('gurl', 'options');
   $gmaplink = !empty($gurl)?$gurl: 'javascript:void()';
-  $cooper = get_field('cooper_basin', 'options');
   $sinfo = get_field('social_media', 'options');
   $copyright_text = get_field('copyright_text', 'options');
 ?>
@@ -35,7 +33,7 @@
                   <?php endif; ?>
                 </div>
                 <div class="ftr-col ftr-col-02">
-                  <h6 class="ftr-title">mAIN links</h6>
+                  <h6 class="ftr-title"> Main links</h6>
                   <div class="ftr-col-menu">
                     <ul class="reset-list">
                       <li><a href="#">Home</a></li>
@@ -62,14 +60,31 @@
                   </div>
                 </div>
                 <div class="ftr-col ftr-col-04">
+                  <?php if( $sinfo ): ?>
                   <h6 class="ftr-title">FOLLOW US </h6>
                   <div class="ftr-col-menu">
                     <ul class="reset-list">
-                      <li><a href="#" target="_blank"><img src="<?php echo THEME_URI; ?>/assets/images/ftr-facebook.png"></a></li>
-                      <li><a href="#" target="_blank"><img src="<?php echo THEME_URI; ?>/assets/images/ftr-instagrame.png"></a></li>
-                      <li><a href="#" target="_blank"><img src="<?php echo THEME_URI; ?>/assets/images/ftr-tiktok.png"></a></li>
+                      <?php if( !empty($sinfo['facebook_url']) ): ?>
+                      <li>
+                        <a href="<?php echo $sinfo['facebook_url']; ?>" target="_blank">
+                          <img src="<?php echo THEME_URI; ?>/assets/images/ftr-facebook.png">
+                        </a>
+                      </li>
+                      <?php endif; if (!empty($sinfo['instagram_url'])): ?>
+                      <li>
+                        <a href="<?php echo $sinfo['instagram_url']; ?>" target="_blank">
+                          <img src="<?php echo THEME_URI; ?>/assets/images/ftr-instagrame.png">
+                        </a>
+                      </li>
+                      <?php endif; if (!empty($sinfo['tiktok_url'])): ?>
+                      <li>
+                        <a href="<?php echo $sinfo['tiktok_url']; ?>" target="_blank">
+                          <img src="<?php echo THEME_URI; ?>/assets/images/ftr-tiktok.png"></a>
+                      </li>
+                      <?php endif; ?>
                     </ul>
                   </div>
+                  <?php endif; ?>
                 </div>
               </div>
             </div>
@@ -81,7 +96,7 @@
           <div class="row">
             <div class="col-md-12">
               <div class="ftr-copyright">
-                <p>&copy;ABracing Watersports 2021. All Rights Reserved.</p>
+                <?php if( !empty( $copyright_text ) ) printf( '<p>%s</p>', $copyright_text); ?>
               </div>
             </div>
           </div>

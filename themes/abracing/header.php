@@ -178,6 +178,8 @@
             <span>Call Today: <a href="<?php echo phone_preg($telephone); ?>"><?php printf('%s', $telephone); ?></a></span>
           </div>
           <?php endif; ?>
+
+          <?php if( $sinfo ): ?>
           <div class="hdr-socials">
             <ul class="reset-list">
               <?php if( !empty($sinfo['tiktok_url']) ): ?>
@@ -201,6 +203,7 @@
               <?php endif; ?>
             </ul>
           </div>
+          <?php endif; ?>
         </div>
       </div>
     </div>
