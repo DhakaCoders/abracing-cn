@@ -2,6 +2,8 @@
 /*Template Name: Contact*/
 get_header();
 $thisID = get_the_ID();
+$title = get_field('custom_page_title', $thisID);
+$page_title = !empty($title) ? $title : get_the_title($thisID);
 $telephone = get_field('telephone', 'options');
 $address = get_field('address', 'options');
 $gurl = get_field('gurl', 'options');
@@ -19,7 +21,7 @@ $mapcode = get_field('gmap_code', $thisID);
       <div class="col-md-12">
         <div class="pg-banner-cntlr">
           <div class="pg-bnr-desc">
-            <h1 class="fl-h1 pg-bnr-title">Contact us</h1>
+            <h1 class="fl-h1 pg-bnr-title"><?php echo $page_title; ?></h1>
           </div>
         </div>
       </div>
