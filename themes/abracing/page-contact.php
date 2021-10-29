@@ -7,10 +7,10 @@ $page_title = !empty($title) ? $title : get_the_title($thisID);
 $telephone = get_field('telephone', 'options');
 $email = get_field('emailaddres', 'options');
 $gmaplink = !empty($gurl)?$gurl: 'javascript:void()';
+$address = $address_sec['address'];
 $mapcode = get_field('gmap_code', $thisID);
 $sinfo = get_field('social_media', 'options');
 $address_sec = get_field('cn_address', $thisID);
-$address = $address_sec['address'];
 $gurl = $address_sec['url'];
 ?>
 
@@ -41,7 +41,6 @@ $gurl = $address_sec['url'];
                   <?php endif; if( !empty($address) ): ?>
                   <div class="cntct-addres cntct-dtails">
                     <i><img src="<?php echo THEME_URI; ?>/assets/images/location-icon.png" alt=""></i>
-                    <!-- <a href="#">Jumeirah Fish Market, <br>Jumeirah 1, <br>Jumeirah - Dubai</a> -->
                     <?php printf('<a href="%s" target="_blank">%s</a>', $gmaplink, $address); ?>
                   </div>
                   <?php endif;?>
