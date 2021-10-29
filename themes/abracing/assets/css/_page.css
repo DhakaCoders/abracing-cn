@@ -173,7 +173,6 @@ ol li:before{
 /*page banner*/
 .page-banner{
 	position: relative;
-	overflow: hidden;
 }
 .bnr-btm-sketch{
 
