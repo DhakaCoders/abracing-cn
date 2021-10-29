@@ -69,44 +69,45 @@ if($showhide_story):
 
 
 
-<?php 
+<!-- <?php 
 $showhide_vision_mission = get_field('showhide_vision_mission', $thisID);
 if($showhide_vision_mission): 
 	$vision_mission_sec = get_field('vision_mission_sec', $thisID); 
 	if($vision_mission_sec ): 
-?>
+?> -->
 <section class="vision-mission-sec">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="vision-mission-con-cntlr">
-          <div class="vision-con-cntlr">
+          <div class="mission-vision-grid-col">
             <div class="vision-con-inner">
-              <div class="vision-des-cntlr mHc">
+              <div class="mission-vision-des-cntlr mHc">
                 <div class="sec-entry-hdr">
                   <h2 class="fl-h2 sec-entry-hdr-title">vision</h2>
-                  <p>We aspire to become the biggest Jet ski rental business in the Middle East.</p>       
+                </div> 
+                <p>We aspire to become the biggest Jet ski rental business in the Middle East.</p>         
               </div>
-              <div class="vision-img-cntlr has-inline-bg mHc1">
+              <div class="mission-vision-img-cntlr has-inline-bg mHc1">
                 <div class="vision-mission-top-sketch inline-bg" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/vision-mission-top-sketch.png);"></div>
                 <div class="vision-mission-btm-sketch inline-bg" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/vision-mission-btm-sketch.png);"></div>
-                <img src="<?php echo THEME_URI; ?>/assets/images/vision-img.jpg" alt="">
+                <img src="assets/images/vision-img.jpg" alt="">
                 <div class="inline-bg mis-vis-img" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/vision-img.jpg);"></div>
               </div>
             </div>
           </div>
-          <div class="mission-con-cntlr">
+          <div class="mission-vision-grid-col">
             <div class="mission-con-inner">
-              <div class="mission-des-cntlr mHc">
+              <div class="mission-vision-des-cntlr mHc">
                 <div class="sec-entry-hdr">
                   <h2 class="fl-h2 sec-entry-hdr-title">mission</h2>
                 </div>
                 <p>To provide the ultimate Dubai Tour Jet ski Experience for our customers while placing a high premium on the safety of our clients</p>
               </div>
-              <div class="mission-img-cntlr has-inline-bg mHc1">
+              <div class="mission-vision-img-cntlr has-inline-bg mHc1">
                 <div class="vision-mission-top-sketch inline-bg" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/vision-mission-top-sketch.png);"></div>
                 <div class="vision-mission-btm-sketch inline-bg" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/vision-mission-btm-sketch.png);"></div>
-                <img src="<?php echo THEME_URI; ?>/assets/images/mission-img.jpg" alt="">
+                <img src="assets/images/mission-img.jpg" alt="">
                 <div class="inline-bg mis-vis-img" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/mission-img.jpg);"></div>
               </div>
             </div>
@@ -116,7 +117,7 @@ if($showhide_vision_mission):
     </div>
   </div>
 </section>
-<?php endif; endif;?>
+<!-- <?php endif; endif;?> -->
 
 
 <?php 
