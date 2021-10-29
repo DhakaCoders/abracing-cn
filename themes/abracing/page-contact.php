@@ -14,23 +14,7 @@ $address = $address_sec['address'];
 $gurl = $address_sec['url'];
 ?>
 
-<section class="page-banner">
-  <div class="bnr-btm-sketch" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/bnr-btm-sketch.png');"></div>
-  <div class="pg-banner-bg-black"></div>
-  <div class="pg-banner-bg" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/contact-banner-bg.jpg');">
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="pg-banner-cntlr">
-          <div class="pg-bnr-desc">
-            <h1 class="fl-h1 pg-bnr-title"><?php echo $page_title; ?></h1>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>    
-</section>
+<?php get_template_part('templates/page', 'banner'); ?>
 
 <section class="contact-form-sec-wrp">
   <div class="container">
