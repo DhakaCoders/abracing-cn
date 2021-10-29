@@ -125,6 +125,7 @@
 }
 .ab-wpa-des blockquote p{
 	margin-bottom: 20px;
+	text-transform: uppercase;
 }
 .ab-wpa-des blockquote p:last-child{
 	margin-bottom: 0;
@@ -158,6 +159,7 @@
 
 .ab-wave-trills-title{
 	color: #fff;
+	text-transform: uppercase;
 	text-shadow: 1px 2px 2px rgba(0,0,0,0.31);
 }
 
