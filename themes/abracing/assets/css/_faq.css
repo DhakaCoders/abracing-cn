@@ -27,6 +27,7 @@
 	cursor: pointer;
 	position: relative;
 	font-family: 'LuckiestGuy-Regular';
+	text-transform: uppercase;
 }
 .ab-faq-accordion-title:after{
 	content: '\f078';

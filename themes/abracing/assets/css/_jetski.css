@@ -57,6 +57,7 @@
 .race-booking-grd-item-cntlr .race-booking-grd-item-title{
 	margin-bottom: 25px;
 	color: #fff;
+	text-transform: uppercase;
 }
 .race-booking-grd-item-col-2 .race-booking-grd-item-desc{
 	padding-bottom: 35px;
@@ -129,6 +130,7 @@
 	font-size: 30px;
 	color: #fff;
 	margin-bottom: 25px;
+	text-transform: uppercase;
 }
 .features-sec-col ul li{
 	color: #fff;
