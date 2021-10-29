@@ -129,6 +129,7 @@
     -webkit-transition: all 0.5s!important;
     cursor: pointer!important;
     padding: 14px 15px!important;
+    padding-top: 16px!important;
     text-align: center;
     border-radius: 7px!important;
     font-family: 'Montserrat', sans-serif;
@@ -532,11 +533,17 @@ textarea {
         padding: 0;
         padding-bottom: 30px;
     }
-    .contact-form-dsc-wrp,
-    .contact-form-info-cntlr {
-        max-width: 400px;
+    .contact-form-dsc-wrp{
+        max-width: 570px;
+        width: 100%;
         margin: 0 auto;
         padding: 0;
+    }
+    .contact-form-info-cntlr{
+        max-width: 400px;
+        width: 100%;
+        margin: 0 auto;
+        padding-left: 0;
     }
     .cntct-mail.cntct-dtails,
     .cntct-tel.cntct-dtails {
@@ -593,7 +600,7 @@ textarea {
     }
     .cntct-addres.cntct-dtails i{
         top: 19px;
-        left: 4px;
+        left: 20px;
     }
     .cntct-addres.cntct-dtails,
     .cntct-mail.cntct-dtails,
@@ -617,6 +624,9 @@ textarea {
     }
     .our-location-form-dtails{
         padding-bottom: 50px;
+    }
+    .cntct-dtails > i {
+        left: 15px;
     }
 
 }
@@ -650,6 +660,25 @@ textarea {
     .hm-cntct-addres a,
     .hm-cntct-tel span{
         font-size: 15px;
+    }
+    .cntct-addres.cntct-dtails i{
+        left: 4px;
+    }
+    .cntct-dtails > i {
+        left: 0;
+    }
+    .cntct-dtails a{
+        font-size: 17px;
+        padding-left: 60px;
+    }
+    .cntct-dtails > i > img{
+        max-width: 32px;
+    }
+    .cntct-addres.cntct-dtails i img {
+        max-height: 35px;
+    }
+    .cntct-addres.cntct-dtails i{
+        top: 18px;
     }
 }
 
