@@ -1,5 +1,13 @@
 <?php get_header(); ?>
-<section class="hm-banner "><!-- has-video -->
+
+
+<?php  
+  $hbanner = get_field('banner', HOMEID);
+  if($hbanner):
+    $banner = !empty($hbanner['image'])? cbv_get_image_src( $hbanner['image'] ): '';
+    $hasvideo = !empty($hbanner['ogg_video']) || !empty($hbanner['mp4_video'])? true:false;
+?>
+<section class="hm-banner <?php echo $hasvideo?' has-video':''; ?>">
   <div class="bnr-btm-sketch" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/bnr-btm-sketch.png');"></div>
   <div class="hm-bnr-down-scroll scrollto UpdownAnimate" data-to="#ab-pkg-section">
     <div class="hm-bnr-down-scroll-icon">
@@ -7,27 +15,40 @@
     </div>
   </div>
   <div class="hm-banner-bg-black"></div>
+  <?php 
+  if( $hasvideo ): 
+    $video_urlmp4 = $hbanner['mp4_video'];
+    $video_urlogg = $hbanner['ogg_video'];
+  ?>
   <div class="hm-video-cntlr">
-    <video id="bnr-vdo" autoplay muted >
-      <source src="<?php echo THEME_URI; ?>/assets/images/videos/placeholder-video.mp4" type="video/mp4">
-      <source src="<?php echo THEME_URI; ?>/assets/images/videos/placeholder-video.mp4" type="video/mp4">
+    <video id="bnr-vdo" autoplay muted loop>
+      <?php if( !empty($video_urlogg)){ ?>
+      <source src="<?php echo $video_urlogg; ?>" type="video/ogg">
+      <?php } 
+      if( !empty($video_urlmp4)){
+      ?>
+      <source src="<?php echo $video_urlmp4; ?>" type="video/mp4">
+      <?php } ?>
     </video>
   </div>
-  <div class="hm-banner-bg inline-bg" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/hm-banner-bg.jpg');">
+  <?php endif; ?>
+  <div class="hm-banner-bg inline-bg" style="background:url(<?php echo $banner; ?>);">
   </div>
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="hm-banner-cntlr">
           <div class="hm-bnr-desc">
-            <h1 class="fl-h1 hm-bnr-title">Your ultimate Jet <br>ski rental in Dubai</h1>
+            <?php 
+              if( !empty($hbanner['title']) ) printf( '<h1 class="fl-h1 hm-bnr-title">%s</h1>', $hbanner['title'] ); 
+            ?>
           </div>
         </div>
       </div>
     </div>
   </div>    
 </section>
-
+<?php endif; ?>
 <section class="ab-pkg-section" id="ab-pkg-section">
     <div class="container">
       <div class="row">
