@@ -5,10 +5,13 @@ $thisID = get_the_ID();
 $title = get_field('custom_page_title', $thisID);
 $page_title = !empty($title) ? $title : get_the_title($thisID);
 $telephone = get_field('telephone', 'options');
-$address = get_field('address', 'options');
-$gurl = get_field('gurl', 'options');
+$email = get_field('emailaddres', 'options');
 $gmaplink = !empty($gurl)?$gurl: 'javascript:void()';
 $mapcode = get_field('gmap_code', $thisID);
+$sinfo = get_field('social_media', 'options');
+$address_sec = get_field('cn_address', $thisID);
+$address = $address_sec['address'];
+$gurl = $address_sec['url'];
 ?>
 
 <section class="page-banner">
@@ -38,25 +41,40 @@ $mapcode = get_field('gmap_code', $thisID);
             <div class="contact-form-lft">
               <div class="contact-form-info-cntlr">
                 <div class="contact-form-info">
+                  <?php if( !empty($telephone) ): ?>
                   <div class="cntct-tel cntct-dtails">
                     <i><img src="<?php echo THEME_URI; ?>/assets/images/tel-icon.png" alt=""></i>
-                    <a href="tel:+971567372727"><i><img src="<?php echo THEME_URI; ?>/assets/images/whatsapp-icon.png" alt=""></i><span>+971 56 737 2727</span></a>
+                    <a href="tel:<?php echo phone_preg($telephone); ?>">
+                      <i><img src="<?php echo THEME_URI; ?>/assets/images/whatsapp-icon.png" alt=""></i>
+                      <?php printf('<span>%s</span>', $telephone); ?>
+                    </a>
                   </div>
+                  <?php endif; if( !empty($email) ): ?>
                   <div class="cntct-mail cntct-dtails">
                     <i><img src="<?php echo THEME_URI; ?>/assets/images/mail-icon.png" alt=""></i>
-                    <a href="mailto:booking@abracing.com">booking@abracing.com</a>
+                    <a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>
                   </div>
+                  <?php endif; if( !empty($address) ): ?>
                   <div class="cntct-addres cntct-dtails">
                     <i><img src="<?php echo THEME_URI; ?>/assets/images/location-icon.png" alt=""></i>
-                    <a href="#">Jumeirah Fish Market, <br>Jumeirah 1, <br>Jumeirah - Dubai</a>
+                    <!-- <a href="#">Jumeirah Fish Market, <br>Jumeirah 1, <br>Jumeirah - Dubai</a> -->
+                    <?php printf('<a href="%s" target="_blank">%s</a>', $gmaplink, $address); ?>
                   </div>
+                  <?php endif;?>
                 </div>
               </div>
             </div>
             <div class="contact-form-rgt">
+              <?php 
+                $form = get_field('form', $thisID);
+                if($form):
+                  $shortcode = $form['shortcode'];
+              ?>
               <div class="contact-form-dsc-wrp">
                 <div class="cntct-form-heading">
-                  <h2 class="fl-h4 cntct-form-title">Get in touch. We'd love to <br>hear from you.</h2>
+                  <?php 
+                    if( !empty($form['title']) ) printf( '<h2 class="fl-h4 cntct-form-title">%s</h2>', $form['title'] );
+                  ?>
                 </div>
                 <div class="contact-form-wrp clearfix">
                   <div class="wpforms-container">
@@ -64,6 +82,7 @@ $mapcode = get_field('gmap_code', $thisID);
                   </div>
                 </div>
               </div>
+              <?php endif; ?>
             </div>
           </div>
         </div>  
