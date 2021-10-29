@@ -92,11 +92,10 @@
 .mission-vision-des-cntlr .sec-entry-hdr{
 	padding-bottom: 30px;
 }
-.mission-img-cntlr img{
+.mission-vision-img-cntlr img{
 	height: 100%;
 }
-.vision-img-cntlr,
-.mission-img-cntlr{
+.mission-vision-img-cntlr{
 	position: relative;
 }
 .vision-mission-top-sketch{
