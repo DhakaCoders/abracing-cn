@@ -1,0 +1,290 @@
+.ab-faq-sec{
+	padding-bottom: 500px;
+}
+
+.ab-faq-sec .sec-entry-hdr{
+	padding-bottom: 60px;
+}
+
+.ab-faq-sec-inr{
+	max-width: 800px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.ab-faq-accordion-item{
+	margin-bottom: 20px;
+	
+}
+
+.ab-faq-accordion-title{
+	background: #009fe1;
+	color: #fff;
+	padding: 15px 50px 15px 15px;
+	font-size: 18px;
+	margin-bottom: 0;
+	cursor: pointer;
+	position: relative;
+	font-family: 'LuckiestGuy-Regular';
+}
+.ab-faq-accordion-title:after{
+	content: '\f078';
+	font-family: 'Font Awesome 5 Free';
+    font-weight: 600;
+    text-decoration: inherit;
+    color: #000000;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    right: 22px;
+    font-size: 25px;
+    -webkit-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.ab-faq-accordion-title.active:after{
+	content: '\f077';
+}
+.ab-faq-accordion-title.active{
+	border-bottom: 2px solid #008ed9;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+.ab-faq-accordion-des{
+	padding: 12px 65px 1px 15px;
+	display: none;
+}
+
+.ab-faq-accordion-item{
+	border: 2px solid #008ed9;
+	border-radius: 8px;
+}
+
+
+
+
+
+/*extra*/
+
+.ab-wpa-sec{
+	padding: 200px 0 215px;
+	background-color: #fafafa;
+	position: relative;
+}
+
+.ab-wpa-rgt-bg{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 65%;
+}
+
+.ab-wpa-sec-inr{
+	display: flex;
+	flex-wrap: wrap;
+}
+.ab-wpa-des{
+	width: 50%;
+	padding-right: 30px;
+	order: 1;
+}
+.ab-wpa-img{
+	width: 50%;
+	order: 2;
+}
+
+
+.ab-wpa-sec .sec-entry-hdr {
+    padding-top: 0;
+    padding-bottom: 20px;
+}
+
+
+.ab-wpa-des blockquote{
+	padding-left: 25px;
+	position: relative;
+}
+.ab-wpa-des blockquote:after{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 8px;
+	width: 3px;
+	height: 100%;
+	background: #009fe1;
+}
+
+.ab-blockquote-title{
+	margin-bottom: 25px;
+}
+.ab-wpa-des blockquote p{
+	margin-bottom: 20px;
+}
+.ab-wpa-des blockquote p:last-child{
+	margin-bottom: 0;
+}
+
+
+
+.ab-wave-trills-sec{
+	padding: 110px 0 180px;
+	position: relative;
+}
+
+.ab-wave-trills-overlay{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-repeat: repeat;
+}
+
+.ab-wave-trills-btm-skew{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 75px;
+	background-repeat: repeat-x;
+}
+
+.ab-wave-trills-title{
+	color: #fff;
+	text-shadow: 1px 2px 2px rgba(0,0,0,0.31);
+}
+
+.ab-wave-trills-title span{
+	color: #fff;
+	margin-bottom: 40px;
+	font-size: 47px;
+	text-shadow: 1px 2px 2px rgba(0,0,0,0.31);
+}
+
+.ab-wave-trills-sec-inr > a{
+	margin-left: 8px;
+}
+.ab-wave-trills-sec .ab-btn{
+	min-width: 154px;
+}
+
+
+@media(max-width: 1199px){
+	.ab-faq-sec {
+	    padding-bottom: 450px;
+	}
+	.ab-wpa-sec {
+	    padding: 160px 0 170px;
+	}
+	.ab-wave-trills-sec{
+		padding: 90px 0 150px;
+	}
+	.ab-wave-trills-title span{
+		font-size: 38px;
+	}
+	.ab-wpa-rgt-bg{
+		width: 75%;
+	}
+	.ab-wave-trills-sec .ab-btn {
+	    min-width: 140px;
+	}
+}
+
+@media(max-width: 991px){
+	.ab-faq-sec {
+	    padding-bottom: 400px;
+	}
+	.ab-faq-accordion-title{
+		font-size: 17px;
+	}
+	.ab-faq-accordion-title:after{
+		font-size: 23px;
+	}
+	.ab-wpa-sec {
+	    padding: 130px 0 140px;
+	}
+	.ab-wpa-rgt-bg{
+		width: 100%;
+	}
+	.ab-blockquote-title br{
+		display: none;
+	}
+	.ab-wave-trills-sec{
+		padding: 80px 0 100px;
+	}
+	.ab-wave-trills-title span{
+	    font-size: 31px;
+	}
+	.ab-wpa-sec-inr{
+		display: block;
+	}
+	.ab-wpa-img {
+	    width: 100%;
+	    margin-bottom: 30px;
+	}
+	.ab-wpa-des {
+	    width: 100%;
+	    padding-right: 0;
+	}
+	.ab-wpa-img-inr{
+		max-width: 450px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+}
+
+@media(max-width: 767px){
+	.ab-faq-sec {
+	    padding-bottom: 300px;
+	}
+	.ab-faq-accordion-title {
+	    font-size: 16px;
+	}
+	.ab-faq-accordion-title:after {
+	    font-size: 21px;
+	}
+	.ab-blockquote-title {
+	    margin-bottom: 18px;
+	}
+	.ab-wpa-des blockquote p {
+	    margin-bottom: 15px;
+	}
+	.ab-wpa-sec {
+	    padding: 100px 0 110px;
+	}
+	.ab-wpa-rgt-bg{
+		width: 100%;
+	}
+	.ab-wave-trills-title span{
+		margin-bottom: 30px;
+		font-size: 28px;
+	}
+}
+
+@media(max-width: 575px){
+	.ab-faq-sec {
+	    padding-bottom: 250px;
+	}
+}
+
+@media(max-width: 479px){
+	.ab-faq-accordion-title {
+	    padding: 15px 35px 15px 15px;
+	}
+	.ab-faq-accordion-title:after {
+	    font-size: 18px;
+	    right: 10px;
+	}
+	.ab-faq-sec {
+	    padding-bottom: 200px;
+	}
+}
+
+

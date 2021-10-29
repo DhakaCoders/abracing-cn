@@ -145,12 +145,12 @@ ol li:before{
 	content: none;
 }
 
-
+/*ab button start*/
 .ab-btn{
 	min-width: 130px;
-	padding: 7px 20px;
-	border-top-left-radius: 20px;
-	border-bottom-right-radius:20px;
+	padding: 9px 20px;
+	border-top-left-radius: 30px;
+	border-bottom-right-radius:30px;
 	font-family: 'LuckiestGuy-Regular';
 	font-size: 18px;
 	background-color: #ff1000;
@@ -163,16 +163,19 @@ ol li:before{
 .ab-btn:hover{
 	border: 1px solid #ff1000;
 	color: #ff1000;
-	background-color: #fff;
+	background-color: #333;
 	transition: all .5s;
 	-webkit-transition: all .5s;
 	-moz-transition: all .5s;
 }
+/*ab button end*/
+
 
 
 /*page banner*/
 .page-banner{
 	position: relative;
+	overflow: hidden;
 }
 .bnr-btm-sketch{
 
@@ -227,11 +230,6 @@ ol li:before{
 }
 
 
-/**/
-body.error404 .page-bnr-404{
-	height: 350px!important;
-}
-
 
 /*responsive*/
 @media(max-width: 1199px){
@@ -275,9 +273,6 @@ body.error404 .page-bnr-404{
 	}
 	.ab-btn{
 		min-width: 95px;
-	}
-	body.error404 .page-bnr-404{
-		height: 300px!important;
 	}
 
 }
