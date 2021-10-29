@@ -338,6 +338,7 @@ textarea {
 .our-location-info-title{
     line-height: 1.2;
     margin-bottom: 40px;
+    text-transform: uppercase;
 }
 .hm-cntct-tel a,
 .hm-cntct-addres a{
