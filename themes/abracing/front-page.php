@@ -279,6 +279,7 @@ if($showhide_location):
     </div>
   </div>
 
+  <?php if( !empty($location_sec['gmap_code']) ): ?>
   <div class="our-location-map-cntlr">
     <div class="our-location-google-map-wrp">
       <div class="our-location-google-map">
@@ -286,7 +287,7 @@ if($showhide_location):
       </div> 
     </div>
   </div>
-
+  <?php endif; ?>
 </section>
 
 <?php endif; endif;?>
