@@ -228,6 +228,11 @@ ol li:before{
 }
 
 
+/**/
+body.error404 .page-bnr-404{
+	height: 350px!important;
+}
+
 
 /*responsive*/
 @media(max-width: 1199px){
@@ -271,6 +276,9 @@ ol li:before{
 	}
 	.ab-btn{
 		min-width: 95px;
+	}
+	body.error404 .page-bnr-404{
+		height: 300px!important;
 	}
 
 }
