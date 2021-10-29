@@ -246,7 +246,7 @@ nav.main-nav > ul > li > a:hover:after{
 }
 
 nav.main-nav > ul > li.current-menu-item a{
-	color: #ccc;
+	text-shadow: none;
 }
 
 nav.main-nav > ul > li.menu-item-has-children ul.sub-menu {

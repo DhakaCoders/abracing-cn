@@ -148,9 +148,9 @@ ol li:before{
 
 .ab-btn{
 	min-width: 130px;
-	padding: 9px 20px;
-	border-top-left-radius: 30px;
-	border-bottom-right-radius:30px;
+	padding: 7px 20px;
+	border-top-left-radius: 20px;
+	border-bottom-right-radius:20px;
 	font-family: 'LuckiestGuy-Regular';
 	font-size: 18px;
 	background-color: #ff1000;
