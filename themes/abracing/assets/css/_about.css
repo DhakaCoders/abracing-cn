@@ -67,17 +67,13 @@
 .vision-mission-con-cntlr {
     display: flex;
     flex-wrap: wrap;
+    margin-right: -45px;
+    margin-left: -45px;
 }
 .mission-vision-grid-col {
     width: 50%;
-}
-.vision-con-inner {
-    padding-left: 15px;
-    padding-right: 60px;
-}
-.mission-con-inner{
-	padding-right: 15px;
     padding-left: 60px;
+    padding-right: 60px;
 }
 .mission-vision-des-cntlr {
     text-align: center;
@@ -88,6 +84,7 @@
 }
 .vision-mission-sec{
 	padding-top: 90px;
+	overflow: hidden;
 }
 .mission-vision-des-cntlr .sec-entry-hdr{
 	padding-bottom: 30px;
@@ -246,11 +243,13 @@
 	.mission-vision-des-cntlr{
 		padding-bottom: 35px;
 	}
-	.vision-con-inner{
-		padding-right: 50px;
+	.vision-mission-con-cntlr {
+	    margin-right: -35px;
+	    margin-left: -35px;
 	}
-	.mission-con-inner{
-		padding-left: 50px;
+	.mission-vision-grid-col {
+	    padding-left: 50px;
+	    padding-right: 50px;
 	}
 	.ab-about-grid-sec{
 		padding-top: 110px;
@@ -310,11 +309,13 @@
 	.has-inline-bg .mis-vis-img{
 		height: 300px;
 	}
-	.vision-con-inner{
-		padding-right: 40px;
+	.vision-mission-con-cntlr {
+	    margin-right: -25px;
+	    margin-left: -25px;
 	}
-	.mission-con-inner{
-		padding-left: 40px;
+	.mission-vision-grid-col {
+	    padding-left: 40px;
+	    padding-right: 40px;
 	}
 	.ab-about-grid-sec{
 		padding-top: 85px;
@@ -388,13 +389,9 @@
 	.mission-vision-grid-col {
 	    width: 100%;
 	}
-	.vision-con-inner{
-		padding-right: 0;
-		padding-left: 0;
-	}
-	.mission-con-inner{
-		padding-left: 0;
-		padding-right: 0;
+	.mission-vision-grid-col {
+	    padding-left: 0px;
+	    padding-right: 0px;
 	}
 	.ab-about-grids-cntlr ul{
 		margin: 0;
