@@ -1,5 +1,22 @@
-<footer class="footer-wrp inline-bg" style="background-image: url(assets/images/ftr-bg.png);">
-      <span class="ftr-top-angle" style="background-image: url(assets/images/ftr-top-angle.png);"></span>
+<?php 
+  $logoObj = get_field('ftlogo', 'options');
+  if( is_array($logoObj) ){
+    $logo_tag = '<img src="'.$logoObj['url'].'" alt="'.$logoObj['alt'].'" title="'.$logoObj['title'].'">';
+  }else{
+    $logo_tag = '';
+  }
+  $telephone = get_field('telephone', 'options');
+  $email = get_field('emailaddres', 'options');
+  $address = get_field('address', 'options');
+  $gurl = get_field('gurl', 'options');
+  $gmaplink = !empty($gurl)?$gurl: 'javascript:void()';
+  $sinfo = get_field('social_media', 'options');
+  $copyright_text = get_field('copyright_text', 'options');
+?>
+
+
+<footer class="footer-wrp inline-bg" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/ftr-bg.png);">
+      <span class="ftr-top-angle" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/ftr-top-angle.png);"></span>
       <div class="ftr-top">
         <div class="ftr-top-border"></div>
         <div class="container">
@@ -7,48 +24,68 @@
             <div class="col-md-12">
               <div class="ftr-top-inr">
                 <div class="ftr-col ftr-col-01">
+                  <?php if( !empty($logo_tag) ): ?>
                   <div class="ftr-logo">
-                    <a href="#">
-                      <img src="assets/images/ftr-logo.png">
+                    <a href="<?php echo esc_url(home_url('/')); ?>">
+                      <?php echo $logo_tag; ?>
                     </a>
                   </div>
+                  <?php endif; ?>
                 </div>
                 <div class="ftr-col ftr-col-02">
-                  <h6 class="ftr-title">mAIN links</h6>
+                  <h6 class="ftr-title"> Main links</h6>
                   <div class="ftr-col-menu">
-                    <ul class="reset-list">
-                      <li><a href="#">Home</a></li>
-                      <li><a href="#">Packages</a></li>
-                      <li><a href="#">Activities</a></li>
-                      <li><a href="#">Book Now</a></li>
-                      <li><a href="#">F.A.Q.S</a></li>
-                      <li><a href="#">About us</a></li>
-                      <li><a href="#">Contact us</a></li>
-                    </ul>
+                    <?php 
+                      $ftmenuOptions1 = array( 
+                          'theme_location' => 'cbv_footer_menu1', 
+                          'menu_class' => 'reset-list',
+                          'container' => '',
+                          'container_class' => ''
+                        );
+                      wp_nav_menu( $ftmenuOptions1 ); 
+                    ?>
                   </div>
                 </div>
                 <div class="ftr-col ftr-col-03">
                   <h6 class="ftr-title">our services</h6>
                   <div class="ftr-col-menu">
-                    <ul class="reset-list">
-                      <li><a href="#">Fly Board</a></li>
-                      <li><a href="#">Paddle board</a></li>
-                      <li><a href="#">Jet Ski</a></li>
-                      <li><a href="#">Banana Boat</a></li>
-                      <li><a href="#">Crazy Shark</a></li>
-                      <li><a href="#">Yamaha Jet Ski</a></li>
-                    </ul>
+                    <?php 
+                      $ftmenuOptions2 = array( 
+                          'theme_location' => 'cbv_footer_menu2', 
+                          'menu_class' => 'reset-list',
+                          'container' => '',
+                          'container_class' => ''
+                        );
+                      wp_nav_menu( $ftmenuOptions2 ); 
+                    ?>
                   </div>
                 </div>
                 <div class="ftr-col ftr-col-04">
+                  <?php if( $sinfo ): ?>
                   <h6 class="ftr-title">FOLLOW US </h6>
                   <div class="ftr-col-menu">
                     <ul class="reset-list">
-                      <li><a href="#" target="_blank"><img src="assets/images/ftr-facebook.png"></a></li>
-                      <li><a href="#" target="_blank"><img src="assets/images/ftr-instagrame.png"></a></li>
-                      <li><a href="#" target="_blank"><img src="assets/images/ftr-tiktok.png"></a></li>
+                      <?php if( !empty($sinfo['facebook_url']) ): ?>
+                      <li>
+                        <a href="<?php echo $sinfo['facebook_url']; ?>" target="_blank">
+                          <img src="<?php echo THEME_URI; ?>/assets/images/ftr-facebook.png">
+                        </a>
+                      </li>
+                      <?php endif; if (!empty($sinfo['instagram_url'])): ?>
+                      <li>
+                        <a href="<?php echo $sinfo['instagram_url']; ?>" target="_blank">
+                          <img src="<?php echo THEME_URI; ?>/assets/images/ftr-instagrame.png">
+                        </a>
+                      </li>
+                      <?php endif; if (!empty($sinfo['tiktok_url'])): ?>
+                      <li>
+                        <a href="<?php echo $sinfo['tiktok_url']; ?>" target="_blank">
+                          <img src="<?php echo THEME_URI; ?>/assets/images/ftr-tiktok.png"></a>
+                      </li>
+                      <?php endif; ?>
                     </ul>
                   </div>
+                  <?php endif; ?>
                 </div>
               </div>
             </div>
@@ -60,7 +97,7 @@
           <div class="row">
             <div class="col-md-12">
               <div class="ftr-copyright">
-                <p>&copy;ABracing Watersports 2021. All Rights Reserved.</p>
+                <?php if( !empty( $copyright_text ) ) printf( '<p>%s</p>', $copyright_text); ?>
               </div>
             </div>
           </div>
@@ -68,21 +105,6 @@
       </div>
     </footer>
   </div>
-
-
-<script src="https://code.jquery.com/jquery-3.0.0.js"></script>
-<script src="https://code.jquery.com/jquery-migrate-3.0.0.js"></script>
-<script src="assets/js/popper.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/ie10-viewport-bug-workaround.js"></script>
-<script src="assets/fancybox3/dist/jquery.fancybox.min.js"></script>
-<script src="assets/slick.slider/slick.js"></script>
-<script src="assets/js/jquery.matchHeight-min.js"></script>
-<script src="assets/js/app.js"></script>
-<script src="assets/js/wow.min.js"></script>
-<script src="assets/select2/select2.min.js"></script>
-<script src="assets/flatpickr/flatpickr.js"></script>
-<script src="assets/js/main.js"></script>
-
+<?php wp_footer(); ?>
 </body>
 </html>

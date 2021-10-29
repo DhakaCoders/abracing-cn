@@ -63,6 +63,7 @@
 	-webkit-transform: translateX(-50%);
 	-o-transform: translateX(-50%);
 	z-index: 10;
+	cursor: pointer;
 }
 .bnr-btm-sketch{
 	height: 75px;
@@ -74,7 +75,6 @@
 	left: 0;
 	right: 0;
 	z-index: 9;
-	cursor: pointer;
 }
 
 

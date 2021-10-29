@@ -35,6 +35,7 @@
 .our-story-sec-title{
 	color: #fff;
 	margin-bottom: 50px;
+	text-transform: uppercase;
 }
 .our-story-sec-title-cntlr p{
 	color: #fff;
@@ -66,19 +67,15 @@
 .vision-mission-con-cntlr {
     display: flex;
     flex-wrap: wrap;
+    margin-right: -45px;
+    margin-left: -45px;
 }
-.vision-con-cntlr, .mission-con-cntlr {
+.mission-vision-grid-col {
     width: 50%;
-}
-.vision-con-inner {
-    padding-left: 15px;
+    padding-left: 60px;
     padding-right: 60px;
 }
-.mission-con-inner{
-	padding-right: 15px;
-    padding-left: 60px;
-}
-.mission-des-cntlr, .vision-des-cntlr {
+.mission-vision-des-cntlr {
     text-align: center;
     max-width: 420px;
     width: 100%;
@@ -87,15 +84,15 @@
 }
 .vision-mission-sec{
 	padding-top: 90px;
+	overflow: hidden;
 }
-.mission-des-cntlr .sec-entry-hdr, .vision-des-cntlr .sec-entry-hdr{
+.mission-vision-des-cntlr .sec-entry-hdr{
 	padding-bottom: 30px;
 }
-.mission-img-cntlr img{
+.mission-vision-img-cntlr img{
 	height: 100%;
 }
-.vision-img-cntlr,
-.mission-img-cntlr{
+.mission-vision-img-cntlr{
 	position: relative;
 }
 .vision-mission-top-sketch{
@@ -140,6 +137,7 @@
 }
 .ab-about-grid-item-title{
 	margin-bottom: 18px;
+	text-transform: uppercase;
 }
 .ab-about-grid-item-img {
     margin-bottom: 30px;
@@ -187,10 +185,10 @@
 	.vision-mission-sec{
 		padding-top: 70px;
 	}
-	.mission-des-cntlr .sec-entry-hdr, .vision-des-cntlr .sec-entry-hdr{
+	.mission-vision-des-cntlr .sec-entry-hdr{
 		padding-bottom: 25px;
 	}
-	.mission-des-cntlr, .vision-des-cntlr{
+	.mission-vision-des-cntlr{
 		padding-bottom: 45px;
 	}
 	.ab-about-grid-sec{
@@ -239,17 +237,19 @@
 	.vision-mission-sec{
 		padding-top: 55px;
 	}
-	.mission-des-cntlr .sec-entry-hdr, .vision-des-cntlr .sec-entry-hdr{
+	.mission-vision-des-cntlr .sec-entry-hdr{
 		padding-bottom: 20px;
 	}
-	.mission-des-cntlr, .vision-des-cntlr{
+	.mission-vision-des-cntlr{
 		padding-bottom: 35px;
 	}
-	.vision-con-inner{
-		padding-right: 50px;
+	.vision-mission-con-cntlr {
+	    margin-right: -35px;
+	    margin-left: -35px;
 	}
-	.mission-con-inner{
-		padding-left: 50px;
+	.mission-vision-grid-col {
+	    padding-left: 50px;
+	    padding-right: 50px;
 	}
 	.ab-about-grid-sec{
 		padding-top: 110px;
@@ -266,6 +266,9 @@
 	}
 	.ab-about-grid-item-img i img {
 	    max-height: 60px;
+	}
+	.our-story-sec-title{
+		margin-bottom: 30px;
 	}
 }
 @media (max-width: 991px){
@@ -297,20 +300,22 @@
 	.vision-mission-sec{
 		padding-top: 35px;
 	}
-	.mission-des-cntlr, .vision-des-cntlr{
+	.mission-vision-des-cntlr{
 		padding-bottom: 20px;
 	}
-	.mission-des-cntlr .sec-entry-hdr, .vision-des-cntlr .sec-entry-hdr{
+	.mission-vision-des-cntlr .sec-entry-hdr{
 		padding-bottom: 10px;
 	}
 	.has-inline-bg .mis-vis-img{
 		height: 300px;
 	}
-	.vision-con-inner{
-		padding-right: 40px;
+	.vision-mission-con-cntlr {
+	    margin-right: -25px;
+	    margin-left: -25px;
 	}
-	.mission-con-inner{
-		padding-left: 40px;
+	.mission-vision-grid-col {
+	    padding-left: 40px;
+	    padding-right: 40px;
 	}
 	.ab-about-grid-sec{
 		padding-top: 85px;
@@ -381,16 +386,12 @@
 	.vision-mission-con-cntlr{
 		margin: 0 -20px;
 	}
-	.vision-con-cntlr, .mission-con-cntlr {
+	.mission-vision-grid-col {
 	    width: 100%;
 	}
-	.vision-con-inner{
-		padding-right: 0;
-		padding-left: 0;
-	}
-	.mission-con-inner{
-		padding-left: 0;
-		padding-right: 0;
+	.mission-vision-grid-col {
+	    padding-left: 0px;
+	    padding-right: 0px;
 	}
 	.ab-about-grids-cntlr ul{
 		margin: 0;

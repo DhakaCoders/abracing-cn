@@ -1,5 +1,5 @@
 .ab-faq-sec{
-	padding-bottom: 500px;
+	padding-bottom: 100px;
 }
 
 .ab-faq-sec .sec-entry-hdr{
@@ -27,6 +27,7 @@
 	cursor: pointer;
 	position: relative;
 	font-family: 'LuckiestGuy-Regular';
+	text-transform: uppercase;
 }
 .ab-faq-accordion-title:after{
 	content: '\f078';
@@ -70,13 +71,13 @@
 
 /*extra*/
 
-.ab-wpa-sec{
+.ab-sports-activities-sec{
 	padding: 200px 0 215px;
 	background-color: #fafafa;
 	position: relative;
 }
 
-.ab-wpa-rgt-bg{
+.ab-sports-activities-rgt-bg{
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -84,32 +85,32 @@
 	width: 65%;
 }
 
-.ab-wpa-sec-inr{
+.ab-sports-activities-sec-inr{
 	display: flex;
 	flex-wrap: wrap;
 }
-.ab-wpa-des{
+.ab-sports-activities-des{
 	width: 50%;
 	padding-right: 30px;
 	order: 1;
 }
-.ab-wpa-img{
+.ab-sports-activities-img{
 	width: 50%;
 	order: 2;
 }
 
 
-.ab-wpa-sec .sec-entry-hdr {
+.ab-sports-activities-sec .sec-entry-hdr {
     padding-top: 0;
     padding-bottom: 20px;
 }
 
 
-.ab-wpa-des blockquote{
+.ab-sports-activities-des blockquote{
 	padding-left: 25px;
 	position: relative;
 }
-.ab-wpa-des blockquote:after{
+.ab-sports-activities-des blockquote:after{
 	content: "";
 	position: absolute;
 	top: 0;
@@ -121,22 +122,25 @@
 
 .ab-blockquote-title{
 	margin-bottom: 25px;
+	text-transform: uppercase;
 }
-.ab-wpa-des blockquote p{
+.ab-sports-activities-des blockquote p{
 	margin-bottom: 20px;
 }
-.ab-wpa-des blockquote p:last-child{
+.ab-sports-activities-des blockquote p:last-child{
 	margin-bottom: 0;
 }
 
 
 
-.ab-wave-trills-sec{
+
+
+.ab-get-ready-sec{
 	padding: 110px 0 180px;
 	position: relative;
 }
 
-.ab-wave-trills-overlay{
+.ab-get-ready-overlay{
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -145,93 +149,93 @@
 	background-repeat: repeat;
 }
 
-.ab-wave-trills-btm-skew{
+.ab-get-ready-btm-skew{
 	position: absolute;
-	bottom: 0;
+	bottom: -1px;
 	left: 0;
 	right: 0;
 	height: 75px;
 	background-repeat: repeat-x;
 }
 
-.ab-wave-trills-title{
+.ab-get-ready-title{
 	color: #fff;
+	text-transform: uppercase;
 	text-shadow: 1px 2px 2px rgba(0,0,0,0.31);
 }
 
-.ab-wave-trills-title span{
+.ab-get-ready-title span{
+	display: block;
 	color: #fff;
+	padding-top: 20px;
 	margin-bottom: 40px;
 	font-size: 47px;
 	text-shadow: 1px 2px 2px rgba(0,0,0,0.31);
 }
 
-.ab-wave-trills-sec-inr > a{
+.ab-get-ready-sec-inr > a{
 	margin-left: 8px;
 }
-.ab-wave-trills-sec .ab-btn{
+.ab-get-ready-sec .ab-btn{
 	min-width: 154px;
 }
 
 
 @media(max-width: 1199px){
 	.ab-faq-sec {
-	    padding-bottom: 450px;
+	    padding-bottom: 50px;
 	}
-	.ab-wpa-sec {
+	.ab-sports-activities-sec {
 	    padding: 160px 0 170px;
 	}
-	.ab-wave-trills-sec{
+	.ab-get-ready-sec{
 		padding: 90px 0 150px;
 	}
-	.ab-wave-trills-title span{
+	.ab-get-ready-title span{
 		font-size: 38px;
 	}
-	.ab-wpa-rgt-bg{
+	.ab-sports-activities-rgt-bg{
 		width: 75%;
 	}
-	.ab-wave-trills-sec .ab-btn {
+	.ab-get-ready-sec .ab-btn {
 	    min-width: 140px;
 	}
 }
 
 @media(max-width: 991px){
-	.ab-faq-sec {
-	    padding-bottom: 400px;
-	}
 	.ab-faq-accordion-title{
 		font-size: 17px;
 	}
 	.ab-faq-accordion-title:after{
 		font-size: 23px;
 	}
-	.ab-wpa-sec {
+	.ab-sports-activities-sec {
 	    padding: 130px 0 140px;
 	}
-	.ab-wpa-rgt-bg{
+	.ab-sports-activities-rgt-bg{
 		width: 100%;
 	}
 	.ab-blockquote-title br{
 		display: none;
 	}
-	.ab-wave-trills-sec{
+	.ab-get-ready-sec{
 		padding: 80px 0 100px;
 	}
-	.ab-wave-trills-title span{
+	.ab-get-ready-title span{
 	    font-size: 31px;
 	}
-	.ab-wpa-sec-inr{
+	.ab-sports-activities-sec-inr{
 		display: block;
 	}
-	.ab-wpa-img {
+	.ab-sports-activities-img {
 	    width: 100%;
 	    margin-bottom: 30px;
 	}
-	.ab-wpa-des {
+	.ab-sports-activities-des {
 	    width: 100%;
 	    padding-right: 0;
 	}
-	.ab-wpa-img-inr{
+	.ab-sports-activities-img-inr{
 		max-width: 450px;
 		width: 100%;
 		margin-left: auto;
@@ -241,9 +245,6 @@
 }
 
 @media(max-width: 767px){
-	.ab-faq-sec {
-	    padding-bottom: 300px;
-	}
 	.ab-faq-accordion-title {
 	    font-size: 16px;
 	}
@@ -253,26 +254,23 @@
 	.ab-blockquote-title {
 	    margin-bottom: 18px;
 	}
-	.ab-wpa-des blockquote p {
+	.ab-sports-activities-des blockquote p {
 	    margin-bottom: 15px;
 	}
-	.ab-wpa-sec {
+	.ab-sports-activities-sec {
 	    padding: 100px 0 110px;
 	}
-	.ab-wpa-rgt-bg{
+	.ab-sports-activities-rgt-bg{
 		width: 100%;
 	}
-	.ab-wave-trills-title span{
+	.ab-get-ready-title span{
 		margin-bottom: 30px;
 		font-size: 28px;
+		padding-top: 15px;
 	}
 }
 
-@media(max-width: 575px){
-	.ab-faq-sec {
-	    padding-bottom: 250px;
-	}
-}
+
 
 @media(max-width: 479px){
 	.ab-faq-accordion-title {

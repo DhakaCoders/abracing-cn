@@ -5,7 +5,7 @@
   $bannerID = get_field('banner', $thisID);
   $banner = !empty($bannerID)? cbv_get_image_src($bannerID): banner_placeholder();
 ?>
-<section class="page-banner">
+<!-- <section class="page-banner">
   <div class="page-banner-bg-black"></div>
   <div class="page-bnr-bg inline-bg" style="background-image: url('<?php echo $banner; ?>');"></div>
   <div class="container">
@@ -19,4 +19,22 @@
       </div>
     </div>
   </div>
+</section> -->
+
+<section class="page-banner">
+  <div class="bnr-btm-sketch" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/bnr-btm-sketch.png');"></div>
+  <div class="pg-banner-bg-black"></div>
+  <div class="pg-banner-bg" style="background-image: url('<?php echo $banner; ?>');">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="pg-banner-cntlr">
+          <div class="pg-bnr-desc">
+            <h1 class="fl-h1 pg-bnr-title"><?php echo $page_title; ?></h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>    
 </section>
