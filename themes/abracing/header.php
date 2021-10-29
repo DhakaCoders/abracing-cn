@@ -43,7 +43,7 @@
                   <div class="hdr-details">
                     <?php if( !empty($telephone) ): ?>
                     <div class="hdr-tel">
-                      <span>Call Today: <a href="<?php echo phone_preg($telephone); ?>"><?php printf('%s', $telephone); ?></a></span>
+                      <span>Call Today: <a href="tel:<?php echo phone_preg($telephone); ?>"><?php printf('%s', $telephone); ?></a></span>
                     </div>
                     <?php endif; if( !empty($time) ): ?>
                     <div class="hdr-open-time">
@@ -175,7 +175,7 @@
           </div>
           <?php endif; if( !empty($telephone) ): ?>
           <div class="hdr-tel">
-            <span>Call Today: <a href="<?php echo phone_preg($telephone); ?>"><?php printf('%s', $telephone); ?></a></span>
+            <span>Call Today: <a href="tel:<?php echo phone_preg($telephone); ?>"><?php printf('%s', $telephone); ?></a></span>
           </div>
           <?php endif; ?>
 
