@@ -148,9 +148,9 @@ ol li:before{
 
 .ab-btn{
 	min-width: 130px;
-	padding: 9px 20px;
-	border-top-left-radius: 30px;
-	border-bottom-right-radius:30px;
+	padding: 7px 20px;
+	border-top-left-radius: 18px;
+	border-bottom-right-radius:18px;
 	font-family: 'LuckiestGuy-Regular';
 	font-size: 18px;
 	background-color: #ff1000;
@@ -173,7 +173,6 @@ ol li:before{
 /*page banner*/
 .page-banner{
 	position: relative;
-	overflow: hidden;
 }
 .bnr-btm-sketch{
 
@@ -256,8 +255,6 @@ body.error404 .page-bnr-404{
 	.ab-btn {
 	    font-size: 13.5px;
 	    min-width: 80px;
-	    border-top-left-radius: 22px;
-	    border-bottom-right-radius: 22px;
 	}
 
 
