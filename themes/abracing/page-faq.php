@@ -8,73 +8,44 @@ $thisID = get_the_ID();
 
 
 
-
+<?php 
+$faq_sec = get_field('faq_sec', $thisID); 
+if($faq_sec ): 
+?>
 <section class="ab-faq-sec">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="ab-faq-sec-inr">
           <div class="sec-entry-hdr">
-              <h2 class="fl-h2 sec-entry-hdr-title">FREQUENTLY ASKED QUESTIONS</h2>
+          	<?php 
+            	if( !empty($faq_sec['title']) ) printf( '<h2 class="fl-h2 sec-entry-hdr-title">%s</h2>', $faq_sec['title'] );
+          	?>
           </div>
+      	  <?php
+		   $args = array( 'post_type' => 'faq', 'posts_per_page' => -1 );
+		   $loop = new WP_Query( $args );  
+		   if ( $loop->have_posts() ) : 
+		  ?>
           <div class="ab-faq-accordion">
+          	<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
             <div class="ab-faq-accordion-item">
               <div class="ab-faq-accordion-hdr">
-                <h6 class="ab-faq-accordion-title">I Have Never Driven A Jet Ski Can I Take Part In The Trip</h6>
+                <h6 class="ab-faq-accordion-title"><?php the_title();?></h6>
               </div>
               <div class="ab-faq-accordion-des">
-                <p>Yes, our instructors are here to take care of you as well as explain to you how to use the Jet Ski</p>
+                <?php the_content(); ?>
               </div>
             </div>
-            <div class="ab-faq-accordion-item">
-              <div class="ab-faq-accordion-hdr">
-                <h6 class="ab-faq-accordion-title">I Have Never Driven A Jet Ski Can I Take Part In The Trip</h6>
-              </div>
-              <div class="ab-faq-accordion-des">
-                <p>Yes, our instructors are here to take care of you as well as explain to you how to use the Jet Ski</p>
-              </div>
-            </div>
-            <div class="ab-faq-accordion-item">
-              <div class="ab-faq-accordion-hdr">
-                <h6 class="ab-faq-accordion-title">I Have Never Driven A Jet Ski Can I Take Part In The Trip</h6>
-              </div>
-              <div class="ab-faq-accordion-des">
-                <p>Yes, our instructors are here to take care of you as well as explain to you how to use the Jet Ski</p>
-              </div>
-            </div>
-            <div class="ab-faq-accordion-item">
-              <div class="ab-faq-accordion-hdr">
-                <h6 class="ab-faq-accordion-title">I Have Never Driven A Jet Ski Can I Take Part In The Trip</h6>
-              </div>
-              <div class="ab-faq-accordion-des">
-                <p>Yes, our instructors are here to take care of you as well as explain to you how to use the Jet Ski</p>
-              </div>
-            </div>
+            <?php endwhile; wp_reset_postdata(); ?>
           </div>
+		  <?php endif; ?> 
         </div>
       </div>
     </div>
   </div>
 </section>
-
-<!-- <section class="contact-follow-us-sec">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="follow-us-sec-entry-hdr">
-          <h2 class="follow-us-sec-title fl-h4">FOLLOW US</h2>
-        </div>
-        <div class="follow-us-socials">
-          <ul class="reset-list">
-            <li><a href="#" target="_blank"><i><img src="assets/images/flw-us-tiktok-icon.png" alt=""></i></a></li>
-            <li><a href="#" target="_blank"><i><img src="assets/images/flw-us-facebook-icon.png" alt=""></i></a></li>
-            <li><a href="#" target="_blank"><i><img src="assets/images/flw-us-instragram-icon.png" alt=""></i></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
+<?php endif; ?>
 
 <?php 
 $sinfo = get_field('social_media', 'options');
