@@ -69,55 +69,46 @@ if($showhide_story):
 
 
 
-<!-- <?php 
+<?php 
 $showhide_vision_mission = get_field('showhide_vision_mission', $thisID);
 if($showhide_vision_mission): 
 	$vision_mission_sec = get_field('vision_mission_sec', $thisID); 
 	if($vision_mission_sec ): 
-?> -->
+?>
 <section class="vision-mission-sec">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="vision-mission-con-cntlr">
+          <?php 
+          	foreach( $vision_mission_sec as $vmgrd ): 
+          		$VMGrdFeaImg = !empty($vmgrd['image'])? cbv_get_image_src( $vmgrd['image'] ): '';  
+          ?>
           <div class="mission-vision-grid-col">
-            <div class="vision-con-inner">
+            <div class="mission-vision-grid-col-inner">
               <div class="mission-vision-des-cntlr mHc">
                 <div class="sec-entry-hdr">
-                  <h2 class="fl-h2 sec-entry-hdr-title">vision</h2>
+                  <?php 
+                    if( !empty($vmgrd['titel']) ) printf( '<h2 class="fl-h2 sec-entry-hdr-title">%s</h2>', $vmgrd['titel']); 
+                 ?>
                 </div> 
-                <p>We aspire to become the biggest Jet ski rental business in the Middle East.</p>         
+                <?php if( !empty($vmgrd['description']) ) echo wpautop($vmgrd['description']); ?>         
               </div>
               <div class="mission-vision-img-cntlr has-inline-bg mHc1">
                 <div class="vision-mission-top-sketch inline-bg" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/vision-mission-top-sketch.png);"></div>
                 <div class="vision-mission-btm-sketch inline-bg" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/vision-mission-btm-sketch.png);"></div>
-                <img src="assets/images/vision-img.jpg" alt="">
-                <div class="inline-bg mis-vis-img" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/vision-img.jpg);"></div>
+                <?php echo cbv_get_image_tag( $vmgrd['image'] ); ?>
+                <div class="inline-bg mis-vis-img" style="background-image:url(<?php echo $VMGrdFeaImg; ?>);"></div>
               </div>
             </div>
           </div>
-          <div class="mission-vision-grid-col">
-            <div class="mission-con-inner">
-              <div class="mission-vision-des-cntlr mHc">
-                <div class="sec-entry-hdr">
-                  <h2 class="fl-h2 sec-entry-hdr-title">mission</h2>
-                </div>
-                <p>To provide the ultimate Dubai Tour Jet ski Experience for our customers while placing a high premium on the safety of our clients</p>
-              </div>
-              <div class="mission-vision-img-cntlr has-inline-bg mHc1">
-                <div class="vision-mission-top-sketch inline-bg" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/vision-mission-top-sketch.png);"></div>
-                <div class="vision-mission-btm-sketch inline-bg" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/vision-mission-btm-sketch.png);"></div>
-                <img src="assets/images/mission-img.jpg" alt="">
-                <div class="inline-bg mis-vis-img" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/mission-img.jpg);"></div>
-              </div>
-            </div>
-          </div>
+          <?php endforeach; ?>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- <?php endif; endif;?> -->
+<?php endif; endif;?>
 
 
 <?php 
@@ -137,8 +128,7 @@ if($showhide_grids):
               <div class="ab-about-grid-item">
                 <div class="ab-about-grid-item-img mHc">
                   <i>
-                  	<?php echo !empty($grid['image'])? cbv_get_image_tag($grid['image']):''; ?>
-                    <!-- <img src="<?php echo THEME_URI; ?>/assets/images/ab-about-grid-item-img-1.png" alt=""> -->
+                  	<?php echo !empty($grid['icon'])? cbv_get_image_tag($grid['icon']):''; ?>
                   </i>
                 </div>
                 <?php 
