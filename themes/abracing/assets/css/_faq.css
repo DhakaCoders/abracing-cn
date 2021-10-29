@@ -122,10 +122,10 @@
 
 .ab-blockquote-title{
 	margin-bottom: 25px;
+	text-transform: uppercase;
 }
 .ab-wpa-des blockquote p{
 	margin-bottom: 20px;
-	text-transform: uppercase;
 }
 .ab-wpa-des blockquote p:last-child{
 	margin-bottom: 0;
