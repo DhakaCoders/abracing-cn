@@ -6,11 +6,12 @@ $title = get_field('custom_page_title', $thisID);
 $page_title = !empty($title) ? $title : get_the_title($thisID);
 $telephone = get_field('telephone', 'options');
 $email = get_field('emailaddres', 'options');
-$gmaplink = !empty($gurl)?$gurl: 'javascript:void()';
-$address = $address_sec['address'];
+
 $mapcode = get_field('gmap_code', $thisID);
 $sinfo = get_field('social_media', 'options');
 $address_sec = get_field('cn_address', $thisID);
+$gmaplink = !empty($gurl)?$gurl: 'javascript:void()';
+$address = $address_sec['address'];
 $gurl = $address_sec['url'];
 ?>
 
@@ -40,7 +41,7 @@ $gurl = $address_sec['url'];
                   </div>
                   <?php endif; if( !empty($address) ): ?>
                   <div class="cntct-addres cntct-dtails">
-                    <i><img src="<?php echo THEME_URI; ?>/assets/images/location-icon.png" alt=""></i>
+                    <i><img src="<?php echo THEME_URI; ?>/assets/images/location-icon-red.png" alt=""></i>
                     <?php printf('<a href="%s" target="_blank">%s</a>', $gmaplink, $address); ?>
                   </div>
                   <?php endif;?>

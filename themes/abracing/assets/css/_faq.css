@@ -1,5 +1,5 @@
 .ab-faq-sec{
-	padding-bottom: 500px;
+	padding-bottom: 100px;
 }
 
 .ab-faq-sec .sec-entry-hdr{
@@ -183,7 +183,7 @@
 
 @media(max-width: 1199px){
 	.ab-faq-sec {
-	    padding-bottom: 450px;
+	    padding-bottom: 50px;
 	}
 	.ab-sports-activities-sec {
 	    padding: 160px 0 170px;
@@ -203,9 +203,6 @@
 }
 
 @media(max-width: 991px){
-	.ab-faq-sec {
-	    padding-bottom: 400px;
-	}
 	.ab-faq-accordion-title{
 		font-size: 17px;
 	}
@@ -248,9 +245,6 @@
 }
 
 @media(max-width: 767px){
-	.ab-faq-sec {
-	    padding-bottom: 300px;
-	}
 	.ab-faq-accordion-title {
 	    font-size: 16px;
 	}
@@ -276,11 +270,7 @@
 	}
 }
 
-@media(max-width: 575px){
-	.ab-faq-sec {
-	    padding-bottom: 250px;
-	}
-}
+
 
 @media(max-width: 479px){
 	.ab-faq-accordion-title {
