@@ -128,31 +128,34 @@
 
 
 
-<!-- <?php 
-$showhide_sports_activities = get_field('showhide_sports_activities', $thisID);
+<?php 
+$showhide_sports_activities = get_field('showhide_sports_activities', HOMEID);
 if($showhide_sports_activities): 
   $sports_activities = get_field('sports_activities', HOMEID); 
   if($sports_activities ): 
-?> -->
-<section class="ab-wpa-sec">
-  <span class="ab-wpa-rgt-bg inline-bg" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/wpa-rgt-bg.png);"></span>
+?>
+<section class="ab-sports-activities-sec">
+  <span class="ab-sports-activities-rgt-bg inline-bg" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/wpa-rgt-bg.png);"></span>
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <div class="ab-wpa-sec-inr">
-          <div class="ab-wpa-img">
-            <div class="ab-wpa-img-inr">
-              <img src="<?php echo THEME_URI; ?>/assets/images/wpa-img.png">
+        <div class="ab-sports-activities-sec-inr">
+          <div class="ab-sports-activities-img">
+            <div class="ab-sports-activities-img-inr">
+              <?php echo !empty($sports_activities['image'])? cbv_get_image_tag($sports_activities['image']):''; ?>
             </div>
           </div>
-          <div class="ab-wpa-des">
+          <div class="ab-sports-activities-des">
             <div class="sec-entry-hdr sec-entry-hdr-lft">
-              <h2 class="fl-h3 sec-entry-hdr-title">Say Yes to <br> WATER SPORTS ACTIVITIES</h2>
+              <?php 
+                if( !empty($sports_activities['title']) ) printf( '<h2 class="fl-h3 sec-entry-hdr-title">%s</h2>', $sports_activities['title'] );
+              ?>
             </div>
             <blockquote>
-              <h3 class="fl-h5 ab-blockquote-title">We want our clients to feel awesome <br> and unique.</h3>
-              <p>Abracing team is made up of water sports professionals with years of combined experience. The team has participated in several domestic and international competitions around the world achieving top ranks in Jet ski, wake board, fly board, and power boat racing.</p>
-              <p>Throughout the past few years, the team has achieved more than 40 trophies in total.</p>
+              <?php 
+                if( !empty($sports_activities['sub_title']) ) printf( '<h3 class="fl-h5 ab-blockquote-title">%s</h3>', $sports_activities['sub_title'] );
+                if( !empty($sports_activities['description']) ) echo wpautop( $sports_activities['description'] );
+              ?>
             </blockquote>
           </div>
         </div>
@@ -160,7 +163,7 @@ if($showhide_sports_activities):
     </div>
   </div>
 </section>
-<!-- <?php endif; endif;?> -->
+<?php endif; endif;?>
 
 
 
@@ -169,16 +172,22 @@ $showhide_get_ready = get_field('showhide_get_ready', HOMEID);
 if($showhide_get_ready): 
   $get_ready_sec = get_field('get_ready_sec', HOMEID); 
   if($get_ready_sec ): 
+    $GetReadySecFeaImg = !empty($get_ready_sec['image'])? cbv_get_image_src( $get_ready_sec['image'] ): '';
 ?>
-<section class="ab-wave-trills-sec inline-bg" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/wave-trills-bg.png);">
-  <div class="ab-wave-trills-overlay" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/wave-trills-overlay-bg.png);"></div>
-  <div class="ab-wave-trills-btm-skew" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/wave-trills-skew.png);"></div>
+<section class="ab-get-ready-sec inline-bg" style="background-image: url(<?php echo $GetReadySecFeaImg; ?>);">
+  <div class="ab-get-ready-overlay" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/wave-trills-overlay-bg.png);"></div>
+  <div class="ab-get-ready-btm-skew" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/wave-trills-skew.png);"></div>
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <div class="ab-wave-trills-sec-inr">
-          <h2 class="ab-wave-trills-title fl-h1">get ready <br> <span>FOR WAVE THRILLS!</span></h2>
-          <a class="ab-btn" href="#">BOOK NOW</a>
+        <div class="ab-get-ready-sec-inr">
+          <?php 
+            if( !empty($get_ready_sec['title']) ) printf( '<h2 class="ab-get-ready-title fl-h1">%s</h2>', $get_ready_sec['title'] );
+            $getReadSeclink = $get_ready_sec['link'];
+            if( is_array( $getReadSeclink ) &&  !empty( $getReadSeclink['url'] ) ){
+                printf('<a class="ab-btn" href="%s" target="%s">%s</a>', $getReadSeclink['url'], $getReadSeclink['target'], $getReadSeclink['title']); 
+            }
+          ?>
         </div>
       </div>
     </div>
