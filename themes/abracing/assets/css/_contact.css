@@ -251,19 +251,19 @@ textarea {
   opacity: 1;
 }
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.wpforms-has-error textarea.wpforms-error::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: #D61D1D!important;
+  color: #acacac!important;
   opacity: 1;
 }
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.wpforms-has-error textarea.wpforms-error::-moz-placeholder { /* Firefox 19+ */
-  color: #D61D1D!important;
+  color: #acacac!important;
   opacity: 1;
 }
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.wpforms-has-error textarea.wpforms-error:-ms-input-placeholder { /* IE 10+ */
-  color: #D61D1D!important;
+  color: #acacac!important;
   opacity: 1;
 }
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.wpforms-has-error textarea.wpforms-error:-moz-placeholder { /* Firefox 18- */
-  color: #D61D1D!important;
+  color: #acacac!important;
   opacity: 1;
 }
 
