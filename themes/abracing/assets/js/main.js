@@ -309,9 +309,7 @@ if( $('.pdtSinglePageSmGllarySlider').length ){
 }
 
 
-$('.fancybox-button').on('click',function(){
-  $('.pdtSinglePageGllarySlider').slick('refresh');
-});
+
 
 
 $('.wpforms-field-select select').select2();
