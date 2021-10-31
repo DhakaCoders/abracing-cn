@@ -98,6 +98,20 @@ $('.fancybox').fancybox({
 }
 
 
+/*if($('.fancyboxLauncher').length){
+$('.fancyboxLauncher').fancybox({
+    //openEffect  : 'none',
+    //closeEffect : 'none'
+    
+  });
+
+}*/
+/*$(".fancyboxLauncher").on("click", function(){
+    $(".fancybox").eq(0).trigger("click");
+    return false;
+});*/
+
+
 
 /**
 Responsive on 767px
