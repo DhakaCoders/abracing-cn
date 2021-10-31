@@ -310,7 +310,6 @@ if( $('.pdtSinglePageSmGllarySlider').length ){
 
 
 $('.fancybox-button').on('click',function(){
-  $('.pdtSinglePageGllarySlider').slick('setPosition');
   $('.pdtSinglePageGllarySlider').slick('refresh');
 });
 
