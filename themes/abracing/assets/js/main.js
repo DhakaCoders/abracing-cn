@@ -308,6 +308,13 @@ if( $('.pdtSinglePageSmGllarySlider').length ){
     });
 }
 
+
+$('.fancybox-button').on('click',function(){
+  $('.pdtSinglePageGllarySlider').slick('setPosition');
+  $('.pdtSinglePageGllarySlider').slick('refresh');
+});
+
+
 $('.wpforms-field-select select').select2();
 $('.select-2-cntlr').select2();
 
