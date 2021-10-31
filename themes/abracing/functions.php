@@ -69,7 +69,6 @@ Includes->>
 include_once(THEME_DIR .'/inc/widgets-area.php');
 include_once(THEME_DIR .'/inc/breadcrumbs.php');
 include_once(THEME_DIR .'/inc/cbv-functions.php');
-//include_once(THEME_DIR .'/inc/ajax-services-load.php');
 /**
 ACF Option pages->>
 */

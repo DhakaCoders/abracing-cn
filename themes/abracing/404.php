@@ -1,11 +1,11 @@
  <?php 
 get_header(); 
+$banner = banner_placeholder();
 ?>
-
 <section class="page-banner page-bnr-404">
   <div class="bnr-btm-sketch" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/bnr-btm-sketch.png');"></div>
   <div class="pg-banner-bg-black"></div>
-  <div class="pg-banner-bg" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/about-banner-bg.jpg');">
+  <div class="pg-banner-bg" style="background-image: url('<?php echo $banner; ?>');">
   </div>
   <div class="container">
     <div class="row">

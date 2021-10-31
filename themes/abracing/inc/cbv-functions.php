@@ -212,59 +212,24 @@ function banner_placeholder($format = 'src'){
 
 }
 
-function news_placeholder($format = 'src'){
+function activities_placeholder($format = 'src'){
   $placehoder = get_field('placeholder', 'options');
   if( !empty($placehoder) ){
       if( $format == 'src' ){
-        $placeholder = !empty($placehoder['news'])? cbv_get_image_src($placehoder['news']):'';
+        $placeholder = !empty($placehoder['activities'])? cbv_get_image_src($placehoder['activities']):'';
       }else{
-        $placeholder = !empty($placehoder['news'])? cbv_get_image_tag($placehoder['news']):'';
+        $placeholder = !empty($placehoder['activities'])? cbv_get_image_tag($placehoder['activities']):'';
       }
       return $placeholder;
   }
   return '';
 
 }
-function cabin_placeholder($format = 'src'){
-  $placehoder = get_field('placeholder', 'options');
-  if( !empty($placehoder) ){
-      if( $format == 'src' ){
-        $placeholder = !empty($placehoder['cabin'])? cbv_get_image_src($placehoder['cabin']):'';
-      }else{
-        $placeholder = !empty($placehoder['cabin'])? cbv_get_image_tag($placehoder['cabin']):'';
-      }
-      return $placeholder;
-  }
-  return '';
 
-}
-function career_placeholder($format = 'src'){
-  $placehoder = get_field('placeholder', 'options');
-  if( !empty($placehoder) ){
-      if( $format == 'src' ){
-        $placeholder = !empty($placehoder['career'])? cbv_get_image_src($placehoder['career']):'';
-      }else{
-        $placeholder = !empty($placehoder['career'])? cbv_get_image_tag($placehoder['career']):'';
-      }
-      return $placeholder;
-  }
-  return '';
-
-}
 function bv_get_current_year(){
     return date('Y');
 }
 add_shortcode( 'cyear', 'bv_get_current_year' );
-
-function cbv_get_excerpt(){
-  global $post;
-  $link = '<a href="'. get_permalink($post->ID) . '">'.__(' ....more', 'postat').'</a>';
-  $excerpt = explode(' ', get_the_excerpt());
-  //array_pop($excerpt);
-  $excerpt = implode(" ",$excerpt);
-  $excerpt .= $link;
-  return wpautop($excerpt);
-}
 
 add_action('admin_head', 'cbv_admin_style');
 function cbv_admin_style(){
@@ -275,4 +240,13 @@ function cbv_admin_style(){
     $output .= '</style>';
     echo $output;
   }
+}
+
+function cbv_currency_symbol(){
+  $currency_name = get_field('currency_name', 'options');
+  if( empty($currency_name) ){
+    $currency_name = 'AED';
+  }
+
+  return $currency_name;
 }

@@ -6,8 +6,6 @@ $thisID = get_the_ID();
 
 <?php get_template_part('templates/page', 'banner'); ?>
 
-
-
 <?php 
 $faq_sec = get_field('faq_sec', $thisID); 
 if($faq_sec ): 

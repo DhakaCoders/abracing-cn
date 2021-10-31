@@ -2,12 +2,8 @@
 /*Template Name: About*/
 get_header();
 $thisID = get_the_ID();
-?>
+get_template_part('templates/page', 'banner'); 
 
-<?php get_template_part('templates/page', 'banner'); ?>
-
-
-<?php 
 $showhide = get_field('showhide', $thisID);
 if($showhide): 
 	$intro = get_field('introsec', $thisID); 
@@ -28,8 +24,6 @@ if($showhide):
   </div>
 </section>
 <?php endif; endif;?>
-
-
 <?php 
 $showhide_story = get_field('showhide_story', $thisID);
 if($showhide_story): 
@@ -66,9 +60,6 @@ if($showhide_story):
   </div>
 </section>
 <?php endif; endif;?>
-
-
-
 <?php 
 $showhide_vision_mission = get_field('showhide_vision_mission', $thisID);
 if($showhide_vision_mission): 
@@ -109,8 +100,6 @@ if($showhide_vision_mission):
   </div>
 </section>
 <?php endif; endif;?>
-
-
 <?php 
 $showhide_grids = get_field('showhide_grids', $thisID);
 if($showhide_grids): 
@@ -147,5 +136,4 @@ if($showhide_grids):
   </div>
 </section>
 <?php endif; endif;?>
-
 <?php get_footer(); ?>

@@ -1,11 +1,9 @@
-<?php get_header(); ?>
-
-
-<?php  
-  $hbanner = get_field('banner', HOMEID);
-  if($hbanner):
-    $banner = !empty($hbanner['image'])? cbv_get_image_src( $hbanner['image'] ): '';
-    $hasvideo = !empty($hbanner['ogg_video']) || !empty($hbanner['mp4_video'])? true:false;
+<?php 
+get_header(); 
+$hbanner = get_field('banner', HOMEID);
+if($hbanner):
+  $banner = !empty($hbanner['image'])? cbv_get_image_src( $hbanner['image'] ): '';
+  $hasvideo = !empty($hbanner['ogg_video']) || !empty($hbanner['mp4_video'])? true:false;
 ?>
 <section class="hm-banner <?php echo $hasvideo?' has-video':''; ?>">
   <div class="bnr-btm-sketch" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/bnr-btm-sketch.png');"></div>
@@ -49,106 +47,62 @@
   </div>    
 </section>
 <?php endif; ?>
+<?php
+$showhide_package = get_field('showhide_package', HOMEID);
+if($showhide_package): 
+$packages = get_field('packages_sec', HOMEID);
+$packobj = $packages['select_packages'];
+if( empty($packobj) ){
+  $packobj = get_terms( array(
+    'taxonomy' => 'activities_cat',
+    'hide_empty' => false,
+    'orderby' => 'menu_order',
+    'order' => 'asc'
+  ) ); 
+}
+if($packages):
+?>
 <section class="ab-pkg-section" id="ab-pkg-section">
     <div class="container">
       <div class="row">
 
         <div class="col-md-12">
             <div class="sec-entry-hdr  cpkg-sec-entry-hdr">
-                <h2 class="fl-h2 sec-entry-hdr-title">activities</h2>
+              <?php if( !empty($packages['title']) ) printf( '<h2 class="fl-h2 sec-entry-hdr-title">%s</h2>', $packages['title'] ); ?>
             </div>
         </div>
-
+        <?php if( $packobj ): ?>
         <div class="col-md-12">
           <div class="pkg-grids-cntlr  hm-pkg-grids-cntlr">
             <ul class="reset-list">
+              <?php 
+                foreach( $packobj as $pack_row ): 
+                $pack_imgID = get_field('image', $pack_row);
+                $packimg = !empty($pack_imgID)? cbv_get_image_src($pack_imgID):'';
+              ?>
               <li>
                 <div class="pkgg-item mHc">                    
-                  <div class="pkggi-hdr"><h3 class="fl-h3  pkggi-tt"><a href="#">Fly Board</a></h3></div>
+                  <div class="pkggi-hdr"><h3 class="fl-h3  pkggi-tt"><a href="<?php echo esc_url( get_term_link( $pack_row ) ); ?>"><?php echo $pack_row->name; ?></a></h3></div>
                   <div class="pkggimg-cntlr">                      
-                    <a href="#" class="overlay-link"></a>
-                    <div class="feat-img  inline-bg" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/cp-grid-img-01.jpg');"></div>                    
+                    <a href="<?php echo esc_url( get_term_link( $pack_row ) ); ?>" class="overlay-link"></a>
+                    <div class="feat-img  inline-bg" style="background-image: url('<?php echo $packimg; ?>');"></div>                    
                   </div>
                   
                   <div class="hm-pkggi-btns-rgt  mHc2">
-                    <a href="#" class="ab-btn  book-now-btn">book now</a>
+                    <a href="<?php echo esc_url( get_term_link( $pack_row ) ); ?>" class="ab-btn  book-now-btn">book now</a>
                   </div>
                 </div>
               </li>
-              <li>
-                <div class="pkgg-item mHc">                    
-                  <div class="pkggi-hdr"><h3 class="fl-h3  pkggi-tt"><a href="#">jet ski</a></h3></div>
-                  <div class="pkggimg-cntlr">                      
-                    <a href="#" class="overlay-link"></a>
-                    <div class="feat-img  inline-bg" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/cp-grid-img-02.jpg');"></div>                    
-                  </div>
-                  
-                  <div class="hm-pkggi-btns-rgt  mHc2">
-                    <a href="#" class="ab-btn  book-now-btn">book now</a>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="pkgg-item mHc">                    
-                  <div class="pkggi-hdr"><h3 class="fl-h3  pkggi-tt"><a href="#">Crazy Shark</a></h3></div>
-                  <div class="pkggimg-cntlr">                      
-                    <a href="#" class="overlay-link"></a>
-                    <div class="feat-img  inline-bg" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/cp-grid-img-03.jpg');"></div>                    
-                  </div>
-                  
-                  <div class="hm-pkggi-btns-rgt  mHc2">
-                    <a href="#" class="ab-btn  book-now-btn">book now</a>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="pkgg-item mHc">                    
-                  <div class="pkggi-hdr"><h3 class="fl-h3  pkggi-tt"><a href="#">Paddle board</a></h3></div>
-                  <div class="pkggimg-cntlr">                      
-                    <a href="#" class="overlay-link"></a>
-                    <div class="feat-img  inline-bg" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/cp-grid-img-03.jpg');"></div>                    
-                  </div>
-                  
-                  <div class="hm-pkggi-btns-rgt  mHc2">
-                    <a href="#" class="ab-btn  book-now-btn">book now</a>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="pkgg-item mHc">                    
-                  <div class="pkggi-hdr"><h3 class="fl-h3  pkggi-tt"><a href="#">Banana Boat</a></h3></div>
-                  <div class="pkggimg-cntlr">                      
-                    <a href="#" class="overlay-link"></a>
-                    <div class="feat-img  inline-bg" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/cp-grid-img-05.jpg');"></div>                    
-                  </div>
-                  
-                  <div class="hm-pkggi-btns-rgt  mHc2">
-                    <a href="#" class="ab-btn  book-now-btn">book now</a>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="pkgg-item mHc">                    
-                  <div class="pkggi-hdr"><h3 class="fl-h3  pkggi-tt"><a href="#">Yamaha Jet Ski</a></h3></div>
-                  <div class="pkggimg-cntlr">                      
-                    <a href="#" class="overlay-link"></a>
-                    <div class="feat-img  inline-bg" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/cp-grid-img-06.jpg');"></div>                    
-                  </div>
-                  
-                  <div class="hm-pkggi-btns-rgt  mHc2">
-                    <a href="#" class="ab-btn  book-now-btn">book now</a>
-                  </div>
-                </div>
-              </li>
+              <?php endforeach; ?>
             </ul>
           </div>
         </div>
+        <?php endif; ?>
       </div>
     </div>
 </section>   
-
-
-
+<?php endif; ?>
+<?php endif; ?>
 <?php 
 $showhide_sports_activities = get_field('showhide_sports_activities', HOMEID);
 if($showhide_sports_activities): 
@@ -186,8 +140,6 @@ if($showhide_sports_activities):
 </section>
 <?php endif; endif;?>
 
-
-
 <?php 
 $showhide_get_ready = get_field('showhide_get_ready', HOMEID);
 if($showhide_get_ready): 
@@ -215,8 +167,6 @@ if($showhide_get_ready):
   </div>
 </section>
 <?php endif; endif;?>
-
-
 <?php 
 $showhide_location = get_field('showhide_location', HOMEID);
 if($showhide_location): 
@@ -262,7 +212,7 @@ if($showhide_location):
                   <?php endif; if( !empty($whatsapp) ): ?>
                   <div class="hm-cntct-tel">
                     <span>Book via WhatsApp: </span>
-                    <a href="tel:<?php echo phone_preg($whatsapp); ?>">
+                    <a href="https://wa.me/<?php echo phone_preg($whatsapp); ?>">
                       <?php echo $whatsapp; ?>
                     </a>
                   </div>

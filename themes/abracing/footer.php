@@ -13,8 +13,6 @@
   $sinfo = get_field('social_media', 'options');
   $copyright_text = get_field('copyright_text', 'options');
 ?>
-
-
 <footer class="footer-wrp inline-bg" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/ftr-bg.png);">
       <span class="ftr-top-angle" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/ftr-top-angle.png);"></span>
       <div class="ftr-top">

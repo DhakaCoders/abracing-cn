@@ -385,7 +385,12 @@ $('.ab-faq-accordion-title').on('click', function(){
 
 
 
-
+if( $('#package_price').length > 0 ){
+  let pkgPrice = $('#package_price').data('price');
+  let pakURL = $('#package_price').data('url');
+  $('#totalcost').text(pkgPrice);
+  $('.wpforms-field.wpforms-field-hidden.activities-url input').val(pakURL);
+}
 
 
 new WOW().init();
