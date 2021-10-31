@@ -98,6 +98,20 @@ $('.fancybox').fancybox({
 }
 
 
+/*if($('.fancyboxLauncher').length){
+$('.fancyboxLauncher').fancybox({
+    //openEffect  : 'none',
+    //closeEffect : 'none'
+    
+  });
+
+}*/
+/*$(".fancyboxLauncher").on("click", function(){
+    $(".fancybox").eq(0).trigger("click");
+    return false;
+});*/
+
+
 
 /**
 Responsive on 767px
@@ -293,6 +307,10 @@ if( $('.pdtSinglePageSmGllarySlider').length ){
       
     });
 }
+
+
+
+
 
 $('.wpforms-field-select select').select2();
 $('.select-2-cntlr').select2();
